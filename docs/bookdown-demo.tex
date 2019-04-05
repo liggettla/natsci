@@ -24,7 +24,7 @@
 \usepackage[margin=1in]{geometry}
 \usepackage{hyperref}
 \hypersetup{unicode=true,
-            pdftitle={Data Science With Python},
+            pdftitle={On Matters Of Nature and Science},
             pdfauthor={L A Liggett},
             pdfborder={0 0 0},
             breaklinks=true}
@@ -117,7 +117,7 @@
 
 \setlength{\droptitle}{-2em}
 
-  \title{Data Science With Python}
+  \title{On Matters Of Nature and Science}
     \pretitle{\vspace{\droptitle}\centering\huge}
   \posttitle{\par}
     \author{L A Liggett}
@@ -166,98 +166,114 @@ To compile this example to PDF, you need XeLaTeX. You are recommended to
 install TinyTeX (which includes XeLaTeX):
 \url{https://yihui.name/tinytex/}.
 
-\chapter{Introduction}\label{intro}
+\chapter{Genetics and Genomics}\label{g2}
 
-You can label chapter and section titles using \texttt{\{\#label\}}
-after them, e.g., we can reference Chapter \ref{intro}. If you do not
-manually label them, there will be automatic labels anyway, e.g.,
-Chapter \ref{visualization}.
+\section{Introduction}\label{introduction}
 
-Figures and tables with captions will be placed in \texttt{figure} and
-\texttt{table} environments, respectively.
+A haplotype block is a set of closely linked alleles or markers on a
+chromosome that tend to be inherited together over evolutionary time.
 
-And this is some other random stuff.
+Across Eukaryotes, the frequency of recombination is inversely
+proportional to overall genome size. The result is that yeast have a
+recombination rate a few orders of magnitude higher than that of humans
+(She and Jarosz, 2018).
 
-\begin{Shaded}
-\begin{Highlighting}[]
-\KeywordTok{par}\NormalTok{(}\DataTypeTok{mar =} \KeywordTok{c}\NormalTok{(}\DecValTok{4}\NormalTok{, }\DecValTok{4}\NormalTok{, .}\DecValTok{1}\NormalTok{, .}\DecValTok{1}\NormalTok{))}
-\KeywordTok{plot}\NormalTok{(pressure, }\DataTypeTok{type =} \StringTok{'b'}\NormalTok{, }\DataTypeTok{pch =} \DecValTok{19}\NormalTok{)}
-\end{Highlighting}
-\end{Shaded}
+\subsection{Subpoint}\label{subpoint}
 
-\begin{figure}
+This is some sub info
 
-{\centering \includegraphics[width=0.8\linewidth]{bookdown-demo_files/figure-latex/nice-fig-1} 
+\subsection{Second subpoint}\label{second-subpoint}
 
-}
+A haplotype block is a set of closely linked alleles or markers on a
+chromosome that tend to be inherited together over evolutionary time.
 
-\caption{Here is a nice figure!}\label{fig:nice-fig}
-\end{figure}
+Across Eukaryotes, the frequency of recombination is inversely
+proportional to overall genome size. The result is that yeast have a
+recombination rate a few orders of magnitude higher than that of humans
+(She and Jarosz, 2018).
 
-Reference a figure by its code chunk label with the \texttt{fig:}
-prefix, e.g., see Figure \ref{fig:nice-fig}. Similarly, you can
-reference tables generated from \texttt{knitr::kable()}, e.g., see Table
-\ref{tab:nice-tab}.
+\section{DNA Replication}\label{dna-replication}
 
-\begin{Shaded}
-\begin{Highlighting}[]
-\NormalTok{knitr}\OperatorTok{::}\KeywordTok{kable}\NormalTok{(}
-  \KeywordTok{head}\NormalTok{(iris, }\DecValTok{20}\NormalTok{), }\DataTypeTok{caption =} \StringTok{'Here is a nice table!'}\NormalTok{,}
-  \DataTypeTok{booktabs =} \OtherTok{TRUE}
-\NormalTok{)}
-\end{Highlighting}
-\end{Shaded}
+When the origin of replication(s) is removed from bacteria or
+eukaryotes, growth and division is restricted or entirely eliminated,
+but in some strains of archaea like H volcanii, deletion of the origin
+of replication accelerates cell growth rates. It turns out that this
+archaea can use a process that is similar to homologous recombination to
+create a replication fork and replicate its chromosome (Hawkins et al.,
+2013).
 
-\begin{table}[t]
+\section{Cloning}\label{cloning}
 
-\caption{\label{tab:nice-tab}Here is a nice table!}
-\centering
-\begin{tabular}{rrrrl}
-\toprule
-Sepal.Length & Sepal.Width & Petal.Length & Petal.Width & Species\\
-\midrule
-5.1 & 3.5 & 1.4 & 0.2 & setosa\\
-4.9 & 3.0 & 1.4 & 0.2 & setosa\\
-4.7 & 3.2 & 1.3 & 0.2 & setosa\\
-4.6 & 3.1 & 1.5 & 0.2 & setosa\\
-5.0 & 3.6 & 1.4 & 0.2 & setosa\\
-\addlinespace
-5.4 & 3.9 & 1.7 & 0.4 & setosa\\
-4.6 & 3.4 & 1.4 & 0.3 & setosa\\
-5.0 & 3.4 & 1.5 & 0.2 & setosa\\
-4.4 & 2.9 & 1.4 & 0.2 & setosa\\
-4.9 & 3.1 & 1.5 & 0.1 & setosa\\
-\addlinespace
-5.4 & 3.7 & 1.5 & 0.2 & setosa\\
-4.8 & 3.4 & 1.6 & 0.2 & setosa\\
-4.8 & 3.0 & 1.4 & 0.1 & setosa\\
-4.3 & 3.0 & 1.1 & 0.1 & setosa\\
-5.8 & 4.0 & 1.2 & 0.2 & setosa\\
-\addlinespace
-5.7 & 4.4 & 1.5 & 0.4 & setosa\\
-5.4 & 3.9 & 1.3 & 0.4 & setosa\\
-5.1 & 3.5 & 1.4 & 0.3 & setosa\\
-5.7 & 3.8 & 1.7 & 0.3 & setosa\\
-5.1 & 3.8 & 1.5 & 0.3 & setosa\\
-\bottomrule
-\end{tabular}
-\end{table}
+A macaque was the first primate to be cloned by SCNT (Liu et al., 2018).
 
-\begin{Shaded}
-\begin{Highlighting}[]
-\ImportTok{import}\NormalTok{ pandas }\ImportTok{as}\NormalTok{ pd}
-\NormalTok{x }\OperatorTok{=} \StringTok{'hello, python world!'}
-\BuiltInTok{print}\NormalTok{(x.split(}\StringTok{' '}\NormalTok{))}
-\end{Highlighting}
-\end{Shaded}
+\section{Mutation Rate}\label{mutation-rate}
 
-\begin{verbatim}
-## ['hello,', 'python', 'world!']
-\end{verbatim}
+Using whole-genome sequencing or next-gen sequencing to determine
+mutation rates by base, it appears that C\textgreater{}T mutations at
+CpG sites mutate at a frequency of 10-7 changes/cell division, and all
+other sites are within the range of 10-8-10-9 base changes per division
+(Arnheim and Calabrese, 2009, 2016; Campbell and Eichler, 2013; Ségurel
+et al., 2014).
 
-You can write citations, too. For example, we are using the
-\textbf{bookdown} package \citep{R-bookdown} in this sample book, which
-was built on top of R Markdown and \textbf{knitr} \citep{xie2015}.
+Providing an example of how human mutation rates can differ by
+geographic origination, europeans compared to african/asian populations
+have a 1.6 increased mutation rate of a particular mutation (Harris,
+2015).
+
+It appears that humans have the highest germline mutation rate of all
+analyzed species (Lynch, 2016)
+
+\section{Mutation Hotspots}\label{mutation-hotspots}
+
+There are a number of sporadic mutation hotspots associated with disease
+incidence, like achondroplasia which has a sporadic incidence rate of
+4.5 x 10-5 per generation (Arnheim and Calabrese, 2016; Waller et al.,
+2008). This disease originates from a single mutation in the FGFR3 gene
+at a mutation rate \textasciitilde{}450 times higher than what would
+ordinarily be expected at a CpG site (Bellus et al., 1995; Rousseau et
+al., 1994; Shiang et al., 1994).
+
+\section{Mutation Detection}\label{mutation-detection}
+
+Pyrophosphorolysis-activated polymerization is a mutation detection
+method that can detect a single mutant molecule of DNA within 25,000
+genomes (Liu and Sommer, 2004; Qin et al., 2007).
+
+\section{Genetic Modifications}\label{genetic-modifications}
+
+Caffeine was cloned to allow for caffeine-deficient coffee and teas
+without the decaffeination process (Kato et al., 2000).
+
+When a DNA-associating protein from tardigrades was cloned into
+mammalian cells, they became about 40\% more tolerant to radiation
+(Hashimoto et al., 2016).
+
+\section{Sequencing Methods}\label{sequencing-methods}
+
+Using a new sequencing method called sci-RNA-seq, the transcriptome of
+every cell of 762 cells in C Elegans was sequenced to yield single-cell
+sequencing results and transcriptome profiling of every cell in the
+body. The way this is done is by methanol fixing nuclei and then
+incorporating a UMI when converting to cDNA, then mixing cells again and
+incorporating another UMI when synthesizing the other strand (Cao et
+al., 2017).
+
+It appears that DAPI does not increase sequencing error rates by
+Illumina sequencing (Leung et al., 2016).
+
+One group came up with a method that is essentially identical to mine in
+which they use barcoded probes to detect leukemia but they tracked the
+mutation manually and ignored background (Wong et al. 2015)
+
+\section{Diagnostics}\label{diagnostics}
+
+In Li and Snyder Cell 2018, the EHR from hospitals is used to integrate
+with a machine learning algorithm trained on aneurysm detection.
+Patients are then whole genome sequenced, and the genome sequencing plus
+the lifestyle of the individual on EHR is then used to predict if the
+person has an aneurysm. They were able to achieve pretty robust
+detection results that could then be used in a prediction setting in the
+clinic.
 
 \chapter{JupyterLab}\label{jupyter}
 
