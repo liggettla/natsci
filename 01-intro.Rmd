@@ -1,5 +1,7 @@
 # Genetics and Genomics {#g2}
 
+floobity
+
 ## Introduction
 A haplotype block is a set of closely linked alleles or markers on a chromosome that tend to be inherited together over evolutionary time.
 
