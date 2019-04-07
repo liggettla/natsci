@@ -125,7 +125,7 @@
   \postauthor{\par}
       \predate{\centering\large\emph}
   \postdate{\par}
-    \date{2019-04-06}
+    \date{2019-04-07}
 
 \usepackage{booktabs}
 \usepackage{amsthm}
@@ -276,6 +276,55 @@ the lifestyle of the individual on EHR is then used to predict if the
 person has an aneurysm. They were able to achieve pretty robust
 detection results that could then be used in a prediction setting in the
 clinic.
+
+\section{Detecting Common Diseases}\label{detecting-common-diseases}
+
+Much of the following information comes from this review: (Shendure et
+al. 2019) Linkage disequilibrium studies were designed to detect
+Mendelian diseases GWAS designed back in 1996 to detect non-mendelian
+multigenic traits that have much less penetrant effects The promise that
+GWAS could risk stratify people for diseases has been challenging
+because most diseases seem to be driven by an extremely large number of
+variants with small effects that will likely require extremely large
+sample sizes There exists a problem of missing heritability, and it was
+often believed that common SNPs only held part of the puzzle, and more
+rare variants accounted for a great deal of heritability, but this does
+not yet seem to be the case, and SNPs seem to have a much greater effect
+size Another problem with GWAS is it is haplotype specific in that it
+can implicate a stretch of DNA inherited from one parent, but is blind
+to the individual effect sizes of each of the individual variants A
+challenge raised by Jonathan Pritchard is that gene regulatory networks
+are so interconnected that variants in one gene may actually cause
+changes in other genes and are therefore only peripherally relevant to a
+phenotype One continued promise of the utility of GWAS to identify the
+causal genetics behind diseases is that most of the strongest GWAS
+associations came from small studies of european populations that
+identified mutations of large effect sizes. By expanding studies to
+populations, especially those like african populations that have less
+linkage disequilibrium many more variants of large effect sizes could be
+identified and used to tease out relationships of smaller effect sizes
+in other populations. Methods are also improving fo linking regulatory
+elements to the genes they regulate like (Gasperini et al. 2018;
+Gasperini et al. 2019). Linking regulatory elements to their
+corresponding genes can be quite helpful, because this information can
+be incorporated into GWAS calculations to refine causal linkage
+probabilities. Polygenic risk scores have often been used to predict
+phenotypic variance in plants and animals, and have yet to really be
+applied to human genomics (Khera et al. 2018). Training of PRSs seem to
+not require fine-mapping, and their use has been aided by the UK Biobank
+(Bycroft et al. 2018).
+
+\section{Detecting Rare Diseases}\label{detecting-rare-diseases}
+
+There are some 7k mendelian monogenic disorders that impact about 0.5\%
+of live births, but contribute to about 70\% of pediatric hospital
+admissions An important surprise has been that de-novo mutations account
+for a substantial amount of intellectual disabilities and autism, where
+as many as 30-60\% of ASD is caused by de-novo mutations Currently as
+many as half of acutely ill inpatient infants can be diagnosed from WGS.
+There are currently 59 genes designated by the American College of
+Medical Genetics as being sufficiently clinically actionable as to
+warrant sequencing and reporting in patients (Kalia et al. 2017).
 
 \chapter{JupyterLab}\label{jupyter}
 
