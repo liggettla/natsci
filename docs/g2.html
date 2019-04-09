@@ -33,7 +33,7 @@
   
   
 <link rel="prev" href="index.html">
-<link rel="next" href="jupyter.html">
+<link rel="next" href="neurosci.html">
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -101,7 +101,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
       <nav role="navigation">
 
 <ul class="summary">
-<li><a href="./">Data Science With Python</a></li>
+<li><a href="./">On Matters Of Nature and Science</a></li>
 
 <li class="divider"></li>
 <li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Prerequisites</a></li>
@@ -120,22 +120,14 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <li class="chapter" data-level="2.9" data-path="g2.html"><a href="g2.html#diagnostics"><i class="fa fa-check"></i><b>2.9</b> Diagnostics</a></li>
 <li class="chapter" data-level="2.10" data-path="g2.html"><a href="g2.html#detecting-common-diseases"><i class="fa fa-check"></i><b>2.10</b> Detecting Common Diseases</a></li>
 <li class="chapter" data-level="2.11" data-path="g2.html"><a href="g2.html#detecting-rare-diseases"><i class="fa fa-check"></i><b>2.11</b> Detecting Rare Diseases</a></li>
+<li class="chapter" data-level="2.12" data-path="g2.html"><a href="g2.html#tissue-evolution"><i class="fa fa-check"></i><b>2.12</b> Tissue Evolution</a></li>
 </ul></li>
-<li class="chapter" data-level="3" data-path="jupyter.html"><a href="jupyter.html"><i class="fa fa-check"></i><b>3</b> JupyterLab</a></li>
-<li class="chapter" data-level="4" data-path="visualization.html"><a href="visualization.html"><i class="fa fa-check"></i><b>4</b> Visualization</a><ul>
-<li class="chapter" data-level="4.1" data-path="visualization.html"><a href="visualization.html#matplotlib"><i class="fa fa-check"></i><b>4.1</b> Matplotlib</a></li>
-<li class="chapter" data-level="4.2" data-path="visualization.html"><a href="visualization.html#seaborn"><i class="fa fa-check"></i><b>4.2</b> Seaborn</a></li>
+<li class="chapter" data-level="3" data-path="neurosci.html"><a href="neurosci.html"><i class="fa fa-check"></i><b>3</b> Neuroscience</a><ul>
+<li class="chapter" data-level="3.1" data-path="neurosci.html"><a href="neurosci.html#alzheimers-disease"><i class="fa fa-check"></i><b>3.1</b> Alzheimer’s Disease</a></li>
+<li class="chapter" data-level="3.2" data-path="neurosci.html"><a href="neurosci.html#sleep"><i class="fa fa-check"></i><b>3.2</b> Sleep</a></li>
 </ul></li>
-<li class="chapter" data-level="5" data-path="biology.html"><a href="biology.html"><i class="fa fa-check"></i><b>5</b> Biology</a><ul>
-<li class="chapter" data-level="5.1" data-path="biology.html"><a href="biology.html#general"><i class="fa fa-check"></i><b>5.1</b> General</a></li>
-<li class="chapter" data-level="5.2" data-path="biology.html"><a href="biology.html#biopython"><i class="fa fa-check"></i><b>5.2</b> Biopython</a></li>
-<li class="chapter" data-level="5.3" data-path="biology.html"><a href="biology.html#ucsc-genome-browser"><i class="fa fa-check"></i><b>5.3</b> UCSC Genome Browser</a></li>
-<li class="chapter" data-level="5.4" data-path="biology.html"><a href="biology.html#ref-genome"><i class="fa fa-check"></i><b>5.4</b> Ref Genome</a></li>
-<li class="chapter" data-level="5.5" data-path="biology.html"><a href="biology.html#personal-information"><i class="fa fa-check"></i><b>5.5</b> Personal Information</a></li>
-</ul></li>
-<li class="chapter" data-level="6" data-path="io.html"><a href="io.html"><i class="fa fa-check"></i><b>6</b> Data I/O</a><ul>
-<li class="chapter" data-level="6.1" data-path="io.html"><a href="io.html#reading-data-files"><i class="fa fa-check"></i><b>6.1</b> Reading Data Files</a></li>
-<li class="chapter" data-level="6.2" data-path="io.html"><a href="io.html#pickles"><i class="fa fa-check"></i><b>6.2</b> Pickles</a></li>
+<li class="chapter" data-level="4" data-path="aging.html"><a href="aging.html"><i class="fa fa-check"></i><b>4</b> Aging</a><ul>
+<li class="chapter" data-level="4.1" data-path="aging.html"><a href="aging.html#somatic-mutation-theory"><i class="fa fa-check"></i><b>4.1</b> Somatic Mutation Theory</a></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
 <li class="divider"></li>
@@ -160,7 +152,6 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
             <section class="normal" id="section-">
 <div id="g2" class="section level1">
 <h1><span class="header-section-number">Chapter 2</span> Genetics and Genomics</h1>
-<p>floobity</p>
 <div id="introduction" class="section level2">
 <h2><span class="header-section-number">2.1</span> Introduction</h2>
 <p>A haplotype block is a set of closely linked alleles or markers on a chromosome that tend to be inherited together over evolutionary time.</p>
@@ -214,12 +205,44 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 </div>
 <div id="detecting-common-diseases" class="section level2">
 <h2><span class="header-section-number">2.10</span> Detecting Common Diseases</h2>
-<p>Much of the following information comes from this review: (Shendure et al. 2019) Linkage disequilibrium studies were designed to detect Mendelian diseases GWAS designed back in 1996 to detect non-mendelian multigenic traits that have much less penetrant effects The promise that GWAS could risk stratify people for diseases has been challenging because most diseases seem to be driven by an extremely large number of variants with small effects that will likely require extremely large sample sizes There exists a problem of missing heritability, and it was often believed that common SNPs only held part of the puzzle, and more rare variants accounted for a great deal of heritability, but this does not yet seem to be the case, and SNPs seem to have a much greater effect size Another problem with GWAS is it is haplotype specific in that it can implicate a stretch of DNA inherited from one parent, but is blind to the individual effect sizes of each of the individual variants A challenge raised by Jonathan Pritchard is that gene regulatory networks are so interconnected that variants in one gene may actually cause changes in other genes and are therefore only peripherally relevant to a phenotype One continued promise of the utility of GWAS to identify the causal genetics behind diseases is that most of the strongest GWAS associations came from small studies of european populations that identified mutations of large effect sizes. By expanding studies to populations, especially those like african populations that have less linkage disequilibrium many more variants of large effect sizes could be identified and used to tease out relationships of smaller effect sizes in other populations. Methods are also improving fo linking regulatory elements to the genes they regulate like (Gasperini et al. 2018; Gasperini et al. 2019). Linking regulatory elements to their corresponding genes can be quite helpful, because this information can be incorporated into GWAS calculations to refine causal linkage probabilities. Polygenic risk scores have often been used to predict phenotypic variance in plants and animals, and have yet to really be applied to human genomics (Khera et al. 2018). Training of PRSs seem to not require fine-mapping, and their use has been aided by the UK Biobank (Bycroft et al. 2018).</p>
+<p>Much of the following information comes from this review: <span class="citation">(Shendure, Findlay, and Snyder <a href="#ref-shendure2019genomic">2019</a>)</span>.</p>
+<p>Linkage disequilibrium studies were designed to detect Mendelian diseases GWAS designed back in 1996 to detect non-mendelian multigenic traits that have much less penetrant effects The promise that GWAS could risk stratify people for diseases has been challenging because most diseases seem to be driven by an extremely large number of variants with small effects that will likely require extremely large sample sizes There exists a problem of missing heritability, and it was often believed that common SNPs only held part of the puzzle, and more rare variants accounted for a great deal of heritability, but this does not yet seem to be the case, and SNPs seem to have a much greater effect size Another problem with GWAS is it is haplotype specific in that it can implicate a stretch of DNA inherited from one parent, but is blind to the individual effect sizes of each of the individual variants A challenge raised by Jonathan Pritchard is that gene regulatory networks are so interconnected that variants in one gene may actually cause changes in other genes and are therefore only peripherally relevant to a phenotype One continued promise of the utility of GWAS to identify the causal genetics behind diseases is that most of the strongest GWAS associations came from small studies of european populations that identified mutations of large effect sizes. By expanding studies to populations, especially those like african populations that have less linkage disequilibrium many more variants of large effect sizes could be identified and used to tease out relationships of smaller effect sizes in other populations. Methods are also improving fo linking regulatory elements to the genes they regulate like (Gasperini et al. 2018; Gasperini et al. 2019). Linking regulatory elements to their corresponding genes can be quite helpful, because this information can be incorporated into GWAS calculations to refine causal linkage probabilities. Polygenic risk scores have often been used to predict phenotypic variance in plants and animals, and have yet to really be applied to human genomics (Khera et al. 2018). Training of PRSs seem to not require fine-mapping, and their use has been aided by the UK Biobank (Bycroft et al. 2018).</p>
 </div>
 <div id="detecting-rare-diseases" class="section level2">
 <h2><span class="header-section-number">2.11</span> Detecting Rare Diseases</h2>
 <p>There are some 7k mendelian monogenic disorders that impact about 0.5% of live births, but contribute to about 70% of pediatric hospital admissions An important surprise has been that de-novo mutations account for a substantial amount of intellectual disabilities and autism, where as many as 30-60% of ASD is caused by de-novo mutations Currently as many as half of acutely ill inpatient infants can be diagnosed from WGS. There are currently 59 genes designated by the American College of Medical Genetics as being sufficiently clinically actionable as to warrant sequencing and reporting in patients (Kalia et al. 2017).</p>
+</div>
+<div id="tissue-evolution" class="section level2">
+<h2><span class="header-section-number">2.12</span> Tissue Evolution</h2>
+<p>By sequencing 7,664 tumors spanning 29 different cancer types, it appears that unlike species evolution, the force of positive selection in developing tumors outweighs that of negative selection as evidenced by the loss of less than 1 coding nucleotide substitution per tumor <span class="citation">(Martincorena et al. <a href="#ref-martincorena2017universal">2017</a>)</span>. The number of mutations per cancer varied from 1 per thyroid and testical cancer to over 10 per endometrial and colorectal cancers. This information helps to answer how many mutations are needed to effectively create cancers and how this can vary with across tissue types. A number of groups have tried to answer these questions in the past by mathematically estimating the number of rate limiting steps required in the process of oncogenesis <span class="citation">(Armitage and Doll <a href="#ref-armitage1954age">1954</a>; Tomasetti and Vogelstein <a href="#ref-tomasetti2015variation">2015</a>)</span>. There are two important problems with this approach, first that not all driver mutations need to be rate-limiting <span class="citation">(Yates et al. <a href="#ref-yates2015subclonal">2015</a>)</span>, and not all rate limiting steps in oncogensis need to be driver mutations <span class="citation">(Martincorena et al. <a href="#ref-martincorena2015high">2015</a>)</span>. It has also been problematic to sequence tumors and count the number of high frequency mutations in oncogenic genes, but this has the added challenges of distinguishing passenger from driver mutations and is limited to current lists of oncogenes. Lists of genes involved in cancer have become increasingly detailed, but are still limited <span class="citation">(Lawrence et al. <a href="#ref-lawrence2014discovery">2014</a>; Kandoth et al. <a href="#ref-kandoth2013mutational">2013</a>)</span>. The absence of negative selection in cancer may well indicate how dispensable the majority of genes are for somatic cells.</p>
 
+</div>
+</div>
+<h3>References</h3>
+<div id="refs" class="references">
+<div id="ref-shendure2019genomic">
+<p>Shendure, Jay, Gregory M Findlay, and Matthew W Snyder. 2019. “Genomic Medicine–Progress, Pitfalls, and Promise.” <em>Cell</em> 177 (1). Elsevier: 45–57.</p>
+</div>
+<div id="ref-martincorena2017universal">
+<p>Martincorena, Iñigo, Keiran M Raine, Moritz Gerstung, Kevin J Dawson, Kerstin Haase, Peter Van Loo, Helen Davies, Michael R Stratton, and Peter J Campbell. 2017. “Universal Patterns of Selection in Cancer and Somatic Tissues.” <em>Cell</em> 171 (5). Elsevier: 1029–41.</p>
+</div>
+<div id="ref-armitage1954age">
+<p>Armitage, Peter, and Richard Doll. 1954. “The Age Distribution of Cancer and a Multi-Stage Theory of Carcinogenesis.” <em>British Journal of Cancer</em> 8 (1). Nature Publishing Group: 1.</p>
+</div>
+<div id="ref-tomasetti2015variation">
+<p>Tomasetti, Cristian, and Bert Vogelstein. 2015. “Variation in Cancer Risk Among Tissues Can Be Explained by the Number of Stem Cell Divisions.” <em>Science</em> 347 (6217). American Association for the Advancement of Science: 78–81.</p>
+</div>
+<div id="ref-yates2015subclonal">
+<p>Yates, Lucy R, Moritz Gerstung, Stian Knappskog, Christine Desmedt, Gunes Gundem, Peter Van Loo, Turid Aas, et al. 2015. “Subclonal Diversification of Primary Breast Cancer Revealed by Multiregion Sequencing.” <em>Nature Medicine</em> 21 (7). Nature Publishing Group: 751.</p>
+</div>
+<div id="ref-martincorena2015high">
+<p>Martincorena, Iñigo, Amit Roshan, Moritz Gerstung, Peter Ellis, Peter Van Loo, Stuart McLaren, David C Wedge, et al. 2015. “High Burden and Pervasive Positive Selection of Somatic Mutations in Normal Human Skin.” <em>Science</em> 348 (6237). American Association for the Advancement of Science: 880–86.</p>
+</div>
+<div id="ref-lawrence2014discovery">
+<p>Lawrence, Michael S, Petar Stojanov, Craig H Mermel, James T Robinson, Levi A Garraway, Todd R Golub, Matthew Meyerson, Stacey B Gabriel, Eric S Lander, and Gad Getz. 2014. “Discovery and Saturation Analysis of Cancer Genes Across 21 Tumour Types.” <em>Nature</em> 505 (7484). Nature Publishing Group: 495.</p>
+</div>
+<div id="ref-kandoth2013mutational">
+<p>Kandoth, Cyriac, Michael D McLellan, Fabio Vandin, Kai Ye, Beifang Niu, Charles Lu, Mingchao Xie, et al. 2013. “Mutational Landscape and Significance Across 12 Major Cancer Types.” <em>Nature</em> 502 (7471). Nature Publishing Group: 333.</p>
 </div>
 </div>
             </section>
@@ -228,7 +251,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
         </div>
       </div>
 <a href="index.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="jupyter.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="neurosci.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -258,7 +281,7 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/rstudio/bookdown-demo/edit/master/01-intro.Rmd",
+"link": "https://github.com/rstudio/bookdown-demo/edit/master/01-genetics_genomics.Rmd",
 "text": "Edit"
 },
 "history": {
@@ -267,7 +290,7 @@ gitbook.start({
 },
 "download": ["bookdown-demo.pdf", "bookdown-demo.epub"],
 "toc": {
-"collapse": "subsection"
+"collapse": "section"
 }
 });
 });

@@ -1,0 +1,5 @@
+# Aging {#aging}
+
+## Somatic Mutation Theory
+In their study covering 7,664 tumors, Martincorena and Campbell illustrate an almost complete absence of negative selection against somatic mutations [@martincorena2017universal]. This is lack of negative selection is quite different from the force at the population level where it acts quite strongly on the germline. This result may be an important finding for the somatic theory of aging [@morley1995somatic], as it may be an indication that point mutations are largely of negligible effect size
+within somatic cells. As such, if point mutations do play a role in aging, it seems that this may be limited to those that are neutral or advantageous to a cell.
