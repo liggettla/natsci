@@ -13,7 +13,11 @@ description: "These are just some things."
 ---
 
 # Introduction 
-This is a glimpse of the universe as it was during my moment on this pebble.
+Here is an unexceptional glimpse of the universe as it was during my moment on this ball. 
+
+knitr::include_app("https://yihui.shinyapps.io/miniUI/", 
+  height = "600px")
+
 
 <!--chapter:end:index.Rmd-->
 
