@@ -13,7 +13,7 @@ description: "These are just some things."
 ---
 
 # Introduction 
-Here is an unexceptional glimpse of the universe as it was during my moment on this ball. 
+Here is an unexceptional glimpse of the universe as it was during my moment in time. 
 
 <!--chapter:end:index.Rmd-->
 
@@ -82,17 +82,33 @@ Polygenic risk scores have often been used to predict phenotypic variance in pla
 Training of PRSs seem to not require fine-mapping, and their use has been aided by the UK Biobank (Bycroft et al. 2018).
 
 ## Detecting Rare Diseases
-There are some 7k mendelian monogenic disorders that impact about 0.5% of live births, but contribute to about 70% of pediatric hospital admissions
+There are some 7k Mendelian monogenic disorders that impact about 0.5% of live births, but contribute to about 70% of pediatric hospital admissions
 An important surprise has been that de-novo mutations account for a substantial amount of intellectual disabilities and autism, where as many as 30-60% of ASD is caused by de-novo mutations
 Currently as many as half of acutely ill inpatient infants can be diagnosed from WGS.
 There are currently 59 genes designated by the American College of Medical Genetics as being sufficiently clinically actionable as to warrant sequencing and reporting in patients (Kalia et al. 2017).
 
 ## Tissue Evolution
-By sequencing 7,664 tumors spanning 29 different cancer types, it appears that unlike species evolution, the force of positive selection in developing tumors outweighs that of negative selection as evidenced by the loss of less than 1 coding nucleotide substitution per tumor [@martincorena2017universal]. The number of mutations per cancer varied from 1 per thyroid and testical cancer to over 10 per endometrial and colorectal cancers. This information helps to answer how many mutations are needed to effectively create cancers and how this can vary with across tissue types. A number of groups have tried to answer these questions in the past by mathematically estimating the number of rate limiting steps required in the process of oncogenesis [@armitage1954age; @tomasetti2015variation]. There are two important problems with this approach, first that not all driver mutations need to be rate-limiting [@yates2015subclonal], and not all rate limiting steps in oncogensis need to be driver mutations [@martincorena2015high]. It has also been problematic to sequence tumors and count the number of high frequency mutations in oncogenic genes, but this has the added challenges of distinguishing passenger from driver mutations and is limited to current lists of oncogenes. Lists of genes involved in cancer have become increasingly detailed, but are still limited [@lawrence2014discovery; @kandoth2013mutational]. The absence of negative selection in cancer may well indicate how dispensable the majority of genes are for somatic cells.
+By sequencing 7,664 tumors spanning 29 different cancer types, it appears that unlike species evolution, the force of positive selection in developing tumors outweighs that of negative selection as evidenced by the loss of less than 1 coding nucleotide substitution per tumor [@martincorena2017universal]. The number of mutations per cancer varied from 1 per thyroid and testicle cancer to over 10 per endometrial and colorectal cancers. This information helps to answer how many mutations are needed to effectively create cancers and how this can vary with across tissue types. A number of groups have tried to answer these questions in the past by mathematically estimating the number of rate limiting steps required in the process of oncogenesis [@armitage1954age; @tomasetti2015variation]. There are two important problems with this approach, first that not all driver mutations need to be rate-limiting [@yates2015subclonal], and not all rate limiting steps in oncogenesis need to be driver mutations [@martincorena2015high]. It has also been problematic to sequence tumors and count the number of high frequency mutations in oncogenic genes, but this has the added challenges of distinguishing passenger from driver mutations and is limited to current lists of oncogenes. Lists of genes involved in cancer have become increasingly detailed, but are still limited [@lawrence2014discovery; @kandoth2013mutational]. The absence of negative selection in cancer may well indicate how dispensable the majority of genes are for somatic cells.
 
-In their paper, Martincorena and Campbell show that the dN/dS ratio for somatic tissues and cancer tissue is 1 or greater showing that the effect of negative selection is minimal. In contrast, the dN/dS for germline species evolution is less than 0.5 showing a much greater effect of negative selection. Surprisingly, the non-synonomous mutations showed a dN/dS ration of 1 whether they existed in haploid or diploid regions suggesting the cells were not simply tolerating the mutations by having two copies.
+In their paper, Martincorena and Campbell show that the dN/dS ratio for somatic tissues and cancer tissue is 1 or greater showing that the effect of negative selection is minimal. In contrast, the dN/dS for germline species evolution is less than 0.5 showing a much greater effect of negative selection. Surprisingly, the non-synonymous mutations showed a dN/dS ration of 1 whether they existed in haploid or diploid regions suggesting the cells were not simply tolerating the mutations by having two copies.
 
 Using sequencing of blood to find spontaneous mutations and go back and use population biology to calculate the number of HSCs, it was found that there were between 50k-200k HSCs contributing to hematopoiesis at any given time [@lee2018population].
+
+## Mutational Processes in Cancer
+Most cancers carry between 1,000 and 20,000 somatic point mutations and a few hundred insertions, deletions, and rearrangements [@martincorena2015somatic]. Leukemias and pediatric brain cancers typically contain the lowest numbers of mutations while those tissues exposed to mutagens like lung and skin cancers tend to have the highest numbers [@stephens2009complex; @alexandrov2013signatures; @lawrence2013mutational; @vogelstein2013cancer]. It is interesting to note that from the Cancer Gene Census database, it appears that only three genes; TP53, PIK3CA, and BRAF are mutated in 10% or more patients [@martincorena2015somatic].
+
+Carcinogens or particular mutations often cause identifiable mutational patterns. BRCA1 and BRCA2 mutations commonly associated with breast, ovarian, and pancreatic cancers are associated with particular substitution patterns, small indels, and large chromosome duplications [@nik2012mutational].
+
+While mutations in TP53 and NOTCH1 can cause an imbalance in the division symmetry of stem cells in intestinal crypts by increasing the ratio of proliferation to differentiation[@klein2010stochastic; @alcolea2014differentiation], mutations like APC and KRAS can increase the rates of crypt fission to allow multiple crypts to become clonal [@preston2003bottom; @snippert2014biased].
+
+## Mutagenesis in Cancer
+### Mutation Rates
+Substitution rates in B/T lymphocytes appears to be on the order of 2 to 10 mutations per diploid genome per cell division, a rate which may be about 10 times higher than that occurring in germ cells [@lynch2010rate].
+
+### Mutation Load
+Sun exposed skin cells can carry thousands of point mutations, and about 25-30% of these cells have acquired at least one driver mutation, and yet, while positive selection is evident as the clones expand, clone sizes are relatively similar across individuals suggesting that some mechanism is constraining the expansion of driver clones [@martincorena2015somatic].
+
+The progression of Barrett's esophagus to esophageal adenocarcinoma shows no significant increase in mutation load. This may mean that Barrett's esophagus is an advanced precancerous lesion, but some other step in the tissue is required for it to transition into such a stage [@gusev2014partitioning].
 
 <!--chapter:end:01-genetics_genomics.Rmd-->
 
@@ -134,11 +150,11 @@ knitr::include_graphics(rep("images/04-1.jpg", 1))
 knitr::opts_chunk$set(comment=NA, fig.width=1, fig.height=1)
 ```
 
-	Flower is a putative transmembrane protein that has three isoforms, two are losers and one is a winner in Drosophila growing disc epithelium (Rhiner Drosophila Dev Cell 2010). RNAi against the losers is sufficient to make a cell a winner and vice versa for flower expressing cells in Drosophila epithelium. When DMBA-TPA is used to promote papilloma formation in mice, loser flower isotypes are expressed by surrounding stromal cells, while winner flower isotypes are expressed by the papilloma, suggesting that this mechanism is conserved from flies to vertebrates (Petrova Dis Models Mech 2012).
+Flower is a putative transmembrane protein that has three isoforms, two are losers and one is a winner in Drosophila growing disc epithelium (Rhiner Drosophila Dev Cell 2010). RNAi against the losers is sufficient to make a cell a winner and vice versa for flower expressing cells in Drosophila epithelium. When DMBA-TPA is used to promote papilloma formation in mice, loser flower isotypes are expressed by surrounding stromal cells, while winner flower isotypes are expressed by the papilloma, suggesting that this mechanism is conserved from flies to vertebrates (Petrova Dis Models Mech 2012).
 
-	Azot is an intracellular protein that integrates the information from flower and SPARC both from the same cell and from surrounding cells and decide if its cell should apoptose (Petrova Commun Integr Biol 2011). If cells have low expression levels of loser flower isoform or high SPARC, or surrounding cells have higher expression levels of loser flower, azot is not transcribed and the cell will survive (Merino Cell 2015).
+Azot is an intracellular protein that integrates the information from flower and SPARC both from the same cell and from surrounding cells and decide if its cell should apoptose (Petrova Commun Integr Biol 2011). If cells have low expression levels of loser flower isoform or high SPARC, or surrounding cells have higher expression levels of loser flower, azot is not transcribed and the cell will survive (Merino Cell 2015).
 
-	It might be possible that while tumor cells are growing and expanding, they express fitness impacting genes like flower, Azot, and Myc, which gives them a competitive advantage over surrounding stromal cells.
+It might be possible that while tumor cells are growing and expanding, they express fitness impacting genes like flower, Azot, and Myc, which gives them a competitive advantage over surrounding stromal cells.
 
 ## Localization
 In the Drosophila gonad, both germline stem cells (GSCs) and somatic stem cells (cyst progenitor cells, CPCs) share a niche created by stromal cells that make up the hub and both share a requirement for JAK-STAT signaling to maintain their stemness. This system provides an understanding for how a single niche with multiple cell types is not overrun by the one that cycles the most rapidly.
@@ -184,9 +200,20 @@ Selene is a deep learning python library designed using PyTorch that is designed
 
 <!--chapter:end:05-bioinformatics.Rmd-->
 
+# Cancer {#cancer}
+
+## Introduction
+### Incidence Rates
+Time and age plays a major role in the occurrence of many cancers, where typically the risk of suffering most cancers is about 2% by the age of 40 in humans, while the risk increases to about 50% by the age of 80 [@martincorena2015somatic].
+```{r}
+knitr::include_graphics(rep("images/04-4.jpg", 1))
+```
+
+<!--chapter:end:06-cancer.Rmd-->
+
 `r if (knitr:::is_html_output()) '
 # References {-}
 '`
 
-<!--chapter:end:06-references.Rmd-->
+<!--chapter:end:99-references.Rmd-->
 

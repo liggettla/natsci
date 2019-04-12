@@ -1,0 +1,8 @@
+# Cancer {#cancer}
+
+## Introduction
+### Incidence Rates
+Time and age plays a major role in the occurrence of many cancers, where typically the risk of suffering most cancers is about 2% by the age of 40 in humans, while the risk increases to about 50% by the age of 80 [@martincorena2015somatic].
+```{r}
+knitr::include_graphics(rep("images/04-4.jpg", 1))
+```

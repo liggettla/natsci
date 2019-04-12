@@ -25,7 +25,7 @@
 <meta name="author" content="L A Liggett">
 
 
-<meta name="date" content="2019-04-11">
+<meta name="date" content="2019-04-12">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -121,6 +121,11 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <li class="chapter" data-level="2.10" data-path="g2.html"><a href="g2.html#detecting-common-diseases"><i class="fa fa-check"></i><b>2.10</b> Detecting Common Diseases</a></li>
 <li class="chapter" data-level="2.11" data-path="g2.html"><a href="g2.html#detecting-rare-diseases"><i class="fa fa-check"></i><b>2.11</b> Detecting Rare Diseases</a></li>
 <li class="chapter" data-level="2.12" data-path="g2.html"><a href="g2.html#tissue-evolution"><i class="fa fa-check"></i><b>2.12</b> Tissue Evolution</a></li>
+<li class="chapter" data-level="2.13" data-path="g2.html"><a href="g2.html#mutational-processes-in-cancer"><i class="fa fa-check"></i><b>2.13</b> Mutational Processes in Cancer</a></li>
+<li class="chapter" data-level="2.14" data-path="g2.html"><a href="g2.html#mutagenesis-in-cancer"><i class="fa fa-check"></i><b>2.14</b> Mutagenesis in Cancer</a><ul>
+<li class="chapter" data-level="2.14.1" data-path="g2.html"><a href="g2.html#mutation-rates"><i class="fa fa-check"></i><b>2.14.1</b> Mutation Rates</a></li>
+<li class="chapter" data-level="2.14.2" data-path="g2.html"><a href="g2.html#mutation-load"><i class="fa fa-check"></i><b>2.14.2</b> Mutation Load</a></li>
+</ul></li>
 </ul></li>
 <li class="chapter" data-level="3" data-path="neurosci.html"><a href="neurosci.html"><i class="fa fa-check"></i><b>3</b> Neuroscience</a><ul>
 <li class="chapter" data-level="3.1" data-path="neurosci.html"><a href="neurosci.html#alzheimers-disease"><i class="fa fa-check"></i><b>3.1</b> Alzheimer’s Disease</a></li>
@@ -139,6 +144,11 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <li class="chapter" data-level="6" data-path="bioinformatics.html"><a href="bioinformatics.html"><i class="fa fa-check"></i><b>6</b> Bioinformatics</a><ul>
 <li class="chapter" data-level="6.1" data-path="bioinformatics.html"><a href="bioinformatics.html#genome-stuff"><i class="fa fa-check"></i><b>6.1</b> Genome stuff</a></li>
 <li class="chapter" data-level="6.2" data-path="bioinformatics.html"><a href="bioinformatics.html#software"><i class="fa fa-check"></i><b>6.2</b> Software</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="cancer.html"><a href="cancer.html"><i class="fa fa-check"></i><b>7</b> Cancer</a><ul>
+<li class="chapter" data-level="7.1" data-path="cancer.html"><a href="cancer.html#introduction-3"><i class="fa fa-check"></i><b>7.1</b> Introduction</a><ul>
+<li class="chapter" data-level="7.1.1" data-path="cancer.html"><a href="cancer.html#incidence-rates"><i class="fa fa-check"></i><b>7.1.1</b> Incidence Rates</a></li>
+</ul></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
 <li class="divider"></li>
@@ -179,11 +189,9 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">knitr<span class="op">::</span><span class="kw">include_graphics</span>(<span class="kw">rep</span>(<span class="st">&quot;images/04-1.jpg&quot;</span>, <span class="dv">1</span>))</code></pre></div>
 <p><img src="images/04-1.jpg" /><!-- --></p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">knitr<span class="op">::</span>opts_chunk<span class="op">$</span><span class="kw">set</span>(<span class="dt">comment=</span><span class="ot">NA</span>, <span class="dt">fig.width=</span><span class="dv">1</span>, <span class="dt">fig.height=</span><span class="dv">1</span>)</code></pre></div>
-<pre><code>Flower is a putative transmembrane protein that has three isoforms, two are losers and one is a winner in Drosophila growing disc epithelium (Rhiner Drosophila Dev Cell 2010). RNAi against the losers is sufficient to make a cell a winner and vice versa for flower expressing cells in Drosophila epithelium. When DMBA-TPA is used to promote papilloma formation in mice, loser flower isotypes are expressed by surrounding stromal cells, while winner flower isotypes are expressed by the papilloma, suggesting that this mechanism is conserved from flies to vertebrates (Petrova Dis Models Mech 2012).
-
-Azot is an intracellular protein that integrates the information from flower and SPARC both from the same cell and from surrounding cells and decide if its cell should apoptose (Petrova Commun Integr Biol 2011). If cells have low expression levels of loser flower isoform or high SPARC, or surrounding cells have higher expression levels of loser flower, azot is not transcribed and the cell will survive (Merino Cell 2015).
-
-It might be possible that while tumor cells are growing and expanding, they express fitness impacting genes like flower, Azot, and Myc, which gives them a competitive advantage over surrounding stromal cells.</code></pre>
+<p>Flower is a putative transmembrane protein that has three isoforms, two are losers and one is a winner in Drosophila growing disc epithelium (Rhiner Drosophila Dev Cell 2010). RNAi against the losers is sufficient to make a cell a winner and vice versa for flower expressing cells in Drosophila epithelium. When DMBA-TPA is used to promote papilloma formation in mice, loser flower isotypes are expressed by surrounding stromal cells, while winner flower isotypes are expressed by the papilloma, suggesting that this mechanism is conserved from flies to vertebrates (Petrova Dis Models Mech 2012).</p>
+<p>Azot is an intracellular protein that integrates the information from flower and SPARC both from the same cell and from surrounding cells and decide if its cell should apoptose (Petrova Commun Integr Biol 2011). If cells have low expression levels of loser flower isoform or high SPARC, or surrounding cells have higher expression levels of loser flower, azot is not transcribed and the cell will survive (Merino Cell 2015).</p>
+<p>It might be possible that while tumor cells are growing and expanding, they express fitness impacting genes like flower, Azot, and Myc, which gives them a competitive advantage over surrounding stromal cells.</p>
 </div>
 <div id="localization" class="section level2">
 <h2><span class="header-section-number">5.4</span> Localization</h2>

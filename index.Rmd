@@ -13,4 +13,4 @@ description: "These are just some things."
 ---
 
 # Introduction 
-Here is an unexceptional glimpse of the universe as it was during my moment on this ball. 
+Here is an unexceptional glimpse of the universe as it was during my moment in time. 
