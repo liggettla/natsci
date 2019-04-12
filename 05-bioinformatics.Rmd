@@ -1,0 +1,19 @@
+# Bioinformatics {#bioinformatics}
+
+## Genome stuff
+There are many instances of ‘NNN’ repeats within the human genome, because there are parts that are very challenging to sequence, including telomere and centromere regions.
+Lowercase letters in the genome specify things like repetitive sequences and introns.
+k-mers are fragments of DNA in the genome that are of a length k, so for the string ATGCA, the 2-mers are AT, TG, GC, and CA, and the 3-mers are ATG, TGC, and GCA
+k-mers can be useful for error correction because sequencing errors can bias towards producing k-mers, but they can also be used in alignment or in genome classification
+No free lunch theorem
+
+## Software
+Google has designed a new variant caller called DeepVariant that uses deep neural networks to learn how best to call variants. This appears to provide a significant improvement to variant calling accuracy (Poplin et al., 2016).
+
+A group put together well defined pipelines for common bioinfomatics analysis like RNASeq into bioconductor that can be easily used and then cited as a method of succinctly referring to the analysis process (http://www.nature.com/authors/policies/license.html).
+
+A group came up with a deep machine learning algorithm that can be used to predict patient data and genomics patterns (Ching et al., 2017).
+
+A group created a machine-learning algorithm for variant calling that seems to significantly outperform many common variant calling software like somatic sniper and mutect, though they do not compare against freebayes. Might be worth taking a look at (Wood et al., 2018)
+
+Selene is a deep learning python library designed using PyTorch that is designed to ask questions using genomic and sequencing data [@chen2019selene]. They also mention in their paper a number of other deep learning python libraries specifically designed to analyze genomics data, that may be worth checking out: DragoNN, pysster[@budach2018pysster], and Kipoi[@avsec2018kipoi].

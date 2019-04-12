@@ -50,6 +50,43 @@
 
 
 
+<style type="text/css">
+div.sourceCode { overflow-x: auto; }
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+code > span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code > span.dt { color: #902000; } /* DataType */
+code > span.dv { color: #40a070; } /* DecVal */
+code > span.bn { color: #40a070; } /* BaseN */
+code > span.fl { color: #40a070; } /* Float */
+code > span.ch { color: #4070a0; } /* Char */
+code > span.st { color: #4070a0; } /* String */
+code > span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code > span.ot { color: #007020; } /* Other */
+code > span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code > span.fu { color: #06287e; } /* Function */
+code > span.er { color: #ff0000; font-weight: bold; } /* Error */
+code > span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+code > span.cn { color: #880000; } /* Constant */
+code > span.sc { color: #4070a0; } /* SpecialChar */
+code > span.vs { color: #4070a0; } /* VerbatimString */
+code > span.ss { color: #bb6688; } /* SpecialString */
+code > span.im { } /* Import */
+code > span.va { color: #19177c; } /* Variable */
+code > span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code > span.op { color: #666666; } /* Operator */
+code > span.bu { } /* BuiltIn */
+code > span.ex { } /* Extension */
+code > span.pp { color: #bc7a00; } /* Preprocessor */
+code > span.at { color: #7d9029; } /* Attribute */
+code > span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+</style>
 
 <link rel="stylesheet" href="style.css" type="text/css" />
 </head>
@@ -91,6 +128,17 @@
 </ul></li>
 <li class="chapter" data-level="4" data-path="aging.html"><a href="aging.html"><i class="fa fa-check"></i><b>4</b> Aging</a><ul>
 <li class="chapter" data-level="4.1" data-path="aging.html"><a href="aging.html#somatic-mutation-theory"><i class="fa fa-check"></i><b>4.1</b> Somatic Mutation Theory</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="competition.html"><a href="competition.html"><i class="fa fa-check"></i><b>5</b> Cell Competition</a><ul>
+<li class="chapter" data-level="5.1" data-path="competition.html"><a href="competition.html#introduction-2"><i class="fa fa-check"></i><b>5.1</b> Introduction</a></li>
+<li class="chapter" data-level="5.2" data-path="competition.html"><a href="competition.html#trophic-theory"><i class="fa fa-check"></i><b>5.2</b> Trophic Theory</a></li>
+<li class="chapter" data-level="5.3" data-path="competition.html"><a href="competition.html#modern-theory"><i class="fa fa-check"></i><b>5.3</b> Modern Theory</a></li>
+<li class="chapter" data-level="5.4" data-path="competition.html"><a href="competition.html#localization"><i class="fa fa-check"></i><b>5.4</b> Localization</a></li>
+<li class="chapter" data-level="5.5" data-path="competition.html"><a href="competition.html#microenvironment"><i class="fa fa-check"></i><b>5.5</b> Microenvironment</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="bioinformatics.html"><a href="bioinformatics.html"><i class="fa fa-check"></i><b>6</b> Bioinformatics</a><ul>
+<li class="chapter" data-level="6.1" data-path="bioinformatics.html"><a href="bioinformatics.html#genome-stuff"><i class="fa fa-check"></i><b>6.1</b> Genome stuff</a></li>
+<li class="chapter" data-level="6.2" data-path="bioinformatics.html"><a href="bioinformatics.html#software"><i class="fa fa-check"></i><b>6.2</b> Software</a></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
 <li class="divider"></li>
@@ -160,7 +208,7 @@
 <h2><span class="header-section-number">2.8</span> Sequencing Methods</h2>
 <p>Using a new sequencing method called sci-RNA-seq, the transcriptome of every cell of 762 cells in C Elegans was sequenced to yield single-cell sequencing results and transcriptome profiling of every cell in the body. The way this is done is by methanol fixing nuclei and then incorporating a UMI when converting to cDNA, then mixing cells again and incorporating another UMI when synthesizing the other strand (Cao et al., 2017).</p>
 <p>It appears that DAPI does not increase sequencing error rates by Illumina sequencing (Leung et al., 2016).</p>
-<p>One group came up with a method that is essentially identical to mine in which they use barcoded probes to detect leukemia but they tracked the mutation manually and ignored background (Wong et al. 2015)</p>
+<p>One group came up with a method that is essentially identical to mine in which they use barcoded probes to detect leukemia but they tracked the mutation manually and ignored background (Wong et al. 2015)</p>
 </div>
 <div id="diagnostics" class="section level2">
 <h2><span class="header-section-number">2.9</span> Diagnostics</h2>
@@ -169,28 +217,15 @@
 <div id="detecting-common-diseases" class="section level2">
 <h2><span class="header-section-number">2.10</span> Detecting Common Diseases</h2>
 <p>Much of the following information comes from this review: <span class="citation">(Shendure, Findlay, and Snyder <a href="#ref-shendure2019genomic">2019</a>)</span>.</p>
-<p>Linkage disequilibrium studies were designed to detect Mendelian diseases
-GWAS designed back in 1996 to detect non-mendelian multigenic traits that have much less penetrant effects
-The promise that GWAS could risk stratify people for diseases has been challenging because most diseases seem to be driven by an extremely large number of variants with small effects that will likely require extremely large sample sizes
-There exists a problem of missing heritability, and it was often believed that common SNPs only held part of the puzzle, and more rare variants accounted for a great deal of heritability, but this does not yet seem to be the case, and SNPs seem to have a much greater effect size
-Another problem with GWAS is it is haplotype specific in that it can implicate a stretch of DNA inherited from one parent, but is blind to the individual effect sizes of each of the individual variants
-A challenge raised by Jonathan Pritchard is that gene regulatory networks are so interconnected that variants in one gene may actually cause changes in other genes and are therefore only peripherally relevant to a phenotype
-One continued promise of the utility of GWAS to identify the causal genetics behind diseases is that most of the strongest GWAS associations came from small studies of european populations that identified mutations of large effect sizes. By expanding studies to populations, especially those like african populations that have less linkage disequilibrium many more variants of large effect sizes could be identified and used to tease out relationships of smaller effect sizes in other populations.
-Methods are also improving fo linking regulatory elements to the genes they regulate like (Gasperini et al. 2018; Gasperini et al. 2019).
-Linking regulatory elements to their corresponding genes can be quite helpful, because this information can be incorporated into GWAS calculations to refine causal linkage probabilities.
-Polygenic risk scores have often been used to predict phenotypic variance in plants and animals, and have yet to really be applied to human genomics (Khera et al. 2018).
-Training of PRSs seem to not require fine-mapping, and their use has been aided by the UK Biobank (Bycroft et al. 2018).</p>
+<p>Linkage disequilibrium studies were designed to detect Mendelian diseases GWAS designed back in 1996 to detect non-mendelian multigenic traits that have much less penetrant effects The promise that GWAS could risk stratify people for diseases has been challenging because most diseases seem to be driven by an extremely large number of variants with small effects that will likely require extremely large sample sizes There exists a problem of missing heritability, and it was often believed that common SNPs only held part of the puzzle, and more rare variants accounted for a great deal of heritability, but this does not yet seem to be the case, and SNPs seem to have a much greater effect size Another problem with GWAS is it is haplotype specific in that it can implicate a stretch of DNA inherited from one parent, but is blind to the individual effect sizes of each of the individual variants A challenge raised by Jonathan Pritchard is that gene regulatory networks are so interconnected that variants in one gene may actually cause changes in other genes and are therefore only peripherally relevant to a phenotype One continued promise of the utility of GWAS to identify the causal genetics behind diseases is that most of the strongest GWAS associations came from small studies of european populations that identified mutations of large effect sizes. By expanding studies to populations, especially those like african populations that have less linkage disequilibrium many more variants of large effect sizes could be identified and used to tease out relationships of smaller effect sizes in other populations. Methods are also improving fo linking regulatory elements to the genes they regulate like (Gasperini et al. 2018; Gasperini et al. 2019). Linking regulatory elements to their corresponding genes can be quite helpful, because this information can be incorporated into GWAS calculations to refine causal linkage probabilities. Polygenic risk scores have often been used to predict phenotypic variance in plants and animals, and have yet to really be applied to human genomics (Khera et al. 2018). Training of PRSs seem to not require fine-mapping, and their use has been aided by the UK Biobank (Bycroft et al. 2018).</p>
 </div>
 <div id="detecting-rare-diseases" class="section level2">
 <h2><span class="header-section-number">2.11</span> Detecting Rare Diseases</h2>
-<p>There are some 7k mendelian monogenic disorders that impact about 0.5% of live births, but contribute to about 70% of pediatric hospital admissions
-An important surprise has been that de-novo mutations account for a substantial amount of intellectual disabilities and autism, where as many as 30-60% of ASD is caused by de-novo mutations
-Currently as many as half of acutely ill inpatient infants can be diagnosed from WGS.
-There are currently 59 genes designated by the American College of Medical Genetics as being sufficiently clinically actionable as to warrant sequencing and reporting in patients (Kalia et al. 2017).</p>
+<p>There are some 7k mendelian monogenic disorders that impact about 0.5% of live births, but contribute to about 70% of pediatric hospital admissions An important surprise has been that de-novo mutations account for a substantial amount of intellectual disabilities and autism, where as many as 30-60% of ASD is caused by de-novo mutations Currently as many as half of acutely ill inpatient infants can be diagnosed from WGS. There are currently 59 genes designated by the American College of Medical Genetics as being sufficiently clinically actionable as to warrant sequencing and reporting in patients (Kalia et al. 2017).</p>
 </div>
 <div id="tissue-evolution" class="section level2">
 <h2><span class="header-section-number">2.12</span> Tissue Evolution</h2>
-<p>By sequencing 7,664 tumors spanning 29 different cancer types, it appears that unlike species evolution, the force of positive selection in developing tumors outweighs that of negative selection as evidenced by the loss of less than 1 coding nucleotide substitution per tumor <span class="citation">(Martincorena et al. <a href="#ref-martincorena2017universal">2017</a>)</span>. The number of mutations per cancer varied from 1 per thyroid and testical cancer to over 10 per endometrial and colorectal cancers. This information helps to answer how many mutations are needed to effectively create cancers and how this can vary with across tissue types. A number of groups have tried to answer these questions in the past by mathematically estimating the number of rate limiting steps required in the process of oncogenesis <span class="citation">(Armitage and Doll <a href="#ref-armitage1954age">1954</a>; Tomasetti and Vogelstein <a href="#ref-tomasetti2015variation">2015</a>)</span>. There are two important problems with this approach, first that not all driver mutations need to be rate-limiting <span class="citation">(Yates et al. <a href="#ref-yates2015subclonal">2015</a>)</span>, and not all rate limiting steps in oncogensis need to be driver mutations <span class="citation">(Martincorena et al. <a href="#ref-martincorena2015high">2015</a>)</span>. It has also been problematic to sequence tumors and count the number of high frequency mutations in oncogenic genes, but this has the added challenges of distinguishing passenger from driver mutations and is limited to current lists of oncogenes. Lists of genes involved in cancer have become increasingly detailed, but are still limited <span class="citation">(Lawrence et al. <a href="#ref-lawrence2014discovery">2014</a>; Kandoth et al. <a href="#ref-kandoth2013mutational">2013</a>)</span>. The absence of negative selection in cancer may well indicate how dispensable the majority of genes are for somatic cells.</p>
+<p>By sequencing 7,664 tumors spanning 29 different cancer types, it appears that unlike species evolution, the force of positive selection in developing tumors outweighs that of negative selection as evidenced by the loss of less than 1 coding nucleotide substitution per tumor <span class="citation">(I. Martincorena et al. <a href="#ref-martincorena2017universal">2017</a>)</span>. The number of mutations per cancer varied from 1 per thyroid and testical cancer to over 10 per endometrial and colorectal cancers. This information helps to answer how many mutations are needed to effectively create cancers and how this can vary with across tissue types. A number of groups have tried to answer these questions in the past by mathematically estimating the number of rate limiting steps required in the process of oncogenesis <span class="citation">(Armitage and Doll <a href="#ref-armitage1954age">1954</a>; Tomasetti and Vogelstein <a href="#ref-tomasetti2015variation">2015</a>)</span>. There are two important problems with this approach, first that not all driver mutations need to be rate-limiting <span class="citation">(Yates et al. <a href="#ref-yates2015subclonal">2015</a>)</span>, and not all rate limiting steps in oncogensis need to be driver mutations <span class="citation">(I. Martincorena et al. <a href="#ref-martincorena2015high">2015</a>)</span>. It has also been problematic to sequence tumors and count the number of high frequency mutations in oncogenic genes, but this has the added challenges of distinguishing passenger from driver mutations and is limited to current lists of oncogenes. Lists of genes involved in cancer have become increasingly detailed, but are still limited <span class="citation">(Lawrence et al. <a href="#ref-lawrence2014discovery">2014</a>; Kandoth et al. <a href="#ref-kandoth2013mutational">2013</a>)</span>. The absence of negative selection in cancer may well indicate how dispensable the majority of genes are for somatic cells.</p>
 <p>In their paper, Martincorena and Campbell show that the dN/dS ratio for somatic tissues and cancer tissue is 1 or greater showing that the effect of negative selection is minimal. In contrast, the dN/dS for germline species evolution is less than 0.5 showing a much greater effect of negative selection. Surprisingly, the non-synonomous mutations showed a dN/dS ration of 1 whether they existed in haploid or diploid regions suggesting the cells were not simply tolerating the mutations by having two copies.</p>
 <p>Using sequencing of blood to find spontaneous mutations and go back and use population biology to calculate the number of HSCs, it was found that there were between 50k-200k HSCs contributing to hematopoiesis at any given time <span class="citation">(Lee-Six et al. <a href="#ref-lee2018population">2018</a>)</span>.</p>
 
@@ -199,31 +234,31 @@ There are currently 59 genes designated by the American College of Medical Genet
 <h3>References</h3>
 <div id="refs" class="references">
 <div id="ref-shendure2019genomic">
-<p>Shendure, Jay, Gregory M Findlay, and Matthew W Snyder. 2019. “Genomic Medicine–Progress, Pitfalls, and Promise.” <em>Cell</em> 177 (1): 45–57.</p>
+<p>Shendure, Jay, Gregory M Findlay, and Matthew W Snyder. 2019. “Genomic Medicine–Progress, Pitfalls, and Promise.” <em>Cell</em> 177 (1). Elsevier: 45–57.</p>
 </div>
 <div id="ref-martincorena2017universal">
-<p>Martincorena, Iñigo, Keiran M Raine, Moritz Gerstung, Kevin J Dawson, Kerstin Haase, Peter Van Loo, Helen Davies, Michael R Stratton, and Peter J Campbell. 2017. “Universal Patterns of Selection in Cancer and Somatic Tissues.” <em>Cell</em> 171 (5): 1029–41.</p>
+<p>Martincorena, Iñigo, Keiran M Raine, Moritz Gerstung, Kevin J Dawson, Kerstin Haase, Peter Van Loo, Helen Davies, Michael R Stratton, and Peter J Campbell. 2017. “Universal Patterns of Selection in Cancer and Somatic Tissues.” <em>Cell</em> 171 (5). Elsevier: 1029–41.</p>
 </div>
 <div id="ref-armitage1954age">
-<p>Armitage, Peter, and Richard Doll. 1954. “The Age Distribution of Cancer and a Multi-Stage Theory of Carcinogenesis.” <em>British Journal of Cancer</em> 8 (1): 1.</p>
+<p>Armitage, Peter, and Richard Doll. 1954. “The Age Distribution of Cancer and a Multi-Stage Theory of Carcinogenesis.” <em>British Journal of Cancer</em> 8 (1). Nature Publishing Group: 1.</p>
 </div>
 <div id="ref-tomasetti2015variation">
-<p>Tomasetti, Cristian, and Bert Vogelstein. 2015. “Variation in Cancer Risk Among Tissues Can Be Explained by the Number of Stem Cell Divisions.” <em>Science</em> 347 (6217): 78–81.</p>
+<p>Tomasetti, Cristian, and Bert Vogelstein. 2015. “Variation in Cancer Risk Among Tissues Can Be Explained by the Number of Stem Cell Divisions.” <em>Science</em> 347 (6217). American Association for the Advancement of Science: 78–81.</p>
 </div>
 <div id="ref-yates2015subclonal">
-<p>Yates, Lucy R, Moritz Gerstung, Stian Knappskog, Christine Desmedt, Gunes Gundem, Peter Van Loo, Turid Aas, et al. 2015. “Subclonal Diversification of Primary Breast Cancer Revealed by Multiregion Sequencing.” <em>Nature Medicine</em> 21 (7): 751.</p>
+<p>Yates, Lucy R, Moritz Gerstung, Stian Knappskog, Christine Desmedt, Gunes Gundem, Peter Van Loo, Turid Aas, et al. 2015. “Subclonal Diversification of Primary Breast Cancer Revealed by Multiregion Sequencing.” <em>Nature Medicine</em> 21 (7). Nature Publishing Group: 751.</p>
 </div>
 <div id="ref-martincorena2015high">
-<p>Martincorena, Iñigo, Amit Roshan, Moritz Gerstung, Peter Ellis, Peter Van Loo, Stuart McLaren, David C Wedge, et al. 2015. “High Burden and Pervasive Positive Selection of Somatic Mutations in Normal Human Skin.” <em>Science</em> 348 (6237): 880–86.</p>
+<p>Martincorena, Iñigo, Amit Roshan, Moritz Gerstung, Peter Ellis, Peter Van Loo, Stuart McLaren, David C Wedge, et al. 2015. “High Burden and Pervasive Positive Selection of Somatic Mutations in Normal Human Skin.” <em>Science</em> 348 (6237). American Association for the Advancement of Science: 880–86.</p>
 </div>
 <div id="ref-lawrence2014discovery">
-<p>Lawrence, Michael S, Petar Stojanov, Craig H Mermel, James T Robinson, Levi A Garraway, Todd R Golub, Matthew Meyerson, Stacey B Gabriel, Eric S Lander, and Gad Getz. 2014. “Discovery and Saturation Analysis of Cancer Genes Across 21 Tumour Types.” <em>Nature</em> 505 (7484): 495.</p>
+<p>Lawrence, Michael S, Petar Stojanov, Craig H Mermel, James T Robinson, Levi A Garraway, Todd R Golub, Matthew Meyerson, Stacey B Gabriel, Eric S Lander, and Gad Getz. 2014. “Discovery and Saturation Analysis of Cancer Genes Across 21 Tumour Types.” <em>Nature</em> 505 (7484). Nature Publishing Group: 495.</p>
 </div>
 <div id="ref-kandoth2013mutational">
-<p>Kandoth, Cyriac, Michael D McLellan, Fabio Vandin, Kai Ye, Beifang Niu, Charles Lu, Mingchao Xie, et al. 2013. “Mutational Landscape and Significance Across 12 Major Cancer Types.” <em>Nature</em> 502 (7471): 333.</p>
+<p>Kandoth, Cyriac, Michael D McLellan, Fabio Vandin, Kai Ye, Beifang Niu, Charles Lu, Mingchao Xie, et al. 2013. “Mutational Landscape and Significance Across 12 Major Cancer Types.” <em>Nature</em> 502 (7471). Nature Publishing Group: 333.</p>
 </div>
 <div id="ref-lee2018population">
-<p>Lee-Six, Henry, Nina Friesgaard Øbro, Mairi S Shepherd, Sebastian Grossmann, Kevin Dawson, Miriam Belmonte, Robert J Osborne, et al. 2018. “Population Dynamics of Normal Human Blood Inferred from Somatic Mutations.” <em>Nature</em> 561 (7724): 473.</p>
+<p>Lee-Six, Henry, Nina Friesgaard Øbro, Mairi S Shepherd, Sebastian Grossmann, Kevin Dawson, Miriam Belmonte, Robert J Osborne, et al. 2018. “Population Dynamics of Normal Human Blood Inferred from Somatic Mutations.” <em>Nature</em> 561 (7724). Nature Publishing Group: 473.</p>
 </div>
 </div>
             </section>

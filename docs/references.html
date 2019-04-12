@@ -32,7 +32,7 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   
   
-<link rel="prev" href="aging.html">
+<link rel="prev" href="bioinformatics.html">
 
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -50,6 +50,43 @@
 
 
 
+<style type="text/css">
+div.sourceCode { overflow-x: auto; }
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+code > span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code > span.dt { color: #902000; } /* DataType */
+code > span.dv { color: #40a070; } /* DecVal */
+code > span.bn { color: #40a070; } /* BaseN */
+code > span.fl { color: #40a070; } /* Float */
+code > span.ch { color: #4070a0; } /* Char */
+code > span.st { color: #4070a0; } /* String */
+code > span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code > span.ot { color: #007020; } /* Other */
+code > span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code > span.fu { color: #06287e; } /* Function */
+code > span.er { color: #ff0000; font-weight: bold; } /* Error */
+code > span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+code > span.cn { color: #880000; } /* Constant */
+code > span.sc { color: #4070a0; } /* SpecialChar */
+code > span.vs { color: #4070a0; } /* VerbatimString */
+code > span.ss { color: #bb6688; } /* SpecialString */
+code > span.im { } /* Import */
+code > span.va { color: #19177c; } /* Variable */
+code > span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code > span.op { color: #666666; } /* Operator */
+code > span.bu { } /* BuiltIn */
+code > span.ex { } /* Extension */
+code > span.pp { color: #bc7a00; } /* Preprocessor */
+code > span.at { color: #7d9029; } /* Attribute */
+code > span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+</style>
 
 <link rel="stylesheet" href="style.css" type="text/css" />
 </head>
@@ -92,6 +129,17 @@
 <li class="chapter" data-level="4" data-path="aging.html"><a href="aging.html"><i class="fa fa-check"></i><b>4</b> Aging</a><ul>
 <li class="chapter" data-level="4.1" data-path="aging.html"><a href="aging.html#somatic-mutation-theory"><i class="fa fa-check"></i><b>4.1</b> Somatic Mutation Theory</a></li>
 </ul></li>
+<li class="chapter" data-level="5" data-path="competition.html"><a href="competition.html"><i class="fa fa-check"></i><b>5</b> Cell Competition</a><ul>
+<li class="chapter" data-level="5.1" data-path="competition.html"><a href="competition.html#introduction-2"><i class="fa fa-check"></i><b>5.1</b> Introduction</a></li>
+<li class="chapter" data-level="5.2" data-path="competition.html"><a href="competition.html#trophic-theory"><i class="fa fa-check"></i><b>5.2</b> Trophic Theory</a></li>
+<li class="chapter" data-level="5.3" data-path="competition.html"><a href="competition.html#modern-theory"><i class="fa fa-check"></i><b>5.3</b> Modern Theory</a></li>
+<li class="chapter" data-level="5.4" data-path="competition.html"><a href="competition.html#localization"><i class="fa fa-check"></i><b>5.4</b> Localization</a></li>
+<li class="chapter" data-level="5.5" data-path="competition.html"><a href="competition.html#microenvironment"><i class="fa fa-check"></i><b>5.5</b> Microenvironment</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="bioinformatics.html"><a href="bioinformatics.html"><i class="fa fa-check"></i><b>6</b> Bioinformatics</a><ul>
+<li class="chapter" data-level="6.1" data-path="bioinformatics.html"><a href="bioinformatics.html#genome-stuff"><i class="fa fa-check"></i><b>6.1</b> Genome stuff</a></li>
+<li class="chapter" data-level="6.2" data-path="bioinformatics.html"><a href="bioinformatics.html#software"><i class="fa fa-check"></i><b>6.2</b> Software</a></li>
+</ul></li>
 <li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
@@ -118,34 +166,46 @@
 
 <div id="refs" class="references">
 <div>
-<p>Armitage, Peter, and Richard Doll. 1954. “The Age Distribution of Cancer and a Multi-Stage Theory of Carcinogenesis.” <em>British Journal of Cancer</em> 8 (1): 1.</p>
+<p>Armitage, Peter, and Richard Doll. 1954. “The Age Distribution of Cancer and a Multi-Stage Theory of Carcinogenesis.” <em>British Journal of Cancer</em> 8 (1). Nature Publishing Group: 1.</p>
 </div>
 <div>
-<p>Kandoth, Cyriac, Michael D McLellan, Fabio Vandin, Kai Ye, Beifang Niu, Charles Lu, Mingchao Xie, et al. 2013. “Mutational Landscape and Significance Across 12 Major Cancer Types.” <em>Nature</em> 502 (7471): 333.</p>
+<p>Avsec, Ziga, Roman Kreuzhuber, Johnny Israeli, Nancy Xu, Jun Cheng, Avanti Shrikumar, Abhimanyu Banerjee, et al. 2018. “Kipoi: Accelerating the Community Exchange and Reuse of Predictive Models for Genomics.” <em>BioRxiv</em>. Cold Spring Harbor Laboratory, 375345.</p>
 </div>
 <div>
-<p>Lawrence, Michael S, Petar Stojanov, Craig H Mermel, James T Robinson, Levi A Garraway, Todd R Golub, Matthew Meyerson, Stacey B Gabriel, Eric S Lander, and Gad Getz. 2014. “Discovery and Saturation Analysis of Cancer Genes Across 21 Tumour Types.” <em>Nature</em> 505 (7484): 495.</p>
+<p>Budach, Stefan, and Annalisa Marsico. 2018. “Pysster: Classification of Biological Sequences by Learning Sequence and Structure Motifs with Convolutional Neural Networks.” <em>Bioinformatics</em> 34 (17). Oxford University Press: 3035–7.</p>
 </div>
 <div>
-<p>Lee-Six, Henry, Nina Friesgaard Øbro, Mairi S Shepherd, Sebastian Grossmann, Kevin Dawson, Miriam Belmonte, Robert J Osborne, et al. 2018. “Population Dynamics of Normal Human Blood Inferred from Somatic Mutations.” <em>Nature</em> 561 (7724): 473.</p>
+<p>Chen, Kathleen M, Evan M Cofer, Jian Zhou, and Olga G Troyanskaya. 2019. “Selene: A Pytorch-Based Deep Learning Library for Sequence Data.” <em>Nature Methods</em> 16 (4). Nature Publishing Group: 315.</p>
 </div>
 <div>
-<p>Martincorena, Iñigo, Keiran M Raine, Moritz Gerstung, Kevin J Dawson, Kerstin Haase, Peter Van Loo, Helen Davies, Michael R Stratton, and Peter J Campbell. 2017. “Universal Patterns of Selection in Cancer and Somatic Tissues.” <em>Cell</em> 171 (5): 1029–41.</p>
+<p>Kandoth, Cyriac, Michael D McLellan, Fabio Vandin, Kai Ye, Beifang Niu, Charles Lu, Mingchao Xie, et al. 2013. “Mutational Landscape and Significance Across 12 Major Cancer Types.” <em>Nature</em> 502 (7471). Nature Publishing Group: 333.</p>
 </div>
 <div>
-<p>Martincorena, Iñigo, Amit Roshan, Moritz Gerstung, Peter Ellis, Peter Van Loo, Stuart McLaren, David C Wedge, et al. 2015. “High Burden and Pervasive Positive Selection of Somatic Mutations in Normal Human Skin.” <em>Science</em> 348 (6237): 880–86.</p>
+<p>Lawrence, Michael S, Petar Stojanov, Craig H Mermel, James T Robinson, Levi A Garraway, Todd R Golub, Matthew Meyerson, Stacey B Gabriel, Eric S Lander, and Gad Getz. 2014. “Discovery and Saturation Analysis of Cancer Genes Across 21 Tumour Types.” <em>Nature</em> 505 (7484). Nature Publishing Group: 495.</p>
 </div>
 <div>
-<p>Morley, Alexander A. 1995. “The Somatic Mutation Theory of Ageing.” <em>Mutation Research/DNAging</em> 338 (1-6): 19–23.</p>
+<p>Lee-Six, Henry, Nina Friesgaard Øbro, Mairi S Shepherd, Sebastian Grossmann, Kevin Dawson, Miriam Belmonte, Robert J Osborne, et al. 2018. “Population Dynamics of Normal Human Blood Inferred from Somatic Mutations.” <em>Nature</em> 561 (7724). Nature Publishing Group: 473.</p>
 </div>
 <div>
-<p>Shendure, Jay, Gregory M Findlay, and Matthew W Snyder. 2019. “Genomic Medicine–Progress, Pitfalls, and Promise.” <em>Cell</em> 177 (1): 45–57.</p>
+<p>Liu, Nan, Hiroyuki Matsumura, Tomoki Kato, Shizuko Ichinose, Aki Takada, Takeshi Namiki, Kyosuke Asakawa, et al. 2019. “Stem Cell Competition Orchestrates Skin Homeostasis and Ageing.” <em>Nature</em>. Nature Publishing Group, 1.</p>
 </div>
 <div>
-<p>Tomasetti, Cristian, and Bert Vogelstein. 2015. “Variation in Cancer Risk Among Tissues Can Be Explained by the Number of Stem Cell Divisions.” <em>Science</em> 347 (6217): 78–81.</p>
+<p>Martincorena, Iñigo, Keiran M Raine, Moritz Gerstung, Kevin J Dawson, Kerstin Haase, Peter Van Loo, Helen Davies, Michael R Stratton, and Peter J Campbell. 2017. “Universal Patterns of Selection in Cancer and Somatic Tissues.” <em>Cell</em> 171 (5). Elsevier: 1029–41.</p>
 </div>
 <div>
-<p>Yates, Lucy R, Moritz Gerstung, Stian Knappskog, Christine Desmedt, Gunes Gundem, Peter Van Loo, Turid Aas, et al. 2015. “Subclonal Diversification of Primary Breast Cancer Revealed by Multiregion Sequencing.” <em>Nature Medicine</em> 21 (7): 751.</p>
+<p>Martincorena, Iñigo, Amit Roshan, Moritz Gerstung, Peter Ellis, Peter Van Loo, Stuart McLaren, David C Wedge, et al. 2015. “High Burden and Pervasive Positive Selection of Somatic Mutations in Normal Human Skin.” <em>Science</em> 348 (6237). American Association for the Advancement of Science: 880–86.</p>
+</div>
+<div>
+<p>Morley, Alexander A. 1995. “The Somatic Mutation Theory of Ageing.” <em>Mutation Research/DNAging</em> 338 (1-6). Elsevier: 19–23.</p>
+</div>
+<div>
+<p>Shendure, Jay, Gregory M Findlay, and Matthew W Snyder. 2019. “Genomic Medicine–Progress, Pitfalls, and Promise.” <em>Cell</em> 177 (1). Elsevier: 45–57.</p>
+</div>
+<div>
+<p>Tomasetti, Cristian, and Bert Vogelstein. 2015. “Variation in Cancer Risk Among Tissues Can Be Explained by the Number of Stem Cell Divisions.” <em>Science</em> 347 (6217). American Association for the Advancement of Science: 78–81.</p>
+</div>
+<div>
+<p>Yates, Lucy R, Moritz Gerstung, Stian Knappskog, Christine Desmedt, Gunes Gundem, Peter Van Loo, Turid Aas, et al. 2015. “Subclonal Diversification of Primary Breast Cancer Revealed by Multiregion Sequencing.” <em>Nature Medicine</em> 21 (7). Nature Publishing Group: 751.</p>
 </div>
 </div>
 </div>
@@ -154,7 +214,7 @@
           </div>
         </div>
       </div>
-<a href="aging.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="bioinformatics.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
 
     </div>
   </div>
