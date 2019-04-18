@@ -16,17 +16,20 @@ Across Eukaryotes, the frequency of recombination is inversely proportional to o
 ## DNA Replication
 When the origin of replication(s) is removed from bacteria or eukaryotes, growth and division is restricted or entirely eliminated, but in some strains of archaea like H volcanii, deletion of the origin of replication accelerates cell growth rates. It turns out that this archaea can use a process that is similar to homologous recombination to create a replication fork and replicate its chromosome (Hawkins et al., 2013).
 
-## Cloning
-A macaque was the first primate to be cloned by SCNT (Liu et al., 2018).
-
 ## Mutation Rate
-Using whole-genome sequencing or next-gen sequencing to determine mutation rates by base, it appears that C>T mutations at CpG sites mutate at a frequency of 10-7 changes/cell division, and all other sites are within the range of 10-8-10-9 base changes per division (Arnheim and Calabrese, 2009, 2016; Campbell and Eichler, 2013; Ségurel et al., 2014).
+### Observed Mutation Rates
+Using whole-genome sequencing or next-gen sequencing to determine mutation rates by base, it appears that C>T mutations at CpG sites mutate at a frequency of 10-7 changes/cell division, and all other sites are within the range of 10^-8 - 10^-9 base changes per division (Arnheim and Calabrese, 2009, 2016; Campbell and Eichler, 2013; Ségurel et al., 2014; @kong2012rate; @segurel2014determinants).
 
-Providing an example of how human mutation rates can differ by geographic origination, europeans compared to african/asian populations have a 1.6 increased mutation rate of a particular mutation (Harris, 2015).
+It appears that humans have the highest germline mutation rate of all analyzed species (Lynch, 2016). It also appears from trio sequencing that both human and chimp mutation rates are in the range of 1.0-1.25x10^-8 mutations per site per generation [@kong2012rate].
 
-It appears that humans have the highest germline mutation rate of all analyzed species (Lynch, 2016).
+While germline mutation rates are similar in chimps and humans, there are important differences, one example being that CpG mutations are more prevalent in the chimp germline [@venn2014strong].
 
 Possibly supporting the somatic theory of aging, increases and reductions in DNA damage rates may accelerate and decelerate, respectively, some aspects of aging [@behjati2014genome; @altieri2008dna].
+
+### Mutation Rate Evolution
+Providing an example of how human mutation rates can differ by geographic origination, Europeans compared to African/Asian populations have a 1.6 increased mutation rate of a TCC->TTC transitions (Harris, 2015). This change in DNA replication fidelity appears to have happened 40-80kya when Europeans and Asians diverged and illustrates that DNA repair rates have not remained entirely stable throughout human evolution.
+
+Just as in humans show a number of different mutational likelihoods, the great apes apes also show evolution in the rates of different triplet-context mutation rates [@harris2017rapid].
 
 ## Mutation Hotspots
 There are a number of sporadic mutation hotspots associated with disease incidence, like achondroplasia which has a sporadic incidence rate of 4.5 x 10-5 per generation (Arnheim and Calabrese, 2016; Waller et al., 2008). This disease originates from a single mutation in the FGFR3 gene at a mutation rate ~450 times higher than what would ordinarily be expected at a CpG site (Bellus et al., 1995; Rousseau et al., 1994; Shiang et al., 1994).
@@ -92,3 +95,13 @@ Substitution rates in B/T lymphocytes appears to be on the order of 2 to 10 muta
 Sun exposed skin cells can carry thousands of point mutations, and about 25-30% of these cells have acquired at least one driver mutation, and yet, while positive selection is evident as the clones expand, clone sizes are relatively similar across individuals suggesting that some mechanism is constraining the expansion of driver clones [@martincorena2015somatic].
 
 The progression of Barrett's esophagus to esophageal adenocarcinoma shows no significant increase in mutation load. This may mean that Barrett's esophagus is an advanced precancerous lesion, but some other step in the tissue is required for it to transition into such a stage [@gusev2014partitioning].
+
+## Genetic Manipulation
+### Cloning
+A macaque was the first primate to be cloned by SCNT (Liu et al., 2018).
+
+### Gene Therapy
+X-linked severe combined immunodeficiency (SCID-X1) (commonly referred to as bubble-boy disease) is caused by mutations within the IL2RG gene which impairs the receptor for IL-2, IL-4, IL-7, IL-9, IL-15 and IL-21. The result of these mutations is that T and NK cells fail to develop. This disease is often treated with bone marrow transplant which involves irradiation. Instead of such a treatment, low-dose busulfan has been used in combination with WT IL2TG DNA carrying lentivirus to give HSCs a functional copy of the receptor. This treatment seems to allow T and NK cells to develop with minimal harm to the patient [@Mamcarz2019-ei].
+
+### Genetic Rescue
+Inbreeding of a population can result in an accumulation of deleterious mutations. The accompanying loss in fitness can be mitigated through outbreeding, as it can increase heterozygosity and thereby mask recessive deleterious alleles [@keller2002inbreeding; @ingvarsson2001restoration; @vila2003rescue]. This effect depends on the principle of overdominance or heterozygous vigour, which is a condition where a heterozygous offspring has a higher fitness than either of the parents.
