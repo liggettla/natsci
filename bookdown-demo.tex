@@ -109,7 +109,7 @@
 \usepackage{titling}
 
 % Create subtitle command for use in maketitle
-\newcommand{\subtitle}[1]{
+\providecommand{\subtitle}[1]{
   \posttitle{
     \begin{center}\large#1\end{center}
     }
@@ -223,7 +223,9 @@ throughout human evolution.
 
 Just as in humans show a number of different mutational likelihoods, the
 great apes apes also show evolution in the rates of different
-triplet-context mutation rates \citep{harris2017rapid}.
+triplet-context mutation rates \citep{harris2017rapid}. It would be
+interesting to investigate how these different rates have constrained
+evolution, if at all.
 
 \section{Mutation Hotspots}\label{mutation-hotspots}
 
@@ -449,6 +451,19 @@ recessive deleterious alleles
 This effect depends on the principle of overdominance or heterozygous
 vigour, which is a condition where a heterozygous offspring has a higher
 fitness than either of the parents.
+
+Using a modeling approach, it appears that genetic rescue of a species
+will result in a substantial loss of the original genes of an organism.
+According to the models, the degree of genetic replacement of additive
+genes will proportionally match the genetic rescue, while the
+replacement of recessive genes may not need to occur as much as they
+will be masked by the foreign alleles \citep{Harris2019-sm}. One caveat
+to this, is that even if a large fraction of the genome in the inbred
+organism is recessive, it is likely that a substantial portion of it
+must be lost to restore fitness, as it is more likely that most of the
+recessive mutations contribute to the reduction in fitness, each with a
+small fitness effect, rather than only a handful of the mutations
+contributing with a large fitness effect.
 
 \chapter{Neuroscience}\label{neurosci}
 
