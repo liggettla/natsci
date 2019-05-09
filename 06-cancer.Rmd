@@ -6,3 +6,6 @@ Time and age plays a major role in the occurrence of many cancers, where typical
 ```{r}
 knitr::include_graphics(rep("images/04-4.jpg", 1))
 ```
+
+## Oncogenesis
+Understanding the cell of origin for a cancer is difficult, but it appears that using ATAC-Seq to measure open chromatin regions within tumor cells can identify the hematopoietic cell of origin [@george2016leukaemia]. This appears to be prognostically relevant as the more stemlike the cell of origin in AML, the worse the prognosis of the patient appears to be [@young2016open].

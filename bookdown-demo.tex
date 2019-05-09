@@ -109,7 +109,7 @@
 \usepackage{titling}
 
 % Create subtitle command for use in maketitle
-\newcommand{\subtitle}[1]{
+\providecommand{\subtitle}[1]{
   \posttitle{
     \begin{center}\large#1\end{center}
     }
@@ -125,7 +125,7 @@
   \postauthor{\par}
       \predate{\centering\large\emph}
   \postdate{\par}
-    \date{2019-04-29}
+    \date{2019-05-08}
 
 \usepackage{booktabs}
 \usepackage{amsthm}
@@ -765,6 +765,15 @@ typically the risk of suffering most cancers is about 2\% by the age of
 \end{Shaded}
 
 \includegraphics{images/04-4.jpg}
+
+\section{Oncogenesis}\label{oncogenesis}
+
+Understanding the cell of origin for a cancer is difficult, but it
+appears that using ATAC-Seq to measure open chromatin regions within
+tumor cells can identify the hematopoietic cell of origin
+\citep{george2016leukaemia}. This appears to be prognostically relevant
+as the more stemlike the cell of origin in AML, the worse the prognosis
+of the patient appears to be \citep{young2016open}.
 
 \bibliography{book.bib,packages.bib}
 
