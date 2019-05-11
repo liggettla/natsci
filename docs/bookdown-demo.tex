@@ -109,7 +109,7 @@
 \usepackage{titling}
 
 % Create subtitle command for use in maketitle
-\newcommand{\subtitle}[1]{
+\providecommand{\subtitle}[1]{
   \posttitle{
     \begin{center}\large#1\end{center}
     }
@@ -125,7 +125,7 @@
   \postauthor{\par}
       \predate{\centering\large\emph}
   \postdate{\par}
-    \date{2019-04-15}
+    \date{2019-05-10}
 
 \usepackage{booktabs}
 \usepackage{amsthm}
@@ -184,31 +184,48 @@ archaea can use a process that is similar to homologous recombination to
 create a replication fork and replicate its chromosome (Hawkins et al.,
 2013).
 
-\section{Cloning}\label{cloning}
-
-A macaque was the first primate to be cloned by SCNT (Liu et al., 2018).
-
 \section{Mutation Rate}\label{mutation-rate}
+
+\subsection{Observed Mutation Rates}\label{observed-mutation-rates}
 
 Using whole-genome sequencing or next-gen sequencing to determine
 mutation rates by base, it appears that C\textgreater{}T mutations at
 CpG sites mutate at a frequency of 10-7 changes/cell division, and all
-other sites are within the range of 10-8-10-9 base changes per division
-(Arnheim and Calabrese, 2009, 2016; Campbell and Eichler, 2013; Ségurel
-et al., 2014).
-
-Providing an example of how human mutation rates can differ by
-geographic origination, europeans compared to african/asian populations
-have a 1.6 increased mutation rate of a particular mutation (Harris,
-2015).
+other sites are within the range of 10\^{}-8 - 10\^{}-9 base changes per
+division (Arnheim and Calabrese, 2009, 2016; Campbell and Eichler, 2013;
+Ségurel et al., 2014; \citet{kong2012rate};
+\citet{segurel2014determinants}).
 
 It appears that humans have the highest germline mutation rate of all
-analyzed species (Lynch, 2016).
+analyzed species (Lynch, 2016). It also appears from trio sequencing
+that both human and chimp mutation rates are in the range of
+1.0-1.25x10\^{}-8 mutations per site per generation
+\citep{kong2012rate}.
+
+While germline mutation rates are similar in chimps and humans, there
+are important differences, one example being that CpG mutations are more
+prevalent in the chimp germline \citep{venn2014strong}.
 
 Possibly supporting the somatic theory of aging, increases and
 reductions in DNA damage rates may accelerate and decelerate,
 respectively, some aspects of aging
 \citep{behjati2014genome, altieri2008dna}.
+
+\subsection{Mutation Rate Evolution}\label{mutation-rate-evolution}
+
+Providing an example of how human mutation rates can differ by
+geographic origination, Europeans compared to African/Asian populations
+have a 1.6 increased mutation rate of a TCC-\textgreater{}TTC
+transitions (Harris, 2015). This change in DNA replication fidelity
+appears to have happened 40-80kya when Europeans and Asians diverged and
+illustrates that DNA repair rates have not remained entirely stable
+throughout human evolution.
+
+Just as in humans show a number of different mutational likelihoods, the
+great apes apes also show evolution in the rates of different
+triplet-context mutation rates \citep{harris2017rapid}. It would be
+interesting to investigate how these different rates have constrained
+evolution, if at all.
 
 \section{Mutation Hotspots}\label{mutation-hotspots}
 
@@ -251,6 +268,15 @@ Illumina sequencing (Leung et al., 2016).
 One group came up with a method that is essentially identical to mine in
 which they use barcoded probes to detect leukemia but they tracked the
 mutation manually and ignored background (Wong et al. 2015)
+
+\subsection{Lineage Tracing}\label{lineage-tracing}
+
+Because mutation rates in mitochondrial DNA are higher than for genomic
+DNA, and they are heterogeneous, single cell ATAC-Seq of the
+mitochondrial can be effectively used alone or in combination with
+RNASeq for lineage tracing \citep{ludwig2019lineage}. This is an
+especially advantageous approach, as it requires no alterations to the
+organism of interest, allowing its application in humans.
 
 \section{Diagnostics}\label{diagnostics}
 
@@ -405,6 +431,49 @@ Barrett's esophagus is an advanced precancerous lesion, but some other
 step in the tissue is required for it to transition into such a stage
 \citep{gusev2014partitioning}.
 
+\section{Genetic Manipulation}\label{genetic-manipulation}
+
+\subsection{Cloning}\label{cloning}
+
+A macaque was the first primate to be cloned by SCNT (Liu et al., 2018).
+
+\subsection{Gene Therapy}\label{gene-therapy}
+
+X-linked severe combined immunodeficiency (SCID-X1) (commonly referred
+to as bubble-boy disease) is caused by mutations within the IL2RG gene
+which impairs the receptor for IL-2, IL-4, IL-7, IL-9, IL-15 and IL-21.
+The result of these mutations is that T and NK cells fail to develop.
+This disease is often treated with bone marrow transplant which involves
+irradiation. Instead of such a treatment, low-dose busulfan has been
+used in combination with WT IL2TG DNA carrying lentivirus to give HSCs a
+functional copy of the receptor. This treatment seems to allow T and NK
+cells to develop with minimal harm to the patient
+\citep{Mamcarz2019-ei}.
+
+\subsection{Genetic Rescue}\label{genetic-rescue}
+
+Inbreeding of a population can result in an accumulation of deleterious
+mutations. The accompanying loss in fitness can be mitigated through
+outbreeding, as it can increase heterozygosity and thereby mask
+recessive deleterious alleles
+\citep{keller2002inbreeding, ingvarsson2001restoration, vila2003rescue}.
+This effect depends on the principle of overdominance or heterozygous
+vigour, which is a condition where a heterozygous offspring has a higher
+fitness than either of the parents.
+
+Using a modeling approach, it appears that genetic rescue of a species
+will result in a substantial loss of the original genes of an organism.
+According to the models, the degree of genetic replacement of additive
+genes will proportionally match the genetic rescue, while the
+replacement of recessive genes may not need to occur as much as they
+will be masked by the foreign alleles \citep{Harris2019-sm}. One caveat
+to this, is that even if a large fraction of the genome in the inbred
+organism is recessive, it is likely that a substantial portion of it
+must be lost to restore fitness, as it is more likely that most of the
+recessive mutations contribute to the reduction in fitness, each with a
+small fitness effect, rather than only a handful of the mutations
+contributing with a large fitness effect.
+
 \chapter{Neuroscience}\label{neurosci}
 
 \section{Alzheimer's Disease}\label{alzheimers-disease}
@@ -415,6 +484,13 @@ the bacteria in the brains of people with AD showed evidence that the
 bacteria secreted proteases called gingipains that increased Aβ
 production and were also neurotoxic. Inhibition of the proteases reduced
 neuroinflammation and rescued neurons in the hippocampus (Dominy 2019).
+
+Tied both to sleep and AD, it appears that chronic sleep deprivation
+increases the formation of Aβ plaques, perhaps suggesting that sleep is
+protective against the formation of the plaques that eventually lead to
+AD \citep{Holth2019-cd}.
+
+{]}
 
 \section{Sleep}\label{sleep}
 
@@ -698,6 +774,15 @@ typically the risk of suffering most cancers is about 2\% by the age of
 \end{Shaded}
 
 \includegraphics{images/04-4.jpg}
+
+\section{Oncogenesis}\label{oncogenesis}
+
+Understanding the cell of origin for a cancer is difficult, but it
+appears that using ATAC-Seq to measure open chromatin regions within
+tumor cells can identify the hematopoietic cell of origin
+\citep{george2016leukaemia}. This appears to be prognostically relevant
+as the more stemlike the cell of origin in AML, the worse the prognosis
+of the patient appears to be \citep{young2016open}.
 
 \bibliography{book.bib,packages.bib}
 

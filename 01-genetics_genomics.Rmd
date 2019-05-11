@@ -5,6 +5,10 @@ A haplotype block is a set of closely linked alleles or markers on a chromosome 
 
 Across Eukaryotes, the frequency of recombination is inversely proportional to overall genome size. The result is that yeast have a recombination rate a few orders of magnitude higher than that of humans (She and Jarosz, 2018).
 
+```{r, include=FALSE}
+options(tinytex.verbose = TRUE)
+```
+
 ### Subpoint
 This is some sub info
 
@@ -48,6 +52,9 @@ Using a new sequencing method called sci-RNA-seq, the transcriptome of every cel
 It appears that DAPI does not increase sequencing error rates by Illumina sequencing (Leung et al., 2016).
 
 One group came up with a method that is essentially identical to mine in which they use barcoded probes to detect leukemia but they tracked the mutation manually and ignored background (Wong et al. 2015)
+
+### Lineage Tracing
+Because mutation rates in mitochondrial DNA are higher than for genomic DNA, and they are heterogeneous, single cell ATAC-Seq of the mitochondrial can be effectively used alone or in combination with RNASeq for lineage tracing [@ludwig2019lineage]. This is an especially advantageous approach, as it requires no alterations to the organism of interest, allowing its application in humans.
 
 ## Diagnostics
 In Li and Snyder Cell 2018, the EHR from hospitals is used to integrate with a machine learning algorithm trained on aneurysm detection. Patients are then whole genome sequenced, and the genome sequencing plus the lifestyle of the individual on EHR is then used to predict if the person has an aneurysm. They were able to achieve pretty robust detection results that could then be used in a prediction setting in the clinic.

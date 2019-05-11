@@ -25,7 +25,7 @@
 <meta name="author" content="L A Liggett">
 
 
-<meta name="date" content="2019-05-08">
+<meta name="date" content="2019-05-10">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -118,7 +118,9 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <li class="chapter" data-level="2.4" data-path="g2.html"><a href="g2.html#mutation-hotspots"><i class="fa fa-check"></i><b>2.4</b> Mutation Hotspots</a></li>
 <li class="chapter" data-level="2.5" data-path="g2.html"><a href="g2.html#mutation-detection"><i class="fa fa-check"></i><b>2.5</b> Mutation Detection</a></li>
 <li class="chapter" data-level="2.6" data-path="g2.html"><a href="g2.html#genetic-modifications"><i class="fa fa-check"></i><b>2.6</b> Genetic Modifications</a></li>
-<li class="chapter" data-level="2.7" data-path="g2.html"><a href="g2.html#sequencing-methods"><i class="fa fa-check"></i><b>2.7</b> Sequencing Methods</a></li>
+<li class="chapter" data-level="2.7" data-path="g2.html"><a href="g2.html#sequencing-methods"><i class="fa fa-check"></i><b>2.7</b> Sequencing Methods</a><ul>
+<li class="chapter" data-level="2.7.1" data-path="g2.html"><a href="g2.html#lineage-tracing"><i class="fa fa-check"></i><b>2.7.1</b> Lineage Tracing</a></li>
+</ul></li>
 <li class="chapter" data-level="2.8" data-path="g2.html"><a href="g2.html#diagnostics"><i class="fa fa-check"></i><b>2.8</b> Diagnostics</a></li>
 <li class="chapter" data-level="2.9" data-path="g2.html"><a href="g2.html#detecting-common-diseases"><i class="fa fa-check"></i><b>2.9</b> Detecting Common Diseases</a></li>
 <li class="chapter" data-level="2.10" data-path="g2.html"><a href="g2.html#detecting-rare-diseases"><i class="fa fa-check"></i><b>2.10</b> Detecting Rare Diseases</a></li>
@@ -232,6 +234,10 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <p>Using a new sequencing method called sci-RNA-seq, the transcriptome of every cell of 762 cells in C Elegans was sequenced to yield single-cell sequencing results and transcriptome profiling of every cell in the body. The way this is done is by methanol fixing nuclei and then incorporating a UMI when converting to cDNA, then mixing cells again and incorporating another UMI when synthesizing the other strand (Cao et al., 2017).</p>
 <p>It appears that DAPI does not increase sequencing error rates by Illumina sequencing (Leung et al., 2016).</p>
 <p>One group came up with a method that is essentially identical to mine in which they use barcoded probes to detect leukemia but they tracked the mutation manually and ignored background (Wong et al. 2015)</p>
+<div id="lineage-tracing" class="section level3">
+<h3><span class="header-section-number">2.7.1</span> Lineage Tracing</h3>
+<p>Because mutation rates in mitochondrial DNA are higher than for genomic DNA, and they are heterogeneous, single cell ATAC-Seq of the mitochondrial can be effectively used alone or in combination with RNASeq for lineage tracing <span class="citation">(Ludwig et al. <a href="#ref-ludwig2019lineage">2019</a>)</span>. This is an especially advantageous approach, as it requires no alterations to the organism of interest, allowing its application in humans.</p>
+</div>
 </div>
 <div id="diagnostics" class="section level2">
 <h2><span class="header-section-number">2.8</span> Diagnostics</h2>
@@ -307,6 +313,9 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 </div>
 <div id="ref-harris2017rapid">
 <p>Harris, Kelley, and Jonathan K Pritchard. 2017. “Rapid Evolution of the Human Mutation Spectrum.” <em>Elife</em> 6. eLife Sciences Publications Limited: e24284.</p>
+</div>
+<div id="ref-ludwig2019lineage">
+<p>Ludwig, Leif S, Caleb A Lareau, Jacob C Ulirsch, Elena Christian, Christoph Muus, Lauren H Li, Karin Pelka, et al. 2019. “Lineage Tracing in Humans Enabled by Mitochondrial Mutations and Single-Cell Genomics.” <em>Cell</em> 176 (6). Elsevier: 1325–39.</p>
 </div>
 <div id="ref-shendure2019genomic">
 <p>Shendure, Jay, Gregory M Findlay, and Matthew W Snyder. 2019. “Genomic Medicine–Progress, Pitfalls, and Promise.” <em>Cell</em> 177 (1). Elsevier: 45–57.</p>
