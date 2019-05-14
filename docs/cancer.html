@@ -159,10 +159,9 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <li class="chapter" data-level="7.1.1" data-path="cancer.html"><a href="cancer.html#incidence-rates"><i class="fa fa-check"></i><b>7.1.1</b> Incidence Rates</a></li>
 </ul></li>
 <li class="chapter" data-level="7.2" data-path="cancer.html"><a href="cancer.html#oncogenesis"><i class="fa fa-check"></i><b>7.2</b> Oncogenesis</a><ul>
-<li class="chapter" data-level="7.2.1" data-path="cancer.html"><a href="cancer.html#chip"><i class="fa fa-check"></i><b>7.2.1</b> CHIP</a></li>
-<li class="chapter" data-level="7.2.2" data-path="cancer.html"><a href="cancer.html#mutation-order"><i class="fa fa-check"></i><b>7.2.2</b> Mutation Order</a></li>
+<li class="chapter" data-level="7.2.1" data-path="cancer.html"><a href="cancer.html#mutation-order"><i class="fa fa-check"></i><b>7.2.1</b> Mutation Order</a></li>
 </ul></li>
-<li class="chapter" data-level="7.3" data-path="cancer.html"><a href="cancer.html#clonal-dynamics"><i class="fa fa-check"></i><b>7.3</b> Clonal Dynamics</a></li>
+<li class="chapter" data-level="7.3" data-path="cancer.html"><a href="cancer.html#aging-related-tissue-clonality"><i class="fa fa-check"></i><b>7.3</b> Aging Related Tissue Clonality</a></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
 <li class="divider"></li>
@@ -199,18 +198,17 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <div id="oncogenesis" class="section level2">
 <h2><span class="header-section-number">7.2</span> Oncogenesis</h2>
 <p>Understanding the cell of origin for a cancer is difficult, but it appears that using ATAC-Seq to measure open chromatin regions within tumor cells can identify the hematopoietic cell of origin <span class="citation">(George et al. <a href="#ref-george2016leukaemia">2016</a>)</span>. This appears to be prognostically relevant as the more stemlike the cell of origin in AML, the worse the prognosis of the patient appears to be <span class="citation">(Young and Trowbridge <a href="#ref-young2016open">2016</a>)</span>.</p>
-<div id="chip" class="section level3">
-<h3><span class="header-section-number">7.2.1</span> CHIP</h3>
-<p>By classifying oncogenic mutations by the number of times they occurred in cosmic, and stratifying into low, intermediate, and high occurence mutations, it appears that when more high risk mutations occur in CHIP, they are significantly predictive of progression to AML <span class="citation">(Abelson et al. <a href="#ref-abelson2018prediction">2018</a>)</span>.</p>
-</div>
 <div id="mutation-order" class="section level3">
-<h3><span class="header-section-number">7.2.2</span> Mutation Order</h3>
+<h3><span class="header-section-number">7.2.1</span> Mutation Order</h3>
 <p>While NPM1 and FLT3-ITD are commonly altered in AML, they appear to not be observed in CHIP, suggesting and consistent with other results that these changes occur late in the process of oncogenesis <span class="citation">(McKerrell et al. <a href="#ref-mckerrell2015leukemia">2015</a>; Krönke et al. <a href="#ref-kronke2013clonal">2013</a>; Abelson et al. <a href="#ref-abelson2018prediction">2018</a>)</span>.</p>
 </div>
 </div>
-<div id="clonal-dynamics" class="section level2">
-<h2><span class="header-section-number">7.3</span> Clonal Dynamics</h2>
+<div id="aging-related-tissue-clonality" class="section level2">
+<h2><span class="header-section-number">7.3</span> Aging Related Tissue Clonality</h2>
 <p>While the Martincorena group has shown that skin epithelium contains a significant number of cells that carry putatively oncogenic mutations, it is possible that this result may have been directly correlated with UV damage from sun exposure. Sequencing of esophageal endothelium revealed that NOTCH1 and TP53 mutations were widespread throughout the tissue <span class="citation">(Yokoyama et al. <a href="#ref-yokoyama2019age">2019</a>; Martincorena et al. <a href="#ref-martincorena2018somatic">2018</a>)</span>. The magnitude with which the tissue was covered by NOTCH1 mutated clones could be increased with chronic smoking and drinking. Furthermore, NOTCH1 mutant clones appeared to be less prevalent in esophageal cancers, and may be indicative of protective effects of the mutant clones.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">knitr<span class="op">::</span><span class="kw">include_graphics</span>(<span class="kw">rep</span>(<span class="st">&quot;images/04-5.jpg&quot;</span>, <span class="dv">1</span>))</code></pre></div>
+<p><img src="images/04-5.jpg" /><!-- --></p>
+<p>By classifying oncogenic mutations by the number of times they occurred in cosmic, and stratifying into low, intermediate, and high occurence mutations, it appears that when more high risk mutations occur in CHIP, they are significantly predictive of progression to AML <span class="citation">(Abelson et al. <a href="#ref-abelson2018prediction">2018</a>)</span>.</p>
 
 </div>
 </div>
@@ -225,14 +223,14 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <div id="ref-young2016open">
 <p>Young, Kira, and Jennifer J Trowbridge. 2016. “Open Chromatin Profiling as a Novel Strategy for Identifying Cancer Cell of Origin.” <em>Molecular &amp; Cellular Oncology</em> 3 (6). Taylor &amp; Francis: e1236770.</p>
 </div>
-<div id="ref-abelson2018prediction">
-<p>Abelson, Sagi, Grace Collord, Stanley WK Ng, Omer Weissbrod, Netta Mendelson Cohen, Elisabeth Niemeyer, Noam Barda, et al. 2018. “Prediction of Acute Myeloid Leukaemia Risk in Healthy Individuals.” <em>Nature</em> 559 (7714). Nature Publishing Group: 400.</p>
-</div>
 <div id="ref-mckerrell2015leukemia">
 <p>McKerrell, Thomas, Naomi Park, Thaidy Moreno, Carolyn S Grove, Hannes Ponstingl, Jonathan Stephens, Charles Crawley, et al. 2015. “Leukemia-Associated Somatic Mutations Drive Distinct Patterns of Age-Related Clonal Hemopoiesis.” <em>Cell Reports</em> 10 (8). Elsevier: 1239–45.</p>
 </div>
 <div id="ref-kronke2013clonal">
 <p>Krönke, Jan, Lars Bullinger, Veronica Teleanu, Florian Tschürtz, Verena I Gaidzik, Michael WM Kühn, Frank G Rücker, et al. 2013. “Clonal Evolution in Relapsed Npm1-Mutated Acute Myeloid Leukemia.” <em>Blood</em> 122 (1). Am Soc Hematology: 100–108.</p>
+</div>
+<div id="ref-abelson2018prediction">
+<p>Abelson, Sagi, Grace Collord, Stanley WK Ng, Omer Weissbrod, Netta Mendelson Cohen, Elisabeth Niemeyer, Noam Barda, et al. 2018. “Prediction of Acute Myeloid Leukaemia Risk in Healthy Individuals.” <em>Nature</em> 559 (7714). Nature Publishing Group: 400.</p>
 </div>
 <div id="ref-yokoyama2019age">
 <p>Yokoyama, Akira, Nobuyuki Kakiuchi, Tetsuichi Yoshizato, Yasuhito Nannya, Hiromichi Suzuki, Yasuhide Takeuchi, Yusuke Shiozawa, et al. 2019. “Age-Related Remodelling of Oesophageal Epithelia by Mutated Cancer Drivers.” <em>Nature</em> 565 (7739). Nature Publishing Group: 312.</p>
