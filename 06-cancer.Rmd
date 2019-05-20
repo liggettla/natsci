@@ -20,3 +20,5 @@ knitr::include_graphics(rep("images/04-5.jpg", 1))
 ```
 
 By classifying oncogenic mutations by the number of times they occurred in cosmic, and stratifying into low, intermediate, and high occurence mutations, it appears that when more high risk mutations occur in CHIP, they are significantly predictive of progression to AML [@abelson2018prediction].
+
+Using a model that holds DFE constant of those mutations consistently observed in CHIP, a static mutation accumulation rate may be mathematically sufficient to explain CHIP incidence [@Watson2019-lg].
