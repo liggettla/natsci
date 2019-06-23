@@ -41,6 +41,9 @@ There are a number of sporadic mutation hotspots associated with disease inciden
 ## Mutation Detection
 Pyrophosphorolysis-activated polymerization is a mutation detection method that can detect a single mutant molecule of DNA within 25,000 genomes (Liu and Sommer, 2004; Qin et al., 2007).
 
+Detecting cancer from cfDNA is often done by mutation detection alone, however, fragment size of the cfDNA seems to be non-randomly linked to malignant state. Using the ratio of short to long cfDNA fragments calculated for 5MB windows, combined with mutation detection within collected cfDNA seems to quite accurately predict cancerous state for a number of different solid cancers [@cristiano2019genome]. It appears that in individuals without cancer, the majority of cfDNA originates from
+leukocytes, and is fragmented in a manner that is dependent on nucleosomal patterns. As solid tissue burden grows and the associated cells release cfDNA, that DNA fragments according to the solid tissue nucleosomal patterns, and this seems to be sufficiently distinct from the fragmentation patterns of leukocyte DNA.
+
 ## Genetic Modifications
 Caffeine was cloned to allow for caffeine-deficient coffee and teas without the decaffeination process (Kato et al., 2000).
 
@@ -86,6 +89,8 @@ By sequencing 7,664 tumors spanning 29 different cancer types, it appears that u
 In their paper, Martincorena and Campbell show that the dN/dS ratio for somatic tissues and cancer tissue is 1 or greater showing that the effect of negative selection is minimal. In contrast, the dN/dS for germline species evolution is less than 0.5 showing a much greater effect of negative selection. Surprisingly, the non-synonymous mutations showed a dN/dS ration of 1 whether they existed in haploid or diploid regions suggesting the cells were not simply tolerating the mutations by having two copies.
 
 Using sequencing of blood to find spontaneous mutations and go back and use population biology to calculate the number of HSCs, it was found that there were between 50k-200k HSCs contributing to hematopoiesis at any given time [@lee2018population].
+
+Using a method they developed called RNA-MuTect, mutations from RNA are found and matched with germline DNA. Using samples within TCGA that had DNA and RNA extractions from the same individual from multiple tissues, RNA-MuTect identifies multiple putatively oncogenic mutations from across otherwise normal tissues [@Yizhak2019-ch]. The numbers of detected oncogenic mutations was dependent upon tissue exposure to mutagens, proliferation rate, and tissue architecture.
 
 ## Mutational Processes in Cancer
 Most cancers carry between 1,000 and 20,000 somatic point mutations and a few hundred insertions, deletions, and rearrangements [@martincorena2015somatic]. Leukemias and pediatric brain cancers typically contain the lowest numbers of mutations while those tissues exposed to mutagens like lung and skin cancers tend to have the highest numbers [@stephens2009complex; @alexandrov2013signatures; @lawrence2013mutational; @vogelstein2013cancer]. It is interesting to note that from the Cancer Gene Census database, it appears that only three genes; TP53, PIK3CA, and BRAF are mutated in 10% or more patients [@martincorena2015somatic].

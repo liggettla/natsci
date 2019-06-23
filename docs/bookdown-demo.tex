@@ -125,7 +125,7 @@
   \postauthor{\par}
       \predate{\centering\large\emph}
   \postdate{\par}
-    \date{2019-05-20}
+    \date{2019-06-23}
 
 \usepackage{booktabs}
 \usepackage{amsthm}
@@ -145,8 +145,10 @@
 }
 \chapter{Introduction}\label{introduction}
 
-Here is an unexceptional glimpse of the universe as it was during my
-moment in time.
+As an entirely unexceptional man, here is my fittingly unexceptional
+glimpse into the universe as it was during my moment in time.
+
+-L A Liggett
 
 \chapter{Genetics and Genomics}\label{g2}
 
@@ -242,6 +244,19 @@ al., 1994; Shiang et al., 1994).
 Pyrophosphorolysis-activated polymerization is a mutation detection
 method that can detect a single mutant molecule of DNA within 25,000
 genomes (Liu and Sommer, 2004; Qin et al., 2007).
+
+Detecting cancer from cfDNA is often done by mutation detection alone,
+however, fragment size of the cfDNA seems to be non-randomly linked to
+malignant state. Using the ratio of short to long cfDNA fragments
+calculated for 5MB windows, combined with mutation detection within
+collected cfDNA seems to quite accurately predict cancerous state for a
+number of different solid cancers \citep{cristiano2019genome}. It
+appears that in individuals without cancer, the majority of cfDNA
+originates from leukocytes, and is fragmented in a manner that is
+dependent on nucleosomal patterns. As solid tissue burden grows and the
+associated cells release cfDNA, that DNA fragments according to the
+solid tissue nucleosomal patterns, and this seems to be sufficiently
+distinct from the fragmentation patterns of leukocyte DNA.
 
 \section{Genetic Modifications}\label{genetic-modifications}
 
@@ -378,6 +393,14 @@ Using sequencing of blood to find spontaneous mutations and go back and
 use population biology to calculate the number of HSCs, it was found
 that there were between 50k-200k HSCs contributing to hematopoiesis at
 any given time \citep{lee2018population}.
+
+Using a method they developed called RNA-MuTect, mutations from RNA are
+found and matched with germline DNA. Using samples within TCGA that had
+DNA and RNA extractions from the same individual from multiple tissues,
+RNA-MuTect identifies multiple putatively oncogenic mutations from
+across otherwise normal tissues \citep{Yizhak2019-ch}. The numbers of
+detected oncogenic mutations was dependent upon tissue exposure to
+mutagens, proliferation rate, and tissue architecture.
 
 \section{Mutational Processes in
 Cancer}\label{mutational-processes-in-cancer}
@@ -823,6 +846,25 @@ Using a model that holds DFE constant of those mutations consistently
 observed in CHIP, a static mutation accumulation rate may be
 mathematically sufficient to explain CHIP incidence
 \citep{Watson2019-lg}.
+
+\chapter{Microbiome}\label{microbiome}
+
+\section{Relationship to Disease}\label{relationship-to-disease}
+
+Using germ-free mice, when gut microbiota were transplanted from either
+typical donors or donors with autism spectrum disorder, the brains of
+the mice that were injected with the microbiota from ASD donors
+exhibited predominant autistic behaviors \citep{sharon2019human}.
+Furthermore, microbiota from typical donors improved behavioral
+abnormalities and neuron function in ASD model mice.
+
+\section{Metabolism}\label{metabolism}
+
+Among 271 tested oral drugs, it appears that many are metabolized
+differently by different gut bacteria. It appears that of the 76
+bacteria that were followed, they differentially modify the ingested
+drugs \citep{zimmermann2019mapping}. This may have important
+implications for personalized drug therapies.
 
 \bibliography{book.bib,packages.bib}
 

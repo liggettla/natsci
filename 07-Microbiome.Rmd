@@ -1,0 +1,7 @@
+# Microbiome {#microbiome}
+
+## Relationship to Disease
+Using germ-free mice, when gut microbiota were transplanted from either typical donors or donors with autism spectrum disorder, the brains of the mice that were injected with the microbiota from ASD donors exhibited predominant autistic behaviors [@sharon2019human]. Furthermore, microbiota from typical donors improved behavioral abnormalities and neuron function in ASD model mice.
+
+## Metabolism
+Among 271 tested oral drugs, it appears that many are metabolized differently by different gut bacteria. It appears that of the 76 bacteria that were followed, they differentially modify the ingested drugs [@zimmermann2019mapping]. This may have important implications for personalized drug therapies.

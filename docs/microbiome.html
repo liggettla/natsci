@@ -5,11 +5,11 @@
 
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Chapter 6 Bioinformatics | On Matters Of Nature and Science</title>
+  <title>Chapter 8 Microbiome | On Matters Of Nature and Science</title>
   <meta name="description" content="These are just some things.">
   <meta name="generator" content="bookdown  and GitBook 2.6.7">
 
-  <meta property="og:title" content="Chapter 6 Bioinformatics | On Matters Of Nature and Science" />
+  <meta property="og:title" content="Chapter 8 Microbiome | On Matters Of Nature and Science" />
   <meta property="og:type" content="book" />
   
   
@@ -17,7 +17,7 @@
   <meta name="github-repo" content="rstudio/bookdown-demo" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 6 Bioinformatics | On Matters Of Nature and Science" />
+  <meta name="twitter:title" content="Chapter 8 Microbiome | On Matters Of Nature and Science" />
   
   <meta name="twitter:description" content="These are just some things." />
   
@@ -32,8 +32,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   
   
-<link rel="prev" href="competition.html">
-<link rel="next" href="cancer.html">
+<link rel="prev" href="cancer.html">
+<link rel="next" href="references.html">
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -188,32 +188,25 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="bioinformatics" class="section level1">
-<h1><span class="header-section-number">Chapter 6</span> Bioinformatics</h1>
-<div id="genome-stuff" class="section level2">
-<h2><span class="header-section-number">6.1</span> Genome stuff</h2>
-<p>There are many instances of ‘NNN’ repeats within the human genome, because there are parts that are very challenging to sequence, including telomere and centromere regions. Lowercase letters in the genome specify things like repetitive sequences and introns. k-mers are fragments of DNA in the genome that are of a length k, so for the string ATGCA, the 2-mers are AT, TG, GC, and CA, and the 3-mers are ATG, TGC, and GCA k-mers can be useful for error correction because sequencing errors can bias towards producing k-mers, but they can also be used in alignment or in genome classification No free lunch theorem</p>
+<div id="microbiome" class="section level1">
+<h1><span class="header-section-number">Chapter 8</span> Microbiome</h1>
+<div id="relationship-to-disease" class="section level2">
+<h2><span class="header-section-number">8.1</span> Relationship to Disease</h2>
+<p>Using germ-free mice, when gut microbiota were transplanted from either typical donors or donors with autism spectrum disorder, the brains of the mice that were injected with the microbiota from ASD donors exhibited predominant autistic behaviors <span class="citation">(Sharon et al. <a href="#ref-sharon2019human">2019</a>)</span>. Furthermore, microbiota from typical donors improved behavioral abnormalities and neuron function in ASD model mice.</p>
 </div>
-<div id="software" class="section level2">
-<h2><span class="header-section-number">6.2</span> Software</h2>
-<p>Google has designed a new variant caller called DeepVariant that uses deep neural networks to learn how best to call variants. This appears to provide a significant improvement to variant calling accuracy (Poplin et al., 2016).</p>
-<p>A group put together well defined pipelines for common bioinfomatics analysis like RNASeq into bioconductor that can be easily used and then cited as a method of succinctly referring to the analysis process (<a href="http://www.nature.com/authors/policies/license.html" class="uri">http://www.nature.com/authors/policies/license.html</a>).</p>
-<p>A group came up with a deep machine learning algorithm that can be used to predict patient data and genomics patterns (Ching et al., 2017).</p>
-<p>A group created a machine-learning algorithm for variant calling that seems to significantly outperform many common variant calling software like somatic sniper and mutect, though they do not compare against freebayes. Might be worth taking a look at (Wood et al., 2018)</p>
-<p>Selene is a deep learning python library designed using PyTorch that is designed to ask questions using genomic and sequencing data <span class="citation">(Chen et al. <a href="#ref-chen2019selene">2019</a>)</span>. They also mention in their paper a number of other deep learning python libraries specifically designed to analyze genomics data, that may be worth checking out: DragoNN, pysster<span class="citation">(Budach and Marsico <a href="#ref-budach2018pysster">2018</a>)</span>, and Kipoi<span class="citation">(Avsec et al. <a href="#ref-avsec2018kipoi">2018</a>)</span>.</p>
+<div id="metabolism" class="section level2">
+<h2><span class="header-section-number">8.2</span> Metabolism</h2>
+<p>Among 271 tested oral drugs, it appears that many are metabolized differently by different gut bacteria. It appears that of the 76 bacteria that were followed, they differentially modify the ingested drugs <span class="citation">(Zimmermann et al. <a href="#ref-zimmermann2019mapping">2019</a>)</span>. This may have important implications for personalized drug therapies.</p>
 
 </div>
 </div>
 <h3>References</h3>
 <div id="refs" class="references">
-<div id="ref-chen2019selene">
-<p>Chen, Kathleen M, Evan M Cofer, Jian Zhou, and Olga G Troyanskaya. 2019. “Selene: A Pytorch-Based Deep Learning Library for Sequence Data.” <em>Nature Methods</em> 16 (4). Nature Publishing Group: 315.</p>
+<div id="ref-sharon2019human">
+<p>Sharon, Gil, Nikki Jamie Cruz, Dae-Wook Kang, Michael J Gandal, Bo Wang, Young-Mo Kim, Erika M Zink, et al. 2019. “Human Gut Microbiota from Autism Spectrum Disorder Promote Behavioral Symptoms in Mice.” <em>Cell</em> 177 (6). Elsevier: 1600–1618.</p>
 </div>
-<div id="ref-budach2018pysster">
-<p>Budach, Stefan, and Annalisa Marsico. 2018. “Pysster: Classification of Biological Sequences by Learning Sequence and Structure Motifs with Convolutional Neural Networks.” <em>Bioinformatics</em> 34 (17). Oxford University Press: 3035–7.</p>
-</div>
-<div id="ref-avsec2018kipoi">
-<p>Avsec, Ziga, Roman Kreuzhuber, Johnny Israeli, Nancy Xu, Jun Cheng, Avanti Shrikumar, Abhimanyu Banerjee, et al. 2018. “Kipoi: Accelerating the Community Exchange and Reuse of Predictive Models for Genomics.” <em>BioRxiv</em>. Cold Spring Harbor Laboratory, 375345.</p>
+<div id="ref-zimmermann2019mapping">
+<p>Zimmermann, Michael, Maria Zimmermann-Kogadeeva, Rebekka Wegmann, and Andrew L Goodman. 2019. “Mapping Human Microbiome Drug Metabolism by Gut Bacteria and Their Genes.” <em>Nature</em>. Nature Publishing Group, 1.</p>
 </div>
 </div>
             </section>
@@ -221,8 +214,8 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
           </div>
         </div>
       </div>
-<a href="competition.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="cancer.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="cancer.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="references.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -252,7 +245,7 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/rstudio/bookdown-demo/edit/master/05-bioinformatics.Rmd",
+"link": "https://github.com/rstudio/bookdown-demo/edit/master/07-Microbiome.Rmd",
 "text": "Edit"
 },
 "history": {
