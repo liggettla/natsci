@@ -1,0 +1,4 @@
+# Methods {#methods}
+
+## HSC Biology
+Optimizations that include Polyvinyl alcohol (PVA), fibronectin, and high levels of TPO allow for the expansion of mouse HSCs in culture for at least a month. It seems that the PVA acts as a carrier molecule that may easily undergo oxidation or reduction within the culture in a manner that facilitates the maintenance of stem-like phenotype while allowing the cells to expand. This method allows for the expansion of mouse HSCs somewhere in the range of 250X-900X and thereby enabled successful transplantation into unconditioned mice [@wilkinson2019long].
