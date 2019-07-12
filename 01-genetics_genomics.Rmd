@@ -35,6 +35,8 @@ Providing an example of how human mutation rates can differ by geographic origin
 
 Just as in humans show a number of different mutational likelihoods, the great apes apes also show evolution in the rates of different triplet-context mutation rates [@harris2017rapid]. It would be interesting to investigate how these different rates have constrained evolution, if at all.
 
+Killifish seem to exhibit an elevation in mutation rates, and exhibit chromosomal expansions and deleterious mutations especially in mitochondrial genes and nuclear genes important for late life. It seems that killifish show evidence of their lifespan being limited by many deleterious mutations of small effect-size in a manner that is compatible with neutral theory of evolution [@ohta1973model]. The overall idea is that when adapting to annual niches, killifish experienced intense selection on genes affecting traits important for early life, and a corresponding relaxation of selection on traits affecting later life in a manner compatible with neutral theory [@cui2019relaxed]. It is important to note that the authors do not test for antagonistic pleiotropy, so this effect may be playing an important role in the development of detrimental aging-related mutations [@charlesworth2000degeneration; @williams1957pleiotropy].
+
 ## Mutation Hotspots
 There are a number of sporadic mutation hotspots associated with disease incidence, like achondroplasia which has a sporadic incidence rate of 4.5 x 10-5 per generation (Arnheim and Calabrese, 2016; Waller et al., 2008). This disease originates from a single mutation in the FGFR3 gene at a mutation rate ~450 times higher than what would ordinarily be expected at a CpG site (Bellus et al., 1995; Rousseau et al., 1994; Shiang et al., 1994).
 
