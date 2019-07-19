@@ -25,7 +25,7 @@
 <meta name="author" content="L A Liggett">
 
 
-<meta name="date" content="2019-07-12">
+<meta name="date" content="2019-07-18">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -142,10 +142,14 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <li class="chapter" data-level="3.2" data-path="neurosci.html"><a href="neurosci.html#sleep"><i class="fa fa-check"></i><b>3.2</b> Sleep</a></li>
 </ul></li>
 <li class="chapter" data-level="4" data-path="aging.html"><a href="aging.html"><i class="fa fa-check"></i><b>4</b> Aging</a><ul>
-<li class="chapter" data-level="4.1" data-path="aging.html"><a href="aging.html#somatic-mutation-theory"><i class="fa fa-check"></i><b>4.1</b> Somatic Mutation Theory</a></li>
+<li class="chapter" data-level="4.1" data-path="aging.html"><a href="aging.html#introduction-2"><i class="fa fa-check"></i><b>4.1</b> Introduction</a></li>
+<li class="chapter" data-level="4.2" data-path="aging.html"><a href="aging.html#somatic-mutation-theory"><i class="fa fa-check"></i><b>4.2</b> Somatic Mutation Theory</a></li>
+<li class="chapter" data-level="4.3" data-path="aging.html"><a href="aging.html#calorie-restriction"><i class="fa fa-check"></i><b>4.3</b> Calorie Restriction</a></li>
+<li class="chapter" data-level="4.4" data-path="aging.html"><a href="aging.html#genetics-of-aging"><i class="fa fa-check"></i><b>4.4</b> Genetics of Aging</a></li>
+<li class="chapter" data-level="4.5" data-path="aging.html"><a href="aging.html#aging-pathways-and-processes"><i class="fa fa-check"></i><b>4.5</b> Aging Pathways and Processes</a></li>
 </ul></li>
 <li class="chapter" data-level="5" data-path="competition.html"><a href="competition.html"><i class="fa fa-check"></i><b>5</b> Cell Competition</a><ul>
-<li class="chapter" data-level="5.1" data-path="competition.html"><a href="competition.html#introduction-2"><i class="fa fa-check"></i><b>5.1</b> Introduction</a></li>
+<li class="chapter" data-level="5.1" data-path="competition.html"><a href="competition.html#introduction-3"><i class="fa fa-check"></i><b>5.1</b> Introduction</a></li>
 <li class="chapter" data-level="5.2" data-path="competition.html"><a href="competition.html#trophic-theory"><i class="fa fa-check"></i><b>5.2</b> Trophic Theory</a></li>
 <li class="chapter" data-level="5.3" data-path="competition.html"><a href="competition.html#modern-theory"><i class="fa fa-check"></i><b>5.3</b> Modern Theory</a></li>
 <li class="chapter" data-level="5.4" data-path="competition.html"><a href="competition.html#localization"><i class="fa fa-check"></i><b>5.4</b> Localization</a></li>
@@ -156,7 +160,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <li class="chapter" data-level="6.2" data-path="bioinformatics.html"><a href="bioinformatics.html#software"><i class="fa fa-check"></i><b>6.2</b> Software</a></li>
 </ul></li>
 <li class="chapter" data-level="7" data-path="cancer.html"><a href="cancer.html"><i class="fa fa-check"></i><b>7</b> Cancer</a><ul>
-<li class="chapter" data-level="7.1" data-path="cancer.html"><a href="cancer.html#introduction-3"><i class="fa fa-check"></i><b>7.1</b> Introduction</a><ul>
+<li class="chapter" data-level="7.1" data-path="cancer.html"><a href="cancer.html#introduction-4"><i class="fa fa-check"></i><b>7.1</b> Introduction</a><ul>
 <li class="chapter" data-level="7.1.1" data-path="cancer.html"><a href="cancer.html#incidence-rates"><i class="fa fa-check"></i><b>7.1.1</b> Incidence Rates</a></li>
 </ul></li>
 <li class="chapter" data-level="7.2" data-path="cancer.html"><a href="cancer.html#oncogenesis"><i class="fa fa-check"></i><b>7.2</b> Oncogenesis</a><ul>
@@ -194,19 +198,87 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
             <section class="normal" id="section-">
 <div id="aging" class="section level1">
 <h1><span class="header-section-number">Chapter 4</span> Aging</h1>
+<div id="introduction-2" class="section level2">
+<h2><span class="header-section-number">4.1</span> Introduction</h2>
+<p>Below is a nice timeline of some major milestones in aging research <span class="citation">(Campisi et al. <a href="#ref-campisi2019discoveries">2019</a>)</span>.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">knitr<span class="op">::</span>opts_chunk<span class="op">$</span><span class="kw">set</span>(<span class="dt">comment=</span><span class="ot">NA</span>, <span class="dt">fig.width=</span><span class="dv">1</span>, <span class="dt">fig.height=</span><span class="dv">1</span>)
+knitr<span class="op">::</span><span class="kw">include_graphics</span>(<span class="kw">rep</span>(<span class="st">&quot;images/04-8.jpg&quot;</span>, <span class="dv">1</span>))</code></pre></div>
+<p><img src="images/04-8.jpg" /><!-- --></p>
+</div>
 <div id="somatic-mutation-theory" class="section level2">
-<h2><span class="header-section-number">4.1</span> Somatic Mutation Theory</h2>
+<h2><span class="header-section-number">4.2</span> Somatic Mutation Theory</h2>
 <p>In their study covering 7,664 tumors, Martincorena and Campbell illustrate an almost complete absence of negative selection against somatic mutations <span class="citation">(Martincorena et al. <a href="#ref-martincorena2017universal">2017</a>)</span>. This is lack of negative selection is quite different from the force at the population level where it acts quite strongly on the germline. This result may be an important finding for the somatic theory of aging <span class="citation">(Morley <a href="#ref-morley1995somatic">1995</a>)</span>, as it may be an indication that point mutations are largely of negligible effect size within somatic cells. As such, if point mutations do play a role in aging, it seems that this may be limited to those that are neutral or advantageous to a cell.</p>
+</div>
+<div id="calorie-restriction" class="section level2">
+<h2><span class="header-section-number">4.3</span> Calorie Restriction</h2>
+<p>1939 was the first time that calorie restriction was shown in mice and rates to increase lifespan <span class="citation">(McCay, Crowell, and Maynard <a href="#ref-mccay1935effect">1935</a>)</span>. This effect of longevity has also been reproduced in primates <span class="citation">(Pifferi et al. <a href="#ref-pifferi2018caloric">2018</a>; Mattison et al. <a href="#ref-mattison2017caloric">2017</a>)</span>.</p>
+</div>
+<div id="genetics-of-aging" class="section level2">
+<h2><span class="header-section-number">4.4</span> Genetics of Aging</h2>
+<p>Peter Medawar proposed in 1952 that aging is the result of a reduction in the force of natural selection for a species after its reproductive years <span class="citation">(Medawar <a href="#ref-medawar1952unsolved">1952</a>)</span>. In part this theory seems a bit obvious as at its core it really seems to state that organisms evolve to their niches. Furthermore, it may seem a bit simplified to me as organisms appear to have significantly different fertility loss and survivorship relationships. In the following figure the fertility rates in humans and <em>C. elegans</em> appear to be rather similar, but their mortality curves appear to be strikingly different <span class="citation">(Aguilaniu <a href="#ref-aguilaniu2015mysterious">2015</a>)</span>.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">knitr<span class="op">::</span>opts_chunk<span class="op">$</span><span class="kw">set</span>(<span class="dt">comment=</span><span class="ot">NA</span>, <span class="dt">fig.width=</span><span class="dv">1</span>, <span class="dt">fig.height=</span><span class="dv">1</span>)
+knitr<span class="op">::</span><span class="kw">include_graphics</span>(<span class="kw">rep</span>(<span class="st">&quot;images/04-6.jpg&quot;</span>, <span class="dv">1</span>))</code></pre></div>
+<p><img src="images/04-6.jpg" /><!-- --></p>
+<p>Here is a more comprehensive understanding of the relationship between fertility and mortality <span class="citation">(O. R. Jones et al. <a href="#ref-jones2014diversity">2014</a>)</span>. The diversity in the following figure makes me inclined to wonder if Medawar was fundamentally flawed in assumption that fertility rates decrease as a function of age and it and other losses in functionality are the result of a systemic relaxation in the forces of selection with the age of an organism.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">knitr<span class="op">::</span>opts_chunk<span class="op">$</span><span class="kw">set</span>(<span class="dt">comment=</span><span class="ot">NA</span>, <span class="dt">fig.width=</span><span class="dv">1</span>, <span class="dt">fig.height=</span><span class="dv">1</span>)
+knitr<span class="op">::</span><span class="kw">include_graphics</span>(<span class="kw">rep</span>(<span class="st">&quot;images/04-7.jpg&quot;</span>, <span class="dv">1</span>))</code></pre></div>
+<p><img src="images/04-7.jpg" /><!-- --></p>
+<p>In part, motivated by the theories begun by Medawar, selection experiments were performed in <em>Drosophila</em> to select for late breeding, and this yielded a nearly two-fold increase in maximum lifespan <span class="citation">(Rose and Charlesworth <a href="#ref-rose1980test">1980</a>)</span>. In part, this illustrates that lifespan can be significantly dependent on genetics and or epigenetics. At least 800 genes have been directly implicated in lifespan regulation in <em>C. elegans</em> (though in light of Jonathan Pritchard’s work, I can only imagine this number will continue to climb until it reaches the total gene count in each organism), and these genes can be found <a href="http://genomics.senescence.info/genes/search.php?organism=Caenorhabditis+elegans&amp;show=4">here</a>.</p>
+</div>
+<div id="aging-pathways-and-processes" class="section level2">
+<h2><span class="header-section-number">4.5</span> Aging Pathways and Processes</h2>
+<p>In 1993 a <em>C. elegans</em> mutation in <em>daf-2</em> which is orthologous to mammalian genes for insulin and insulin-like growth factor was found to nearly double the lifespan of the organism <span class="citation">(Kenyon et al. <a href="#ref-kenyon1993c">1993</a>)</span>.</p>
+<p>Target of rapamycin (TOR) proteins have important metabolic effects that also impact maximum lifespan. A common evolutionary hypothesis for the general role of TOR in modulation of maximum lifespan is that it shifts metabolic investment from reproduction and growth into somatic maintenance, and that this switch increases the longevity of an organism <span class="citation">(Kapahi et al. <a href="#ref-kapahi2010tor">2010</a>)</span>.</p>
+<p>In 1995 Brian Kennedy identified the epigenetic silencing factors, sirtuins (Sir) in yeast <span class="citation">(Kennedy et al. <a href="#ref-kennedy1995mutation">1995</a>)</span>. Sir2 is a protein deacetylase that depends on the coenzyme nicotinamide adenine dinucleotide (NAD+) <span class="citation">(Imai et al. <a href="#ref-imai2000transcriptional">2000</a>)</span>. On the basis that NAD+ levels increase during conditions that are typically associated with longevity such as exercise, fasting, and dietary restriction, it is commonly suggested that NAD+ supplementation may increase lifespan (though this idea seems a bit simple to me) <span class="citation">(Mouchiroud et al. <a href="#ref-mouchiroud2013nad">2013</a>)</span>.</p>
 
 </div>
 </div>
 <h3>References</h3>
 <div id="refs" class="references">
+<div id="ref-campisi2019discoveries">
+<p>Campisi, Judith, Pankaj Kapahi, Gordon J Lithgow, Simon Melov, John C Newman, and Eric Verdin. 2019. “From Discoveries in Ageing Research to Therapeutics for Healthy Ageing.” <em>Nature</em> 571 (7764). Nature Publishing Group: 183.</p>
+</div>
 <div id="ref-martincorena2017universal">
 <p>Martincorena, Iñigo, Keiran M Raine, Moritz Gerstung, Kevin J Dawson, Kerstin Haase, Peter Van Loo, Helen Davies, Michael R Stratton, and Peter J Campbell. 2017. “Universal Patterns of Selection in Cancer and Somatic Tissues.” <em>Cell</em> 171 (5). Elsevier: 1029–41.</p>
 </div>
 <div id="ref-morley1995somatic">
 <p>Morley, Alexander A. 1995. “The Somatic Mutation Theory of Ageing.” <em>Mutation Research/DNAging</em> 338 (1-6). Elsevier: 19–23.</p>
+</div>
+<div id="ref-mccay1935effect">
+<p>McCay, Carl M, Mary F Crowell, and Lewis A Maynard. 1935. “The Effect of Retarded Growth Upon the Length of Life Span and Upon the Ultimate Body Size: One Figure.” <em>The Journal of Nutrition</em> 10 (1). Oxford University Press: 63–79.</p>
+</div>
+<div id="ref-pifferi2018caloric">
+<p>Pifferi, Fabien, Jérémy Terrien, Julia Marchal, Alexandre Dal-Pan, Fathia Djelti, Isabelle Hardy, Sabine Chahory, et al. 2018. “Caloric Restriction Increases Lifespan but Affects Brain Integrity in Grey Mouse Lemur Primates.” <em>Communications Biology</em> 1 (1). Nature Publishing Group: 30.</p>
+</div>
+<div id="ref-mattison2017caloric">
+<p>Mattison, Julie A, Ricki J Colman, T Mark Beasley, David B Allison, Joseph W Kemnitz, George S Roth, Donald K Ingram, Richard Weindruch, Rafael De Cabo, and Rozalyn M Anderson. 2017. “Caloric Restriction Improves Health and Survival of Rhesus Monkeys.” <em>Nature Communications</em> 8. Nature Publishing Group: 14063.</p>
+</div>
+<div id="ref-medawar1952unsolved">
+<p>Medawar, Peter Brian. 1952. <em>An Unsolved Problem of Biology</em>. College.</p>
+</div>
+<div id="ref-aguilaniu2015mysterious">
+<p>Aguilaniu, Hugo. 2015. “The Mysterious Relationship Between Reproduction and Longevity.” In <em>Worm</em>, 4:e1020276. 2. Taylor &amp; Francis.</p>
+</div>
+<div id="ref-jones2014diversity">
+<p>Jones, Owen R, Alexander Scheuerlein, Roberto Salguero-Gómez, Carlo Giovanni Camarda, Ralf Schaible, Brenda B Casper, Johan P Dahlgren, et al. 2014. “Diversity of Ageing Across the Tree of Life.” <em>Nature</em> 505 (7482). Nature Publishing Group: 169.</p>
+</div>
+<div id="ref-rose1980test">
+<p>Rose, Michael, and Brian Charlesworth. 1980. “A Test of Evolutionary Theories of Senescence.” <em>Nature</em> 287 (5778). Nature Publishing Group: 141.</p>
+</div>
+<div id="ref-kenyon1993c">
+<p>Kenyon, Cynthia, Jean Chang, Erin Gensch, Adam Rudner, and Ramon Tabtiang. 1993. “A c. Elegans Mutant That Lives Twice as Long as Wild Type.” <em>Nature</em> 366 (6454). Nature Publishing Group: 461.</p>
+</div>
+<div id="ref-kapahi2010tor">
+<p>Kapahi, Pankaj, Di Chen, Aric N Rogers, Subhash D Katewa, Patrick Wai-Lun Li, Emma L Thomas, and Lutz Kockel. 2010. “With Tor, Less Is More: A Key Role for the Conserved Nutrient-Sensing Tor Pathway in Aging.” <em>Cell Metabolism</em> 11 (6). Elsevier: 453–65.</p>
+</div>
+<div id="ref-kennedy1995mutation">
+<p>Kennedy, Brian K, Nicanor R Austriaco Jr, Jisi Zhang, and Leonard Guarente. 1995. “Mutation in the Silencing Gene S/R4 Can Delay Aging in S. Cerevisiae.” <em>Cell</em> 80 (3). Elsevier: 485–96.</p>
+</div>
+<div id="ref-imai2000transcriptional">
+<p>Imai, Shin-Ichiro, Christopher M Armstrong, Matt Kaeberlein, and Leonard Guarente. 2000. “Transcriptional Silencing and Longevity Protein Sir2 Is an Nad-Dependent Histone Deacetylase.” <em>Nature</em> 403 (6771). Nature Publishing Group: 795.</p>
+</div>
+<div id="ref-mouchiroud2013nad">
+<p>Mouchiroud, Laurent, Riekelt H Houtkooper, Norman Moullan, Elena Katsyuba, Dongryeol Ryu, Carles Cantó, Adrienne Mottis, et al. 2013. “The Nad+/Sirtuin Pathway Modulates Longevity Through Activation of Mitochondrial Upr and Foxo Signaling.” <em>Cell</em> 154 (2). Elsevier: 430–41.</p>
 </div>
 </div>
             </section>
