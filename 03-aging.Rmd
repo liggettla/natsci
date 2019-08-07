@@ -32,6 +32,8 @@ knitr::include_graphics(rep("images/04-7.jpg", 1))
 
 In part, motivated by the theories begun by Medawar, selection experiments were performed in _Drosophila_ to select for late breeding, and this yielded a nearly two-fold increase in maximum lifespan [@rose1980test]. In part, this illustrates that lifespan can be significantly dependent on genetics and or epigenetics. At least 800 genes have been directly implicated in lifespan regulation in _C. elegans_ (though in light of Jonathan Pritchard's work, I can only imagine this number will continue to climb until it reaches the total gene count in each organism), and these genes can be found [here](http://genomics.senescence.info/genes/search.php?organism=Caenorhabditis+elegans&show=4).
 
+Supercentenarians and the oldest populations concentrate nicely within areas that have no birth certificates and a shorter mean lifespan the general country [@Newman2019-zs]. Examples of this trend are Okinawa, Sardinia, and Ikaria. It may be possible that part of the reason for the substantial increase in maximum lifespan is due to fraud especially as people that get payments from the government like social security can be useful to people that just claim to be an elderly person that has died.
+
 ## Aging Pathways and Processes
 In 1993 a _C. elegans_ mutation in _daf-2_ which is orthologous to mammalian genes for insulin and insulin-like growth factor was found to nearly double the lifespan of the organism [@kenyon1993c].
 
