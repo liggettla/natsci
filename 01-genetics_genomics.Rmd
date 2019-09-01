@@ -117,6 +117,8 @@ A macaque was the first primate to be cloned by SCNT (Liu et al., 2018).
 ### Gene Therapy
 X-linked severe combined immunodeficiency (SCID-X1) (commonly referred to as bubble-boy disease) is caused by mutations within the IL2RG gene which impairs the receptor for IL-2, IL-4, IL-7, IL-9, IL-15 and IL-21. The result of these mutations is that T and NK cells fail to develop. This disease is often treated with bone marrow transplant which involves irradiation. Instead of such a treatment, low-dose busulfan has been used in combination with WT IL2TG DNA carrying lentivirus to give HSCs a functional copy of the receptor. This treatment seems to allow T and NK cells to develop with minimal harm to the patient [@Mamcarz2019-ei].
 
+The use of CRISPR technology to edit RNA may have significant therapeutic potential gene expression could be transiently controlled. One concern of RNA editing is that the CRISPR system would likely have to be activated in a human the entire time an effect is desired. This long-term CRISPR activation would likely cause an immune response against the bacterial Cas protein. Rauch et al developed a largely humanized Cas protein using human proteins which may significantly reduce the immunogenic potential [@rauch2019programmable].
+
 ### Genetic Rescue
 Inbreeding of a population can result in an accumulation of deleterious mutations. The accompanying loss in fitness can be mitigated through outbreeding, as it can increase heterozygosity and thereby mask recessive deleterious alleles [@keller2002inbreeding; @ingvarsson2001restoration; @vila2003rescue]. This effect depends on the principle of overdominance or heterozygous vigour, which is a condition where a heterozygous offspring has a higher fitness than either of the parents.
 
