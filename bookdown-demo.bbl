@@ -1,0 +1,587 @@
+\begin{thebibliography}{}
+
+\bibitem[Abelson et~al., 2018]{abelson2018prediction}
+Abelson, S., Collord, G., Ng, S.~W., Weissbrod, O., Cohen, N.~M., Niemeyer, E.,
+  Barda, N., Zuzarte, P.~C., Heisler, L., Sundaravadanam, Y., et~al. (2018).
+\newblock Prediction of acute myeloid leukaemia risk in healthy individuals.
+\newblock {\em Nature}, 559(7714):400.
+
+\bibitem[Aguilaniu, 2015]{aguilaniu2015mysterious}
+Aguilaniu, H. (2015).
+\newblock The mysterious relationship between reproduction and longevity.
+\newblock In {\em Worm}, volume~4, page e1020276. Taylor \& Francis.
+
+\bibitem[Alcolea et~al., 2014]{alcolea2014differentiation}
+Alcolea, M.~P., Greulich, P., Wabik, A., Frede, J., Simons, B.~D., and Jones,
+  P.~H. (2014).
+\newblock Differentiation imbalance in single oesophageal progenitor cells
+  causes clonal immortalization and field change.
+\newblock {\em Nature cell biology}, 16(6):612.
+
+\bibitem[Alexandrov et~al., 2013]{alexandrov2013signatures}
+Alexandrov, L.~B., Nik-Zainal, S., Wedge, D.~C., Aparicio, S.~A., Behjati, S.,
+  Biankin, A.~V., Bignell, G.~R., Bolli, N., Borg, A., B{\o}rresen-Dale, A.-L.,
+  et~al. (2013).
+\newblock Signatures of mutational processes in human cancer.
+\newblock {\em Nature}, 500(7463):415.
+
+\bibitem[Altieri et~al., 2008]{altieri2008dna}
+Altieri, F., Grillo, C., Maceroni, M., and Chichiarelli, S. (2008).
+\newblock Dna damage and repair: from molecular mechanisms to health
+  implications.
+\newblock {\em Antioxidants \& redox signaling}, 10(5):891--938.
+
+\bibitem[Armitage and Doll, 1954]{armitage1954age}
+Armitage, P. and Doll, R. (1954).
+\newblock The age distribution of cancer and a multi-stage theory of
+  carcinogenesis.
+\newblock {\em British journal of cancer}, 8(1):1.
+
+\bibitem[Avsec et~al., 2018]{avsec2018kipoi}
+Avsec, Z., Kreuzhuber, R., Israeli, J., Xu, N., Cheng, J., Shrikumar, A.,
+  Banerjee, A., Kim, D.~S., Urban, L., Kundaje, A., et~al. (2018).
+\newblock Kipoi: accelerating the community exchange and reuse of predictive
+  models for genomics.
+\newblock {\em BioRxiv}, page 375345.
+
+\bibitem[Behjati et~al., 2014]{behjati2014genome}
+Behjati, S., Huch, M., van Boxtel, R., Karthaus, W., Wedge, D.~C., Tamuri,
+  A.~U., Martincorena, I., Petljak, M., Alexandrov, L.~B., Gundem, G., et~al.
+  (2014).
+\newblock Genome sequencing of normal cells reveals developmental lineages and
+  mutational processes.
+\newblock {\em Nature}, 513(7518):422.
+
+\bibitem[Budach and Marsico, 2018]{budach2018pysster}
+Budach, S. and Marsico, A. (2018).
+\newblock pysster: classification of biological sequences by learning sequence
+  and structure motifs with convolutional neural networks.
+\newblock {\em Bioinformatics}, 34(17):3035--3037.
+
+\bibitem[Campisi et~al., 2019]{campisi2019discoveries}
+Campisi, J., Kapahi, P., Lithgow, G.~J., Melov, S., Newman, J.~C., and Verdin,
+  E. (2019).
+\newblock From discoveries in ageing research to therapeutics for healthy
+  ageing.
+\newblock {\em Nature}, 571(7764):183.
+
+\bibitem[Charlesworth and Charlesworth, 2000]{charlesworth2000degeneration}
+Charlesworth, B. and Charlesworth, D. (2000).
+\newblock The degeneration of y chromosomes.
+\newblock {\em Philosophical Transactions of the Royal Society of London.
+  Series B: Biological Sciences}, 355(1403):1563--1572.
+
+\bibitem[Chen et~al., 2019]{chen2019selene}
+Chen, K.~M., Cofer, E.~M., Zhou, J., and Troyanskaya, O.~G. (2019).
+\newblock Selene: a pytorch-based deep learning library for sequence data.
+\newblock {\em Nature Methods}, 16(4):315.
+
+\bibitem[Chen, 2013]{chen2013mechanism}
+Chen, X.~J. (2013).
+\newblock Mechanism of homologous recombination and implications for
+  aging-related deletions in mitochondrial dna.
+\newblock {\em Microbiol. Mol. Biol. Rev.}, 77(3):476--496.
+
+\bibitem[Cristiano et~al., 2019]{cristiano2019genome}
+Cristiano, S., Leal, A., Phallen, J., Fiksel, J., Adleff, V., Bruhm, D.~C.,
+  Jensen, S.~{\O}., Medina, J.~E., Hruban, C., White, J.~R., et~al. (2019).
+\newblock Genome-wide cell-free dna fragmentation in patients with cancer.
+\newblock {\em Nature}, page~1.
+
+\bibitem[Cui et~al., 2019]{cui2019relaxed}
+Cui, R., Medeiros, T., Willemsen, D., Iasi, L.~N., Collier, G.~E., Graef, M.,
+  Reichard, M., and Valenzano, D.~R. (2019).
+\newblock Relaxed selection limits lifespan by increasing mutation load.
+\newblock {\em Cell}.
+
+\bibitem[Dominy et~al., 2019]{dominy2019porphyromonas}
+Dominy, S.~S., Lynch, C., Ermini, F., Benedyk, M., Marczyk, A., Konradi, A.,
+  Nguyen, M., Haditsch, U., Raha, D., Griffin, C., et~al. (2019).
+\newblock Porphyromonas gingivalis in alzheimer’s disease brains: Evidence
+  for disease causation and treatment with small-molecule inhibitors.
+\newblock {\em Science advances}, 5(1):eaau3333.
+
+\bibitem[George et~al., 2016]{george2016leukaemia}
+George, J., Uyar, A., Young, K., Kuffler, L., Waldron-Francis, K., Marquez, E.,
+  Ucar, D., and Trowbridge, J.~J. (2016).
+\newblock Leukaemia cell of origin identified by chromatin landscape of bulk
+  tumour cells.
+\newblock {\em Nature communications}, 7:12166.
+
+\bibitem[Grinfeld et~al., 2018]{grinfeld2018classification}
+Grinfeld, J., Nangalia, J., Baxter, E.~J., Wedge, D.~C., Angelopoulos, N.,
+  Cantrill, R., Godfrey, A.~L., Papaemmanuil, E., Gundem, G., MacLean, C.,
+  et~al. (2018).
+\newblock Classification and personalized prognosis in myeloproliferative
+  neoplasms.
+\newblock {\em New England Journal of Medicine}, 379(15):1416--1430.
+
+\bibitem[Gusev et~al., 2014]{gusev2014partitioning}
+Gusev, A., Lee, S.~H., Trynka, G., Finucane, H., Vilhj{\'a}lmsson, B.~J., Xu,
+  H., Zang, C., Ripke, S., Bulik-Sullivan, B., Stahl, E., et~al. (2014).
+\newblock Partitioning heritability of regulatory and cell-type-specific
+  variants across 11 common diseases.
+\newblock {\em The American Journal of Human Genetics}, 95(5):535--552.
+
+\bibitem[Harris and Pritchard, 2017]{harris2017rapid}
+Harris, K. and Pritchard, J.~K. (2017).
+\newblock Rapid evolution of the human mutation spectrum.
+\newblock {\em Elife}, 6:e24284.
+
+\bibitem[Harris et~al., 2019]{Harris2019-sm}
+Harris, K., Zhang, Y., and Nielsen, R. (2019).
+\newblock Genetic rescue and the maintenance of native ancestry.
+\newblock {\em Conserv. Genet.}, 20(1):59--64.
+
+\bibitem[Holth et~al., 2019]{Holth2019-cd}
+Holth, J.~K., Fritschi, S.~K., Wang, C., Pedersen, N.~P., Cirrito, J.~R.,
+  Mahan, T.~E., Finn, M.~B., Manis, M., Geerling, J.~C., Fuller, P.~M., Lucey,
+  B.~P., and Holtzman, D.~M. (2019).
+\newblock The sleep-wake cycle regulates brain interstitial fluid tau in mice
+  and {CSF} tau in humans.
+\newblock {\em Science}, 363(6429):880--884.
+
+\bibitem[Imai et~al., 2000]{imai2000transcriptional}
+Imai, S.-I., Armstrong, C.~M., Kaeberlein, M., and Guarente, L. (2000).
+\newblock Transcriptional silencing and longevity protein sir2 is an
+  nad-dependent histone deacetylase.
+\newblock {\em Nature}, 403(6771):795.
+
+\bibitem[Ingvarsson, 2001]{ingvarsson2001restoration}
+Ingvarsson, P.~K. (2001).
+\newblock Restoration of genetic variation lost--the genetic rescue hypothesis.
+\newblock {\em Trends in Ecology \& Evolution}, 16(2):62--63.
+
+\bibitem[Jones et~al., 2014]{jones2014diversity}
+Jones, O.~R., Scheuerlein, A., Salguero-G{\'o}mez, R., Camarda, C.~G.,
+  Schaible, R., Casper, B.~B., Dahlgren, J.~P., Ehrl{\'e}n, J., Garc{\'\i}a,
+  M.~B., Menges, E.~S., et~al. (2014).
+\newblock Diversity of ageing across the tree of life.
+\newblock {\em Nature}, 505(7482):169.
+
+\bibitem[Kandoth et~al., 2013]{kandoth2013mutational}
+Kandoth, C., McLellan, M.~D., Vandin, F., Ye, K., Niu, B., Lu, C., Xie, M.,
+  Zhang, Q., McMichael, J.~F., Wyczalkowski, M.~A., et~al. (2013).
+\newblock Mutational landscape and significance across 12 major cancer types.
+\newblock {\em Nature}, 502(7471):333.
+
+\bibitem[Kapahi et~al., 2010]{kapahi2010tor}
+Kapahi, P., Chen, D., Rogers, A.~N., Katewa, S.~D., Li, P. W.-L., Thomas,
+  E.~L., and Kockel, L. (2010).
+\newblock With tor, less is more: a key role for the conserved nutrient-sensing
+  tor pathway in aging.
+\newblock {\em Cell metabolism}, 11(6):453--465.
+
+\bibitem[Keller and Waller, 2002]{keller2002inbreeding}
+Keller, L.~F. and Waller, D.~M. (2002).
+\newblock Inbreeding effects in wild populations.
+\newblock {\em Trends in ecology \& evolution}, 17(5):230--241.
+
+\bibitem[Kennedy et~al., 1995]{kennedy1995mutation}
+Kennedy, B.~K., Austriaco~Jr, N.~R., Zhang, J., and Guarente, L. (1995).
+\newblock Mutation in the silencing gene s/r4 can delay aging in s. cerevisiae.
+\newblock {\em Cell}, 80(3):485--496.
+
+\bibitem[Kenyon et~al., 1993]{kenyon1993c}
+Kenyon, C., Chang, J., Gensch, E., Rudner, A., and Tabtiang, R. (1993).
+\newblock A c. elegans mutant that lives twice as long as wild type.
+\newblock {\em Nature}, 366(6454):461.
+
+\bibitem[Kimura et~al., 1968]{kimura1968evolutionary}
+Kimura, M. et~al. (1968).
+\newblock Evolutionary rate at the molecular level.
+\newblock {\em Nature}, 217(5129):624--626.
+
+\bibitem[Klein et~al., 2010]{klein2010stochastic}
+Klein, A.~M., Brash, D.~E., Jones, P.~H., and Simons, B.~D. (2010).
+\newblock Stochastic fate of p53-mutant epidermal progenitor cells is tilted
+  toward proliferation by uv b during preneoplasia.
+\newblock {\em Proceedings of the National Academy of Sciences},
+  107(1):270--275.
+
+\bibitem[Kong et~al., 2012]{kong2012rate}
+Kong, A., Frigge, M.~L., Masson, G., Besenbacher, S., Sulem, P., Magnusson, G.,
+  Gudjonsson, S.~A., Sigurdsson, A., Jonasdottir, A., Jonasdottir, A., et~al.
+  (2012).
+\newblock Rate of de novo mutations and the importance of father’s age to
+  disease risk.
+\newblock {\em Nature}, 488(7412):471.
+
+\bibitem[Kraytsberg et~al., 2004]{kraytsberg2004recombination}
+Kraytsberg, Y., Schwartz, M., Brown, T.~A., Ebralidse, K., Kunz, W.~S.,
+  Clayton, D.~A., Vissing, J., and Khrapko, K. (2004).
+\newblock Recombination of human mitochondrial dna.
+\newblock {\em Science}, 304(5673):981--981.
+
+\bibitem[Kr{\"o}nke et~al., 2013]{kronke2013clonal}
+Kr{\"o}nke, J., Bullinger, L., Teleanu, V., Tsch{\"u}rtz, F., Gaidzik, V.~I.,
+  K{\"u}hn, M.~W., R{\"u}cker, F.~G., Holzmann, K., Paschka, P.,
+  Kapp-Schw{\"o}rer, S., et~al. (2013).
+\newblock Clonal evolution in relapsed npm1-mutated acute myeloid leukemia.
+\newblock {\em Blood}, 122(1):100--108.
+
+\bibitem[Lawrence et~al., 2014]{lawrence2014discovery}
+Lawrence, M.~S., Stojanov, P., Mermel, C.~H., Robinson, J.~T., Garraway, L.~A.,
+  Golub, T.~R., Meyerson, M., Gabriel, S.~B., Lander, E.~S., and Getz, G.
+  (2014).
+\newblock Discovery and saturation analysis of cancer genes across 21 tumour
+  types.
+\newblock {\em Nature}, 505(7484):495.
+
+\bibitem[Lawrence et~al., 2013]{lawrence2013mutational}
+Lawrence, M.~S., Stojanov, P., Polak, P., Kryukov, G.~V., Cibulskis, K.,
+  Sivachenko, A., Carter, S.~L., Stewart, C., Mermel, C.~H., Roberts, S.~A.,
+  et~al. (2013).
+\newblock Mutational heterogeneity in cancer and the search for new
+  cancer-associated genes.
+\newblock {\em Nature}, 499(7457):214.
+
+\bibitem[Lee-Six et~al., 2018]{lee2018population}
+Lee-Six, H., {\O}bro, N.~F., Shepherd, M.~S., Grossmann, S., Dawson, K.,
+  Belmonte, M., Osborne, R.~J., Huntly, B.~J., Martincorena, I., Anderson, E.,
+  et~al. (2018).
+\newblock Population dynamics of normal human blood inferred from somatic
+  mutations.
+\newblock {\em Nature}, 561(7724):473.
+
+\bibitem[Liu et~al., 2019]{liu2019stem}
+Liu, N., Matsumura, H., Kato, T., Ichinose, S., Takada, A., Namiki, T.,
+  Asakawa, K., Morinaga, H., Mohri, Y., De~Arcangelis, A., et~al. (2019).
+\newblock Stem cell competition orchestrates skin homeostasis and ageing.
+\newblock {\em Nature}, page~1.
+
+\bibitem[Ludwig et~al., 2019]{ludwig2019lineage}
+Ludwig, L.~S., Lareau, C.~A., Ulirsch, J.~C., Christian, E., Muus, C., Li,
+  L.~H., Pelka, K., Ge, W., Oren, Y., Brack, A., et~al. (2019).
+\newblock Lineage tracing in humans enabled by mitochondrial mutations and
+  single-cell genomics.
+\newblock {\em Cell}, 176(6):1325--1339.
+
+\bibitem[Lynch, 2010]{lynch2010rate}
+Lynch, M. (2010).
+\newblock Rate, molecular spectrum, and consequences of human mutation.
+\newblock {\em Proceedings of the National Academy of Sciences},
+  107(3):961--968.
+
+\bibitem[Mamcarz et~al., 2019]{Mamcarz2019-ei}
+Mamcarz, E., Zhou, S., Lockey, T., Abdelsamed, H., Cross, S.~J., Kang, G., Ma,
+  Z., Condori, J., Dowdy, J., Triplett, B., Li, C., Maron, G., Aldave~Becerra,
+  J.~C., Church, J.~A., Dokmeci, E., Love, J.~T., da~Matta~Ain, A.~C., van~der
+  Watt, H., Tang, X., Janssen, W., Ryu, B.~Y., De~Ravin, S.~S., Weiss, M.~J.,
+  Youngblood, B., Long-Boyle, J.~R., Gottschalk, S., Meagher, M.~M., Malech,
+  H.~L., Puck, J.~M., Cowan, M.~J., and Sorrentino, B.~P. (2019).
+\newblock Lentiviral gene therapy combined with {Low-Dose} busulfan in infants
+  with {SCID-X1}.
+\newblock {\em N. Engl. J. Med.}, 380(16):1525--1534.
+
+\bibitem[Martincorena and Campbell, 2015]{martincorena2015somatic}
+Martincorena, I. and Campbell, P.~J. (2015).
+\newblock Somatic mutation in cancer and normal cells.
+\newblock {\em Science}, 349(6255):1483--1489.
+
+\bibitem[Martincorena et~al., 2018]{martincorena2018somatic}
+Martincorena, I., Fowler, J.~C., Wabik, A., Lawson, A.~R., Abascal, F., Hall,
+  M.~W., Cagan, A., Murai, K., Mahbubani, K., Stratton, M.~R., et~al. (2018).
+\newblock Somatic mutant clones colonize the human esophagus with age.
+\newblock {\em Science}, 362(6417):911--917.
+
+\bibitem[Martincorena et~al., 2017]{martincorena2017universal}
+Martincorena, I., Raine, K.~M., Gerstung, M., Dawson, K.~J., Haase, K.,
+  Van~Loo, P., Davies, H., Stratton, M.~R., and Campbell, P.~J. (2017).
+\newblock Universal patterns of selection in cancer and somatic tissues.
+\newblock {\em Cell}, 171(5):1029--1041.
+
+\bibitem[Martincorena et~al., 2015]{martincorena2015high}
+Martincorena, I., Roshan, A., Gerstung, M., Ellis, P., Van~Loo, P., McLaren,
+  S., Wedge, D.~C., Fullam, A., Alexandrov, L.~B., Tubio, J.~M., et~al. (2015).
+\newblock High burden and pervasive positive selection of somatic mutations in
+  normal human skin.
+\newblock {\em Science}, 348(6237):880--886.
+
+\bibitem[Matheoud et~al., 2019]{matheoud2019intestinal}
+Matheoud, D., Cannon, T., Voisin, A., Penttinen, A.-M., Ramet, L., Fahmy,
+  A.~M., Ducrot, C., Laplante, A., Bourque, M.-J., Zhu, L., et~al. (2019).
+\newblock Intestinal infection triggers parkinson’s disease-like symptoms in
+  pink1-/- mice.
+\newblock {\em Nature}, page~1.
+
+\bibitem[Mattison et~al., 2017]{mattison2017caloric}
+Mattison, J.~A., Colman, R.~J., Beasley, T.~M., Allison, D.~B., Kemnitz, J.~W.,
+  Roth, G.~S., Ingram, D.~K., Weindruch, R., De~Cabo, R., and Anderson, R.~M.
+  (2017).
+\newblock Caloric restriction improves health and survival of rhesus monkeys.
+\newblock {\em Nature communications}, 8:14063.
+
+\bibitem[McCay et~al., 1935]{mccay1935effect}
+McCay, C.~M., Crowell, M.~F., and Maynard, L.~A. (1935).
+\newblock The effect of retarded growth upon the length of life span and upon
+  the ultimate body size: one figure.
+\newblock {\em The journal of Nutrition}, 10(1):63--79.
+
+\bibitem[McKerrell et~al., 2015]{mckerrell2015leukemia}
+McKerrell, T., Park, N., Moreno, T., Grove, C.~S., Ponstingl, H., Stephens, J.,
+  Crawley, C., Craig, J., Scott, M.~A., Hodkinson, C., et~al. (2015).
+\newblock Leukemia-associated somatic mutations drive distinct patterns of
+  age-related clonal hemopoiesis.
+\newblock {\em Cell reports}, 10(8):1239--1245.
+
+\bibitem[Medawar, 1952]{medawar1952unsolved}
+Medawar, P.~B. (1952).
+\newblock {\em An unsolved problem of biology}.
+\newblock College.
+
+\bibitem[Merino et~al., 2015]{merino2015elimination}
+Merino, M.~M., Rhiner, C., Lopez-Gay, J.~M., Buechel, D., Hauert, B., and
+  Moreno, E. (2015).
+\newblock Elimination of unfit cells maintains tissue health and prolongs
+  lifespan.
+\newblock {\em Cell}, 160(3):461--476.
+
+\bibitem[Mesa et~al., 2012]{mesa2012epidemiology}
+Mesa, R.~A., Mehta, J., Wang, H., Wang, Y., Iqbal, U., Neumann, F., Zhang, Y.,
+  and Colton, T. (2012).
+\newblock Epidemiology of myeloproliferative disorders in us-a real world
+  analysis.
+
+\bibitem[Morley, 1995]{morley1995somatic}
+Morley, A.~A. (1995).
+\newblock The somatic mutation theory of ageing.
+\newblock {\em Mutation Research/DNAging}, 338(1-6):19--23.
+
+\bibitem[Mouchiroud et~al., 2013]{mouchiroud2013nad}
+Mouchiroud, L., Houtkooper, R.~H., Moullan, N., Katsyuba, E., Ryu, D.,
+  Cant{\'o}, C., Mottis, A., Jo, Y.-S., Viswanathan, M., Schoonjans, K., et~al.
+  (2013).
+\newblock The nad+/sirtuin pathway modulates longevity through activation of
+  mitochondrial upr and foxo signaling.
+\newblock {\em Cell}, 154(2):430--441.
+
+\bibitem[Nangalia et~al., 2015]{nangalia2015dnmt3a}
+Nangalia, J., Nice, F.~L., Wedge, D.~C., Godfrey, A.~L., Grinfeld, J., Thakker,
+  C., Massie, C.~E., Baxter, J., Sewell, D., Silber, Y., et~al. (2015).
+\newblock Dnmt3a mutations occur early or late in patients with
+  myeloproliferative neoplasms and mutation order influences phenotype.
+\newblock {\em Haematologica}, pages haematol--2015.
+
+\bibitem[Newman, 2019]{Newman2019-zs}
+Newman, S.~J. (2019).
+\newblock Supercentenarians and the oldest-old are concentrated into regions
+  with no birth certificates and short lifespans.
+
+\bibitem[Nik-Zainal et~al., 2012]{nik2012mutational}
+Nik-Zainal, S., Alexandrov, L.~B., Wedge, D.~C., Van~Loo, P., Greenman, C.~D.,
+  Raine, K., Jones, D., Hinton, J., Marshall, J., Stebbings, L.~A., et~al.
+  (2012).
+\newblock Mutational processes molding the genomes of 21 breast cancers.
+\newblock {\em Cell}, 149(5):979--993.
+
+\bibitem[Ohta and Kimura, 1973]{ohta1973model}
+Ohta, T. and Kimura, M. (1973).
+\newblock A model of mutation appropriate to estimate the number of
+  electrophoretically detectable alleles in a finite population.
+\newblock {\em Genetics Research}, 22(2):201--204.
+
+\bibitem[Ortmann et~al., 2015]{ortmann2015effect}
+Ortmann, C.~A., Kent, D.~G., Nangalia, J., Silber, Y., Wedge, D.~C., Grinfeld,
+  J., Baxter, E.~J., Massie, C.~E., Papaemmanuil, E., Menon, S., et~al. (2015).
+\newblock Effect of mutation order on myeloproliferative neoplasms.
+\newblock {\em New England Journal of Medicine}, 372(7):601--612.
+
+\bibitem[Petrova et~al., 2011]{petrova2011expression}
+Petrova, E., Soldini, D., and Moreno, E. (2011).
+\newblock The expression of sparc in human tumors is consistent with its role
+  during cell competition.
+\newblock {\em Communicative \& integrative biology}, 4(2):171--174.
+
+\bibitem[Pifferi et~al., 2018]{pifferi2018caloric}
+Pifferi, F., Terrien, J., Marchal, J., Dal-Pan, A., Djelti, F., Hardy, I.,
+  Chahory, S., Cordonnier, N., Desquilbet, L., Hurion, M., et~al. (2018).
+\newblock Caloric restriction increases lifespan but affects brain integrity in
+  grey mouse lemur primates.
+\newblock {\em Communications biology}, 1(1):30.
+
+\bibitem[Preston et~al., 2003]{preston2003bottom}
+Preston, S.~L., Wong, W.-M., Chan, A. O.-O., Poulsom, R., Jeffery, R., Goodlad,
+  R.~A., Mandir, N., Elia, G., Novelli, M., Bodmer, W.~F., et~al. (2003).
+\newblock Bottom-up histogenesis of colorectal adenomas: origin in the
+  monocryptal adenoma and initial expansion by crypt fission.
+\newblock {\em Cancer research}, 63(13):3819--3825.
+
+\bibitem[Rauch et~al., 2019]{rauch2019programmable}
+Rauch, S., He, E., Srienc, M., Zhou, H., Zhang, Z., and Dickinson, B.~C.
+  (2019).
+\newblock Programmable rna-guided rna effector proteins built from human parts.
+\newblock {\em Cell}.
+
+\bibitem[Rose and Charlesworth, 1980]{rose1980test}
+Rose, M. and Charlesworth, B. (1980).
+\newblock A test of evolutionary theories of senescence.
+\newblock {\em Nature}, 287(5778):141.
+
+\bibitem[S{\'e}gurel et~al., 2014]{segurel2014determinants}
+S{\'e}gurel, L., Wyman, M.~J., and Przeworski, M. (2014).
+\newblock Determinants of mutation rate variation in the human germline.
+\newblock {\em Annual review of genomics and human genetics}, 15:47--70.
+
+\bibitem[Sharon et~al., 2019]{sharon2019human}
+Sharon, G., Cruz, N.~J., Kang, D.-W., Gandal, M.~J., Wang, B., Kim, Y.-M.,
+  Zink, E.~M., Casey, C.~P., Taylor, B.~C., Lane, C.~J., et~al. (2019).
+\newblock Human gut microbiota from autism spectrum disorder promote behavioral
+  symptoms in mice.
+\newblock {\em Cell}, 177(6):1600--1618.
+
+\bibitem[Shendure et~al., 2019]{shendure2019genomic}
+Shendure, J., Findlay, G.~M., and Snyder, M.~W. (2019).
+\newblock Genomic medicine--progress, pitfalls, and promise.
+\newblock {\em Cell}, 177(1):45--57.
+
+\bibitem[Snippert et~al., 2014]{snippert2014biased}
+Snippert, H.~J., Schepers, A.~G., van Es, J.~H., Simons, B.~D., and Clevers, H.
+  (2014).
+\newblock Biased competition between lgr5 intestinal stem cells driven by
+  oncogenic mutation induces clonal expansion.
+\newblock {\em EMBO reports}, 15(1):62--69.
+
+\bibitem[Stephens et~al., 2009]{stephens2009complex}
+Stephens, P.~J., McBride, D.~J., Lin, M.-L., Varela, I., Pleasance, E.~D.,
+  Simpson, J.~T., Stebbings, L.~A., Leroy, C., Edkins, S., Mudie, L.~J., et~al.
+  (2009).
+\newblock Complex landscapes of somatic rearrangement in human breast cancer
+  genomes.
+\newblock {\em Nature}, 462(7276):1005.
+
+\bibitem[Szuber et~al., 2018]{szuber2018myeloproliferative}
+Szuber, N., Vallapureddy, R.~R., Penna, D., Lasho, T.~L., Finke, C., Hanson,
+  C.~A., Ketterling, R.~P., Pardanani, A., Gangat, N., and Tefferi, A. (2018).
+\newblock Myeloproliferative neoplasms in the young: Mayo clinic experience
+  with 361 patients age 40 years or younger.
+\newblock {\em American journal of hematology}, 93(12):1474--1484.
+
+\bibitem[Tefferi et~al., 2016]{tefferi2016targeted}
+Tefferi, A., Lasho, T.~L., Guglielmelli, P., Finke, C.~M., Rotunno, G., Elala,
+  Y., Pacilli, A., Hanson, C.~A., Pancrazzi, A., Ketterling, R.~P., et~al.
+  (2016).
+\newblock Targeted deep sequencing in polycythemia vera and essential
+  thrombocythemia.
+\newblock {\em Blood advances}, 1(1):21--30.
+
+\bibitem[Tefferi et~al., 2014]{tefferi2014overview}
+Tefferi, A., Thiele, J., Vannucchi, A., and Barbui, T. (2014).
+\newblock An overview on calr and csf3r mutations and a proposal for revision
+  of who diagnostic criteria for myeloproliferative neoplasms.
+\newblock {\em Leukemia}, 28(7):1407.
+
+\bibitem[Tomasetti and Vogelstein, 2015]{tomasetti2015variation}
+Tomasetti, C. and Vogelstein, B. (2015).
+\newblock Variation in cancer risk among tissues can be explained by the number
+  of stem cell divisions.
+\newblock {\em Science}, 347(6217):78--81.
+
+\bibitem[Vannucchi et~al., 2013]{vannucchi2013mutations}
+Vannucchi, A., Lasho, T., Guglielmelli, P., Biamonte, F., Pardanani, A.,
+  Pereira, A., Finke, C., Score, J., Gangat, N., Mannarelli, C., et~al. (2013).
+\newblock Mutations and prognosis in primary myelofibrosis.
+\newblock {\em Leukemia}, 27(9):1861.
+
+\bibitem[Venn et~al., 2014]{venn2014strong}
+Venn, O., Turner, I., Mathieson, I., de~Groot, N., Bontrop, R., and McVean, G.
+  (2014).
+\newblock Strong male bias drives germline mutation in chimpanzees.
+\newblock {\em Science}, 344(6189):1272--1275.
+
+\bibitem[Vila et~al., 2003]{vila2003rescue}
+Vila, C., Sundqvist, A.-K., Flagstad, {\O}., Seddon, J., rnerfeldt, S.~B.,
+  Kojola, I., Casulli, A., Sand, H., Wabakken, P., and Ellegren, H. (2003).
+\newblock Rescue of a severely bottlenecked wolf (canis lupus) population by a
+  single immigrant.
+\newblock {\em Proceedings of the Royal Society of London. Series B: Biological
+  Sciences}, 270(1510):91--97.
+
+\bibitem[Vogelstein et~al., 2013]{vogelstein2013cancer}
+Vogelstein, B., Papadopoulos, N., Velculescu, V.~E., Zhou, S., Diaz, L.~A., and
+  Kinzler, K.~W. (2013).
+\newblock Cancer genome landscapes.
+\newblock {\em science}, 339(6127):1546--1558.
+
+\bibitem[Wang et~al., 2018]{wang2018quantitative}
+Wang, Z., Ma, J., Miyoshi, C., Li, Y., Sato, M., Ogawa, Y., Lou, T., Ma, C.,
+  Gao, X., Lee, C., et~al. (2018).
+\newblock Quantitative phosphoproteomic analysis of the molecular substrates of
+  sleep need.
+\newblock {\em Nature}, 558(7710):435.
+
+\bibitem[Watson et~al., 2019]{Watson2019-lg}
+Watson, C.~J., Papula, A., Poon, Y. P.~G., Wong, W.~H., Young, A.~L., Druley,
+  T.~E., Fisher, D.~S., and Blundell, J.~R. (2019).
+\newblock The evolutionary dynamics and fitness landscape of clonal
+  haematopoiesis.
+
+\bibitem[Weinstein et~al., 2019]{weinstein2019dna}
+Weinstein, J.~A., Regev, A., and Zhang, F. (2019).
+\newblock Dna microscopy: Optics-free spatio-genetic imaging by a stand-alone
+  chemical reaction.
+\newblock {\em Cell}.
+
+\bibitem[Wilkins et~al., 2008]{wilkins2008bone}
+Wilkins, B.~S., Erber, W.~N., Bareford, D., Buck, G., Wheatley, K., East,
+  C.~L., Paul, B., Harrison, C.~N., Green, A.~R., and Campbell, P.~J. (2008).
+\newblock Bone marrow pathology in essential thrombocythemia: interobserver
+  reliability and utility for identifying disease subtypes.
+\newblock {\em Blood}, 111(1):60--70.
+
+\bibitem[Wilkinson et~al., 2019]{wilkinson2019long}
+Wilkinson, A.~C., Ishida, R., Kikuchi, M., Sudo, K., Morita, M., Crisostomo,
+  R.~V., Yamamoto, R., Loh, K.~M., Nakamura, Y., Watanabe, M., et~al. (2019).
+\newblock Long-term ex vivo haematopoietic-stem-cell expansion allows
+  nonconditioned transplantation.
+\newblock {\em Nature}, page~1.
+
+\bibitem[Williams, 1957]{williams1957pleiotropy}
+Williams, G.~C. (1957).
+\newblock Pleiotropy, natural selection, and the evolution of senescence.
+\newblock {\em evolution}, pages 398--411.
+
+\bibitem[Yates et~al., 2015]{yates2015subclonal}
+Yates, L.~R., Gerstung, M., Knappskog, S., Desmedt, C., Gundem, G., Van~Loo,
+  P., Aas, T., Alexandrov, L.~B., Larsimont, D., Davies, H., et~al. (2015).
+\newblock Subclonal diversification of primary breast cancer revealed by
+  multiregion sequencing.
+\newblock {\em Nature medicine}, 21(7):751.
+
+\bibitem[Yizhak et~al., 2019]{Yizhak2019-ch}
+Yizhak, K., Aguet, F., Kim, J., Hess, J.~M., K{\"u}bler, K., Grimsby, J.,
+  Frazer, R., Zhang, H., Haradhvala, N.~J., Rosebrock, D., Livitz, D., Li, X.,
+  Arich-Landkof, E., Shoresh, N., Stewart, C., Segr{\`e}, A.~V., Branton,
+  P.~A., Polak, P., Ardlie, K.~G., and Getz, G. (2019).
+\newblock {RNA} sequence analysis reveals macroscopic somatic clonal expansion
+  across normal tissues.
+\newblock {\em Science}, 364(6444).
+
+\bibitem[Yogarajah and Tefferi, 2017]{yogarajah2017leukemic}
+Yogarajah, M. and Tefferi, A. (2017).
+\newblock Leukemic transformation in myeloproliferative neoplasms: a literature
+  review on risk, characteristics, and outcome.
+\newblock In {\em Mayo Clinic Proceedings}, volume~92, pages 1118--1128.
+  Elsevier.
+
+\bibitem[Yokoyama et~al., 2019]{yokoyama2019age}
+Yokoyama, A., Kakiuchi, N., Yoshizato, T., Nannya, Y., Suzuki, H., Takeuchi,
+  Y., Shiozawa, Y., Sato, Y., Aoki, K., Kim, S.~K., et~al. (2019).
+\newblock Age-related remodelling of oesophageal epithelia by mutated cancer
+  drivers.
+\newblock {\em Nature}, 565(7739):312.
+
+\bibitem[Young and Trowbridge, 2016]{young2016open}
+Young, K. and Trowbridge, J.~J. (2016).
+\newblock Open chromatin profiling as a novel strategy for identifying cancer
+  cell of origin.
+\newblock {\em Molecular \& cellular oncology}, 3(6):e1236770.
+
+\bibitem[Zimmermann et~al., 2019]{zimmermann2019mapping}
+Zimmermann, M., Zimmermann-Kogadeeva, M., Wegmann, R., and Goodman, A.~L.
+  (2019).
+\newblock Mapping human microbiome drug metabolism by gut bacteria and their
+  genes.
+\newblock {\em Nature}, page~1.
+
+\end{thebibliography}

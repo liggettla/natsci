@@ -23,7 +23,7 @@ By classifying oncogenic mutations by the number of times they occurred in cosmi
 
 Using a model that holds DFE constant of those mutations consistently observed in CHIP, a static mutation accumulation rate may be mathematically sufficient to explain CHIP incidence [@Watson2019-lg].
 
-### Myeloproliferative Neoplasms
+## Myeloproliferative Neoplasms
 The class of Myeloproliferative Neoplasms consists of a few different clonal hematopoietic disorders including polycythemia vera, which is characterized by red-cell overproduction; essential thrombocythemia, which involves elevated platelet counts; and myelofibrosis, which is defined by bone marrow fibrosis [@grinfeld2018classification]. The myelofibrosis MPN subtype can follow and accompany the other subtypes. Myelofibrosis can also appear not in combination with the other two subtypes; termed secondary myelofibrosis (SMF) [@mesa2012epidemiology]. Using clinical and laboratory features, the three subtypes of MPN can be distinguished but the division of the three can often be quite unclear [@wilkins2008bone; @tefferi2014overview]. The major driver mutations in MPNs are JAK2, CALR, and MPL, though accompanying mutations are common.
 ```{r}                                                      
 knitr::include_graphics(rep("images/06-1.jpg", 1))          
@@ -38,11 +38,14 @@ While the identities of driver mutations can predict disease phenotype and progn
 knitr::include_graphics(rep("images/06-2.jpg", 1))          
 knitr::opts_chunk$set(comment=NA, fig.width=1, fig.height=1)
 ```                                                         
+[@grinfeld2018classification]  
 
 It is interesting to note that the mutation order can influence the type of MPN [@ortmann2015effect; @nangalia2015dnmt3a].
 ```{r}                                                      
 knitr::include_graphics(rep("images/06-3.jpg", 1))          
 knitr::opts_chunk$set(comment=NA, fig.width=1, fig.height=1)
 ```                                                         
+[@grinfeld2018classification]  
 
+Using Mayo Clinic patients as an approximation for overall MPN incidence, about 12% of all MPN incidence occurs within patients under 40 years of age [@szuber2018myeloproliferative]. With a median follow-up period of roughly 10 years, leukemia incidence is really not all that high, at about 5% on average. The probability of developing fibrosis is elevated in the younger individuals, which may be explained by a longer time to death. 
 
