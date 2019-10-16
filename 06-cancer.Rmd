@@ -29,7 +29,20 @@ The class of Myeloproliferative Neoplasms consists of a few different clonal hem
 knitr::include_graphics(rep("images/06-1.jpg", 1))          
 knitr::opts_chunk$set(comment=NA, fig.width=1, fig.height=1)
 ```                                                         
-[@grinfeld2018classification]
-While the identities of driver mutations can predict disease phenotype and prognosis [@vannucchi2013mutations; @tefferi2016targeted; @yogarajah2017leukemic] especially when accompanied by mutation order, it is unclear how the complex genetic landscape of MPNs contributes to the varied diagnostic features of the disease. SF3B1 and DNMT3a mutations commonly drive MPNs; as these appear to drive clonal hematopoiesis it may be possible that some MPNs are arising from asymptomatic clones that have come to dominate the hematopoietic system in a similar manner to CHIP. It is interesting to note that the mutation order can influence the type of MPN [@ortmann2015effect; @nangalia2015dnmt3a].
+[@grinfeld2018classification]  
+
+In the above figure, the LOH occurring at chr9p JAK2 V617F homozygosity, or a high JAK2 V617F allele burden correlated with polycythemia vera.  
+
+While the identities of driver mutations can predict disease phenotype and prognosis [@vannucchi2013mutations; @tefferi2016targeted; @yogarajah2017leukemic] especially when accompanied by mutation order, it is unclear how the complex genetic landscape of MPNs contributes to the varied diagnostic features of the disease. SF3B1 and DNMT3a mutations commonly drive MPNs; as these appear to drive clonal hematopoiesis it may be possible that some MPNs are arising from asymptomatic clones that have come to dominate the hematopoietic system in a similar manner to CHIP.
+```{r}                                                      
+knitr::include_graphics(rep("images/06-2.jpg", 1))          
+knitr::opts_chunk$set(comment=NA, fig.width=1, fig.height=1)
+```                                                         
+
+It is interesting to note that the mutation order can influence the type of MPN [@ortmann2015effect; @nangalia2015dnmt3a].
+```{r}                                                      
+knitr::include_graphics(rep("images/06-3.jpg", 1))          
+knitr::opts_chunk$set(comment=NA, fig.width=1, fig.height=1)
+```                                                         
 
 
