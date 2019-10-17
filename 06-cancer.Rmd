@@ -40,12 +40,13 @@ knitr::opts_chunk$set(comment=NA, fig.width=1, fig.height=1)
 ```                                                         
 [@grinfeld2018classification]  
 
-It is interesting to note that the mutation order can influence the type of MPN [@ortmann2015effect; @nangalia2015dnmt3a].
+It is interesting to note that the mutation order can influence the type of MPN [@ortmann2015effect; @nangalia2015dnmt3a]. When JAK2 is the first mutation, it tends to produce PV, but when TET2 is the initiating mutation, it tends to produce ET [@ortmann2015effect]. MPNs that begin with JAK2 mutations also appear to be more sensitive to the JAK2 inhibitor Ruxolitinib.
+
 ```{r}                                                      
 knitr::include_graphics(rep("images/06-3.jpg", 1))          
 knitr::opts_chunk$set(comment=NA, fig.width=1, fig.height=1)
 ```                                                         
 [@grinfeld2018classification]  
 
-Using Mayo Clinic patients as an approximation for overall MPN incidence, about 12% of all MPN incidence occurs within patients under 40 years of age [@szuber2018myeloproliferative]. With a median follow-up period of roughly 10 years, leukemia incidence is really not all that high, at about 5% on average. The probability of developing fibrosis is elevated in the younger individuals, which may be explained by a longer time to death. 
+Using Mayo Clinic patients as an approximation for overall MPN incidence, about 12% of all MPN incidence occurs within patients under 40 years of age, with the median age of incidence being 50 years [@szuber2018myeloproliferative]. With a median follow-up period of roughly 10 years, leukemia incidence is really not all that high, at about 5% on average. The probability of developing fibrosis is elevated in the younger individuals, which may be explained by a conspicuously longer expected survival time. Mean survival times in the Mayo Clinic data are 37, 35, 20 for under 40, 22, 22, 8 for 40-60, and 10, 11, 3 for over 60 for PV, ET, and PMF respectively.
 
