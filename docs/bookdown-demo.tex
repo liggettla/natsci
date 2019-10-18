@@ -125,7 +125,7 @@
   \postauthor{\par}
       \predate{\centering\large\emph}
   \postdate{\par}
-    \date{2019-10-17}
+    \date{2019-10-18}
 
 \usepackage{booktabs}
 \usepackage{amsthm}
@@ -1000,6 +1000,8 @@ mathematically sufficient to explain CHIP incidence
 \section{Myeloproliferative
 Neoplasms}\label{myeloproliferative-neoplasms}
 
+\subsection{Overview}\label{overview}
+
 The class of Myeloproliferative Neoplasms consists of a few different
 clonal hematopoietic disorders including polycythemia vera, which is
 characterized by red-cell overproduction; essential thrombocythemia,
@@ -1012,8 +1014,11 @@ subtypes; termed secondary myelofibrosis (SMF)
 the three subtypes of MPN can be distinguished but the division of the
 three can often be quite unclear
 \citep{wilkins2008bone, tefferi2014overview}. The major driver mutations
-in MPNs are JAK2, CALR, and MPL, though accompanying mutations are
-common.
+in MPNs are JAK2, CALR, and MPL, and are largely mutually exclusive,
+though other accompanying mutations are common
+\citep{tefferi2015myeloproliferative}. Diagnosis is currently performed
+using bone marrow morphology especially in distinguishing ET from
+prefibrotic PMF.
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -1067,6 +1072,40 @@ mutation, it tends to produce ET \citep{ortmann2015effect}. MPNs that
 begin with JAK2 mutations also appear to be more sensitive to the JAK2
 inhibitor Ruxolitinib.
 
+The concept of genetic canalization or functional buffering is one that
+describes the consequences of an early mutation, and how it influences
+the range of future compatible mutations
+\citep{ashworth2011genetic, hartman2001principles}. Some mutations
+however, have been observed to occur both early and late during tumor
+progression, perhaps suggesting that the final properties of a tumor are
+more reflective of the sum of the mutation effects rather than the
+evolutionary path taken.As an example, in NPM, when TET2 if mutated
+first, it appears to alter the transcriptional consequences of a
+subsequent JAK2 mutation.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{knitr}\OperatorTok{::}\KeywordTok{include_graphics}\NormalTok{(}\KeywordTok{rep}\NormalTok{(}\StringTok{"images/06-3.jpg"}\NormalTok{, }\DecValTok{1}\NormalTok{))          }
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{images/06-3.jpg}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{knitr}\OperatorTok{::}\NormalTok{opts_chunk}\OperatorTok{$}\KeywordTok{set}\NormalTok{(}\DataTypeTok{comment=}\OtherTok{NA}\NormalTok{, }\DataTypeTok{fig.width=}\DecValTok{1}\NormalTok{, }\DataTypeTok{fig.height=}\DecValTok{1}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+In the above figure, HSPCs originating from a clone that first acquired
+either a JAK2 or TET2 mutation are expanded in culture to look for an
+effect of mutation order on the lineage generation
+\citep{ortmann2015effect}. Each bar is a different set of clones coming
+from a particular MPN type as labeled along the x-axis, and shows an
+apparent transcriptional difference when the mutation acquisition order
+is changed. This is perhaps in part due to the epigenetic effects of
+TET2 mutation when it is the founder mutation.
+
 \begin{Shaded}
 \begin{Highlighting}[]
 \NormalTok{knitr}\OperatorTok{::}\KeywordTok{include_graphics}\NormalTok{(}\KeywordTok{rep}\NormalTok{(}\StringTok{"images/06-3.jpg"}\NormalTok{, }\DecValTok{1}\NormalTok{))          }
@@ -1092,7 +1131,78 @@ about 5\% on average. The probability of developing fibrosis is elevated
 in the younger individuals, which may be explained by a conspicuously
 longer expected survival time. Mean survival times in the Mayo Clinic
 data are 37, 35, 20 for under 40, 22, 22, 8 for 40-60, and 10, 11, 3 for
-over 60 for PV, ET, and PMF respectively.
+over 60 for PV, ET, and PMF respectively
+\citep{szuber2018myeloproliferative, tefferi2015myeloproliferative}. The
+disease complications are typically thrombosis, leukemic transformation,
+or fibrotic transformation. In PV and ET, risk factors for survival
+include older age, leukocytosis, and thrombosis, whereas JAK2 mutation
+in ET is associated with increased risk of thrombosis. Thrombosis risk
+in PV is typically treated by phlebotomy to reduce haematocrit levels,
+or aspirin to reduce clotting potential in both PV and ET. Those
+individuals that are at a high risk of clotting may also be given
+hydroxyurea, interferon-alpha and busulfan as cytoreductive agents.
+Though the JAK2 inhibitor Ruxolitinib has been approved for use in
+treating hydroxyurea-resistant PV it is still unclear what the effects
+of chronic administration are.
+
+\subsection{Genetics}\label{genetics}
+
+JAK2 is the most common of the mutations found within MPNs, occurring in
+about 98\% of PV 55\% in ET and 60\% in PMF
+\citep{tefferi2015myeloproliferative}. JAK2 mutations also appear to be
+generally associated with old age, while CALR and PMF are more
+associated with young age. Below is a more in-depth understanding of the
+link between certain disease subtypes and the mutations associated with
+them. It is possible that JAK2 and MPL mutations directly activate
+JAK-STAT which allows cells to proliferate in a cytokine independent
+manner.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{knitr}\OperatorTok{::}\KeywordTok{include_graphics}\NormalTok{(}\KeywordTok{rep}\NormalTok{(}\StringTok{"images/06-5.jpg"}\NormalTok{, }\DecValTok{1}\NormalTok{))          }
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{images/06-5.jpg}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{knitr}\OperatorTok{::}\NormalTok{opts_chunk}\OperatorTok{$}\KeywordTok{set}\NormalTok{(}\DataTypeTok{comment=}\OtherTok{NA}\NormalTok{, }\DataTypeTok{fig.width=}\DecValTok{1}\NormalTok{, }\DataTypeTok{fig.height=}\DecValTok{1}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\citep{tefferi2015myeloproliferative}
+
+It is possible that JAK-STAT activation plays a key role in the
+development of MPNs, but it seems that people are confused why MPNs
+exist in an inflammatory state with altered cytokine signaling. I'm not
+sure I understand why the two understandings are inconsistent with each
+other \citep{rampal2014integrated}.
+
+\subsection{Disease Manifestations}\label{disease-manifestations}
+
+Complete blood counts exceed the upper limit of the WHO reference range.
+Other characteristic features include palpable splenomegaly, anemia,
+aquagenic pruritus (itching when skin contacts water), unusual
+thrombosis such as portal or hepatic vein thrombosis, bone marrow
+fibrosis, and extramedullary hematopoiesis. A more complete explanation
+of diagnostics can be found in the figure below.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{knitr}\OperatorTok{::}\KeywordTok{include_graphics}\NormalTok{(}\KeywordTok{rep}\NormalTok{(}\StringTok{"images/06-6.jpg"}\NormalTok{, }\DecValTok{1}\NormalTok{))          }
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{images/06-6.jpg}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{knitr}\OperatorTok{::}\NormalTok{opts_chunk}\OperatorTok{$}\KeywordTok{set}\NormalTok{(}\DataTypeTok{comment=}\OtherTok{NA}\NormalTok{, }\DataTypeTok{fig.width=}\DecValTok{1}\NormalTok{, }\DataTypeTok{fig.height=}\DecValTok{1}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\citep{tefferi2015myeloproliferative}.
 
 \chapter{Microbiome}\label{microbiome}
 
