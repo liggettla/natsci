@@ -126,3 +126,7 @@ Using a modeling approach, it appears that genetic rescue of a species will resu
 
 ### Mitochondria
 While the mechanism appears to still be unclear [@chen2013mechanism], mtDNA can undergo recombination, direct evidence of which was first found in an individual that was heterologous for paternal and maternal inheritance of mitochondria [@kraytsberg2004recombination].
+
+### Evolution
+In the codfish, it appears that the one of the genes they use to allow them to freeze without damaging cells did not evolve from the duplication of a different gene that was then altered to produce its current function, but rather, it appears to have evolved from a non-functional portion of the genome [@baalsrud2017novo]. This constitutes some of the first evidence that genes can result from the de-novo use of junk DNA to create an entirely novel gene, rather than repurposing
+another gene.
