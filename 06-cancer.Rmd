@@ -23,6 +23,8 @@ By classifying oncogenic mutations by the number of times they occurred in cosmi
 
 Using a model that holds DFE constant of those mutations consistently observed in CHIP, a static mutation accumulation rate may be mathematically sufficient to explain CHIP incidence [@Watson2019-lg].
 
+Using TOPMed whole genome sequencing to measure CHIP, it appears that CHIP is associated with different inflammatory traits, and that TERT/TET2 SNPs predispose to CHIP [@Bick2019-ji].
+
 ## Myeloproliferative Neoplasms
 
 ### Overview
