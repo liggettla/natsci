@@ -1,13 +1,12 @@
 <!DOCTYPE html>
-<html >
-
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
 <head>
 
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Chapter 7 Cancer | On Matters Of Nature and Science</title>
-  <meta name="description" content="These are just some things.">
-  <meta name="generator" content="bookdown  and GitBook 2.6.7">
+  <meta name="description" content="These are just some things." />
+  <meta name="generator" content="bookdown 0.14 and GitBook 2.6.7" />
 
   <meta property="og:title" content="Chapter 7 Cancer | On Matters Of Nature and Science" />
   <meta property="og:type" content="book" />
@@ -22,18 +21,18 @@
   <meta name="twitter:description" content="These are just some things." />
   
 
-<meta name="author" content="L A Liggett">
+<meta name="author" content="L A Liggett" />
 
 
-<meta name="date" content="2019-10-24">
+<meta name="date" content="2019-11-07" />
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="bioinformatics.html">
-<link rel="next" href="microbiome.html">
+<link rel="prev" href="bioinformatics.html"/>
+<link rel="next" href="microbiome.html"/>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -41,6 +40,9 @@
 <link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
 
 
 
@@ -51,41 +53,66 @@
 
 
 <style type="text/css">
-div.sourceCode { overflow-x: auto; }
-table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
-  margin: 0; padding: 0; vertical-align: baseline; border: none; }
-table.sourceCode { width: 100%; line-height: 100%; }
-td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
-td.sourceCode { padding-left: 5px; }
-code > span.kw { color: #007020; font-weight: bold; } /* Keyword */
-code > span.dt { color: #902000; } /* DataType */
-code > span.dv { color: #40a070; } /* DecVal */
-code > span.bn { color: #40a070; } /* BaseN */
-code > span.fl { color: #40a070; } /* Float */
-code > span.ch { color: #4070a0; } /* Char */
-code > span.st { color: #4070a0; } /* String */
-code > span.co { color: #60a0b0; font-style: italic; } /* Comment */
-code > span.ot { color: #007020; } /* Other */
-code > span.al { color: #ff0000; font-weight: bold; } /* Alert */
-code > span.fu { color: #06287e; } /* Function */
-code > span.er { color: #ff0000; font-weight: bold; } /* Error */
-code > span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
-code > span.cn { color: #880000; } /* Constant */
-code > span.sc { color: #4070a0; } /* SpecialChar */
-code > span.vs { color: #4070a0; } /* VerbatimString */
-code > span.ss { color: #bb6688; } /* SpecialString */
-code > span.im { } /* Import */
-code > span.va { color: #19177c; } /* Variable */
-code > span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
-code > span.op { color: #666666; } /* Operator */
-code > span.bu { } /* BuiltIn */
-code > span.ex { } /* Extension */
-code > span.pp { color: #bc7a00; } /* Preprocessor */
-code > span.at { color: #7d9029; } /* Attribute */
-code > span.do { color: #ba2121; font-style: italic; } /* Documentation */
-code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
-code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
-code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(data-line-number);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
 </style>
 
 <link rel="stylesheet" href="style.css" type="text/css" />
@@ -211,7 +238,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <div id="incidence-rates" class="section level3">
 <h3><span class="header-section-number">7.1.1</span> Incidence Rates</h3>
 <p>Time and age plays a major role in the occurrence of many cancers, where typically the risk of suffering most cancers is about 2% by the age of 40 in humans, while the risk increases to about 50% by the age of 80 <span class="citation">(Martincorena and Campbell <a href="#ref-martincorena2015somatic">2015</a>)</span>.</p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">knitr<span class="op">::</span><span class="kw">include_graphics</span>(<span class="kw">rep</span>(<span class="st">&quot;images/04-4.jpg&quot;</span>, <span class="dv">1</span>))</code></pre></div>
+<div class="sourceCode" id="cb9"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb9-1" data-line-number="1">knitr<span class="op">::</span><span class="kw">include_graphics</span>(<span class="kw">rep</span>(<span class="st">&quot;images/04-4.jpg&quot;</span>, <span class="dv">1</span>))</a></code></pre></div>
 <p><img src="images/04-4.jpg" /><!-- --></p>
 </div>
 </div>
@@ -226,7 +253,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <div id="aging-related-tissue-clonality" class="section level2">
 <h2><span class="header-section-number">7.3</span> Aging Related Tissue Clonality</h2>
 <p>While the Martincorena group has shown that skin epithelium contains a significant number of cells that carry putatively oncogenic mutations, it is possible that this result may have been directly correlated with UV damage from sun exposure. Sequencing of esophageal endothelium revealed that NOTCH1 and TP53 mutations were widespread throughout the tissue <span class="citation">(Yokoyama et al. <a href="#ref-yokoyama2019age">2019</a>; Martincorena et al. <a href="#ref-martincorena2018somatic">2018</a>)</span>. The magnitude with which the tissue was covered by NOTCH1 mutated clones could be increased with chronic smoking and drinking. Furthermore, NOTCH1 mutant clones appeared to be less prevalent in esophageal cancers, and may be indicative of protective effects of the mutant clones.</p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">knitr<span class="op">::</span><span class="kw">include_graphics</span>(<span class="kw">rep</span>(<span class="st">&quot;images/04-5.jpg&quot;</span>, <span class="dv">1</span>))</code></pre></div>
+<div class="sourceCode" id="cb10"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb10-1" data-line-number="1">knitr<span class="op">::</span><span class="kw">include_graphics</span>(<span class="kw">rep</span>(<span class="st">&quot;images/04-5.jpg&quot;</span>, <span class="dv">1</span>))</a></code></pre></div>
 <p><img src="images/04-5.jpg" /><!-- --></p>
 <p>By classifying oncogenic mutations by the number of times they occurred in cosmic, and stratifying into low, intermediate, and high occurrence mutations, it appears that when more high risk mutations occur in CHIP, they are significantly predictive of progression to AML <span class="citation">(Abelson et al. <a href="#ref-abelson2018prediction">2018</a>)</span>.</p>
 <p>Using a model that holds DFE constant of those mutations consistently observed in CHIP, a static mutation accumulation rate may be mathematically sufficient to explain CHIP incidence <span class="citation">(Watson et al. <a href="#ref-Watson2019-lg">2019</a>)</span>.</p>
@@ -237,43 +264,43 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <div id="overview" class="section level3">
 <h3><span class="header-section-number">7.4.1</span> Overview</h3>
 <p>The class of Myeloproliferative Neoplasms consists of a few different clonal hematopoietic disorders including polycythemia vera, which is characterized by red-cell overproduction; essential thrombocythemia, which involves elevated platelet counts; and myelofibrosis, which is defined by bone marrow fibrosis <span class="citation">(Grinfeld et al. <a href="#ref-grinfeld2018classification">2018</a>)</span>. The myelofibrosis MPN subtype can follow and accompany the other subtypes. Myelofibrosis can also appear not in combination with the other two subtypes; termed secondary myelofibrosis (SMF) <span class="citation">(Mesa et al. <a href="#ref-mesa2012epidemiology">2012</a>)</span>. Using clinical and laboratory features, the three subtypes of MPN can be distinguished but the division of the three can often be quite unclear <span class="citation">(Wilkins et al. <a href="#ref-wilkins2008bone">2008</a>; Tefferi et al. <a href="#ref-tefferi2014overview">2014</a>)</span>. The major driver mutations in MPNs are JAK2, CALR, and MPL, and are largely mutually exclusive, though other accompanying mutations are common <span class="citation">(Tefferi and Pardanani <a href="#ref-tefferi2015myeloproliferative">2015</a>)</span>. Diagnosis is currently performed using bone marrow morphology especially in distinguishing ET from prefibrotic PMF.</p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">knitr<span class="op">::</span><span class="kw">include_graphics</span>(<span class="kw">rep</span>(<span class="st">&quot;images/06-1.jpg&quot;</span>, <span class="dv">1</span>))          </code></pre></div>
+<div class="sourceCode" id="cb11"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb11-1" data-line-number="1">knitr<span class="op">::</span><span class="kw">include_graphics</span>(<span class="kw">rep</span>(<span class="st">&quot;images/06-1.jpg&quot;</span>, <span class="dv">1</span>))          </a></code></pre></div>
 <p><img src="images/06-1.jpg" /><!-- --></p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">knitr<span class="op">::</span>opts_chunk<span class="op">$</span><span class="kw">set</span>(<span class="dt">comment=</span><span class="ot">NA</span>, <span class="dt">fig.width=</span><span class="dv">1</span>, <span class="dt">fig.height=</span><span class="dv">1</span>)</code></pre></div>
+<div class="sourceCode" id="cb12"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb12-1" data-line-number="1">knitr<span class="op">::</span>opts_chunk<span class="op">$</span><span class="kw">set</span>(<span class="dt">comment=</span><span class="ot">NA</span>, <span class="dt">fig.width=</span><span class="dv">1</span>, <span class="dt">fig.height=</span><span class="dv">1</span>)</a></code></pre></div>
 <p><span class="citation">(Grinfeld et al. <a href="#ref-grinfeld2018classification">2018</a>)</span></p>
 <p>In the above figure, the LOH occurring at chr9p JAK2 V617F homozygosity, or a high JAK2 V617F allele burden correlated with polycythemia vera.</p>
 <p>While the identities of driver mutations can predict disease phenotype and prognosis <span class="citation">(Vannucchi et al. <a href="#ref-vannucchi2013mutations">2013</a>; Tefferi et al. <a href="#ref-tefferi2016targeted">2016</a>; Yogarajah and Tefferi <a href="#ref-yogarajah2017leukemic">2017</a>)</span> especially when accompanied by mutation order, it is unclear how the complex genetic landscape of MPNs contributes to the varied diagnostic features of the disease. SF3B1 and DNMT3a mutations commonly drive MPNs; as these appear to drive clonal hematopoiesis it may be possible that some MPNs are arising from asymptomatic clones that have come to dominate the hematopoietic system in a similar manner to CHIP.</p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">knitr<span class="op">::</span><span class="kw">include_graphics</span>(<span class="kw">rep</span>(<span class="st">&quot;images/06-2.jpg&quot;</span>, <span class="dv">1</span>))          </code></pre></div>
+<div class="sourceCode" id="cb13"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb13-1" data-line-number="1">knitr<span class="op">::</span><span class="kw">include_graphics</span>(<span class="kw">rep</span>(<span class="st">&quot;images/06-2.jpg&quot;</span>, <span class="dv">1</span>))          </a></code></pre></div>
 <p><img src="images/06-2.jpg" /><!-- --></p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">knitr<span class="op">::</span>opts_chunk<span class="op">$</span><span class="kw">set</span>(<span class="dt">comment=</span><span class="ot">NA</span>, <span class="dt">fig.width=</span><span class="dv">1</span>, <span class="dt">fig.height=</span><span class="dv">1</span>)</code></pre></div>
+<div class="sourceCode" id="cb14"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb14-1" data-line-number="1">knitr<span class="op">::</span>opts_chunk<span class="op">$</span><span class="kw">set</span>(<span class="dt">comment=</span><span class="ot">NA</span>, <span class="dt">fig.width=</span><span class="dv">1</span>, <span class="dt">fig.height=</span><span class="dv">1</span>)</a></code></pre></div>
 <p><span class="citation">(Grinfeld et al. <a href="#ref-grinfeld2018classification">2018</a>)</span></p>
 <p>It is interesting to note that the mutation order can influence the type of MPN <span class="citation">(Ortmann et al. <a href="#ref-ortmann2015effect">2015</a>; Nangalia et al. <a href="#ref-nangalia2015dnmt3a">2015</a>)</span>. When JAK2 is the first mutation, it tends to produce PV, but when TET2 is the initiating mutation, it tends to produce ET <span class="citation">(Ortmann et al. <a href="#ref-ortmann2015effect">2015</a>)</span>. MPNs that begin with JAK2 mutations also appear to be more sensitive to the JAK2 inhibitor Ruxolitinib.</p>
 <p>The concept of genetic canalization or functional buffering is one that describes the consequences of an early mutation, and how it influences the range of future compatible mutations <span class="citation">(Ashworth, Lord, and Reis-Filho <a href="#ref-ashworth2011genetic">2011</a>; Hartman, Garvik, and Hartwell <a href="#ref-hartman2001principles">2001</a>)</span>. Some mutations however, have been observed to occur both early and late during tumor progression, perhaps suggesting that the final properties of a tumor are more reflective of the sum of the mutation effects rather than the evolutionary path taken.As an example, in NPM, when TET2 if mutated first, it appears to alter the transcriptional consequences of a subsequent JAK2 mutation.</p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">knitr<span class="op">::</span><span class="kw">include_graphics</span>(<span class="kw">rep</span>(<span class="st">&quot;images/06-3.jpg&quot;</span>, <span class="dv">1</span>))          </code></pre></div>
+<div class="sourceCode" id="cb15"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb15-1" data-line-number="1">knitr<span class="op">::</span><span class="kw">include_graphics</span>(<span class="kw">rep</span>(<span class="st">&quot;images/06-3.jpg&quot;</span>, <span class="dv">1</span>))          </a></code></pre></div>
 <p><img src="images/06-3.jpg" /><!-- --></p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">knitr<span class="op">::</span>opts_chunk<span class="op">$</span><span class="kw">set</span>(<span class="dt">comment=</span><span class="ot">NA</span>, <span class="dt">fig.width=</span><span class="dv">1</span>, <span class="dt">fig.height=</span><span class="dv">1</span>)</code></pre></div>
+<div class="sourceCode" id="cb16"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb16-1" data-line-number="1">knitr<span class="op">::</span>opts_chunk<span class="op">$</span><span class="kw">set</span>(<span class="dt">comment=</span><span class="ot">NA</span>, <span class="dt">fig.width=</span><span class="dv">1</span>, <span class="dt">fig.height=</span><span class="dv">1</span>)</a></code></pre></div>
 <p>In the above figure, HSPCs originating from a clone that first acquired either a JAK2 or TET2 mutation are expanded in culture to look for an effect of mutation order on the lineage generation <span class="citation">(Ortmann et al. <a href="#ref-ortmann2015effect">2015</a>)</span>. Each bar is a different set of clones coming from a particular MPN type as labeled along the x-axis, and shows an apparent transcriptional difference when the mutation acquisition order is changed. This is perhaps in part due to the epigenetic effects of TET2 mutation when it is the founder mutation.</p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">knitr<span class="op">::</span><span class="kw">include_graphics</span>(<span class="kw">rep</span>(<span class="st">&quot;images/06-3.jpg&quot;</span>, <span class="dv">1</span>))          </code></pre></div>
+<div class="sourceCode" id="cb17"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb17-1" data-line-number="1">knitr<span class="op">::</span><span class="kw">include_graphics</span>(<span class="kw">rep</span>(<span class="st">&quot;images/06-3.jpg&quot;</span>, <span class="dv">1</span>))          </a></code></pre></div>
 <p><img src="images/06-3.jpg" /><!-- --></p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">knitr<span class="op">::</span>opts_chunk<span class="op">$</span><span class="kw">set</span>(<span class="dt">comment=</span><span class="ot">NA</span>, <span class="dt">fig.width=</span><span class="dv">1</span>, <span class="dt">fig.height=</span><span class="dv">1</span>)</code></pre></div>
+<div class="sourceCode" id="cb18"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb18-1" data-line-number="1">knitr<span class="op">::</span>opts_chunk<span class="op">$</span><span class="kw">set</span>(<span class="dt">comment=</span><span class="ot">NA</span>, <span class="dt">fig.width=</span><span class="dv">1</span>, <span class="dt">fig.height=</span><span class="dv">1</span>)</a></code></pre></div>
 <p><span class="citation">(Grinfeld et al. <a href="#ref-grinfeld2018classification">2018</a>)</span></p>
 <p>Using Mayo Clinic patients as an approximation for overall MPN incidence, about 12% of all MPN incidence occurs within patients under 40 years of age, with the median age of incidence being 50 years <span class="citation">(Szuber et al. <a href="#ref-szuber2018myeloproliferative">2018</a>)</span>. With a median follow-up period of roughly 10 years, leukemia incidence is really not all that high, at about 5% on average. The probability of developing fibrosis is elevated in the younger individuals, which may be explained by a conspicuously longer expected survival time. Mean survival times in the Mayo Clinic data are 37, 35, 20 for under 40, 22, 22, 8 for 40-60, and 10, 11, 3 for over 60 for PV, ET, and PMF respectively <span class="citation">(Szuber et al. <a href="#ref-szuber2018myeloproliferative">2018</a>; Tefferi and Pardanani <a href="#ref-tefferi2015myeloproliferative">2015</a>)</span>. The disease complications are typically thrombosis, leukemic transformation, or fibrotic transformation. In PV and ET, risk factors for survival include older age, leukocytosis, and thrombosis, whereas JAK2 mutation in ET is associated with increased risk of thrombosis. Thrombosis risk in PV is typically treated by phlebotomy to reduce haematocrit levels, or aspirin to reduce clotting potential in both PV and ET. Those individuals that are at a high risk of clotting may also be given hydroxyurea, interferon-alpha and busulfan as cytoreductive agents. Though the JAK2 inhibitor Ruxolitinib has been approved for use in treating hydroxyurea-resistant PV it is still unclear what the effects of chronic administration are.</p>
 </div>
 <div id="genetics" class="section level3">
 <h3><span class="header-section-number">7.4.2</span> Genetics</h3>
 <p>JAK2 is the most common of the mutations found within MPNs, occurring in about 98% of PV 55% in ET and 60% in PMF <span class="citation">(Tefferi and Pardanani <a href="#ref-tefferi2015myeloproliferative">2015</a>)</span>. JAK2 mutations also appear to be generally associated with old age, while CALR and PMF are more associated with young age. Below is a more in-depth understanding of the link between certain disease subtypes and the mutations associated with them. It is possible that JAK2 and MPL mutations directly activate JAK-STAT which allows cells to proliferate in a cytokine independent manner.</p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">knitr<span class="op">::</span><span class="kw">include_graphics</span>(<span class="kw">rep</span>(<span class="st">&quot;images/06-5.jpg&quot;</span>, <span class="dv">1</span>))          </code></pre></div>
+<div class="sourceCode" id="cb19"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb19-1" data-line-number="1">knitr<span class="op">::</span><span class="kw">include_graphics</span>(<span class="kw">rep</span>(<span class="st">&quot;images/06-5.jpg&quot;</span>, <span class="dv">1</span>))          </a></code></pre></div>
 <p><img src="images/06-5.jpg" /><!-- --></p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">knitr<span class="op">::</span>opts_chunk<span class="op">$</span><span class="kw">set</span>(<span class="dt">comment=</span><span class="ot">NA</span>, <span class="dt">fig.width=</span><span class="dv">1</span>, <span class="dt">fig.height=</span><span class="dv">1</span>)</code></pre></div>
+<div class="sourceCode" id="cb20"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb20-1" data-line-number="1">knitr<span class="op">::</span>opts_chunk<span class="op">$</span><span class="kw">set</span>(<span class="dt">comment=</span><span class="ot">NA</span>, <span class="dt">fig.width=</span><span class="dv">1</span>, <span class="dt">fig.height=</span><span class="dv">1</span>)</a></code></pre></div>
 <p><span class="citation">(Tefferi and Pardanani <a href="#ref-tefferi2015myeloproliferative">2015</a>)</span></p>
 <p>It is possible that JAK-STAT activation plays a key role in the development of MPNs, but it seems that people are confused why MPNs exist in an inflammatory state with altered cytokine signaling. I’m not sure I understand why the two understandings are inconsistent with each other <span class="citation">(Rampal et al. <a href="#ref-rampal2014integrated">2014</a>)</span>.</p>
 </div>
 <div id="disease-manifestations" class="section level3">
 <h3><span class="header-section-number">7.4.3</span> Disease Manifestations</h3>
 <p>Complete blood counts exceed the upper limit of the WHO reference range. Other characteristic features include palpable splenomegaly, anemia, aquagenic pruritus (itching when skin contacts water), unusual thrombosis such as portal or hepatic vein thrombosis, bone marrow fibrosis, and extramedullary hematopoiesis. A more complete explanation of diagnostics can be found in the figure below.</p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">knitr<span class="op">::</span><span class="kw">include_graphics</span>(<span class="kw">rep</span>(<span class="st">&quot;images/06-6.jpg&quot;</span>, <span class="dv">1</span>))          </code></pre></div>
+<div class="sourceCode" id="cb21"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb21-1" data-line-number="1">knitr<span class="op">::</span><span class="kw">include_graphics</span>(<span class="kw">rep</span>(<span class="st">&quot;images/06-6.jpg&quot;</span>, <span class="dv">1</span>))          </a></code></pre></div>
 <p><img src="images/06-6.jpg" /><!-- --></p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">knitr<span class="op">::</span>opts_chunk<span class="op">$</span><span class="kw">set</span>(<span class="dt">comment=</span><span class="ot">NA</span>, <span class="dt">fig.width=</span><span class="dv">1</span>, <span class="dt">fig.height=</span><span class="dv">1</span>)</code></pre></div>
+<div class="sourceCode" id="cb22"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb22-1" data-line-number="1">knitr<span class="op">::</span>opts_chunk<span class="op">$</span><span class="kw">set</span>(<span class="dt">comment=</span><span class="ot">NA</span>, <span class="dt">fig.width=</span><span class="dv">1</span>, <span class="dt">fig.height=</span><span class="dv">1</span>)</a></code></pre></div>
 <p><span class="citation">(Tefferi and Pardanani <a href="#ref-tefferi2015myeloproliferative">2015</a>)</span>.</p>
 
 </div>
@@ -281,77 +308,77 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 </div>
 <h3>References</h3>
 <div id="refs" class="references">
-<div id="ref-martincorena2015somatic">
-<p>Martincorena, Iñigo, and Peter J Campbell. 2015. “Somatic Mutation in Cancer and Normal Cells.” <em>Science</em> 349 (6255). American Association for the Advancement of Science: 1483–9.</p>
-</div>
-<div id="ref-george2016leukaemia">
-<p>George, Joshy, Asli Uyar, Kira Young, Lauren Kuffler, Kaiden Waldron-Francis, Eladio Marquez, Duygu Ucar, and Jennifer J Trowbridge. 2016. “Leukaemia Cell of Origin Identified by Chromatin Landscape of Bulk Tumour Cells.” <em>Nature Communications</em> 7. Nature Publishing Group: 12166.</p>
-</div>
-<div id="ref-young2016open">
-<p>Young, Kira, and Jennifer J Trowbridge. 2016. “Open Chromatin Profiling as a Novel Strategy for Identifying Cancer Cell of Origin.” <em>Molecular &amp; Cellular Oncology</em> 3 (6). Taylor &amp; Francis: e1236770.</p>
-</div>
-<div id="ref-mckerrell2015leukemia">
-<p>McKerrell, Thomas, Naomi Park, Thaidy Moreno, Carolyn S Grove, Hannes Ponstingl, Jonathan Stephens, Charles Crawley, et al. 2015. “Leukemia-Associated Somatic Mutations Drive Distinct Patterns of Age-Related Clonal Hemopoiesis.” <em>Cell Reports</em> 10 (8). Elsevier: 1239–45.</p>
-</div>
-<div id="ref-kronke2013clonal">
-<p>Krönke, Jan, Lars Bullinger, Veronica Teleanu, Florian Tschürtz, Verena I Gaidzik, Michael WM Kühn, Frank G Rücker, et al. 2013. “Clonal Evolution in Relapsed Npm1-Mutated Acute Myeloid Leukemia.” <em>Blood</em> 122 (1). Am Soc Hematology: 100–108.</p>
-</div>
 <div id="ref-abelson2018prediction">
 <p>Abelson, Sagi, Grace Collord, Stanley WK Ng, Omer Weissbrod, Netta Mendelson Cohen, Elisabeth Niemeyer, Noam Barda, et al. 2018. “Prediction of Acute Myeloid Leukaemia Risk in Healthy Individuals.” <em>Nature</em> 559 (7714). Nature Publishing Group: 400.</p>
-</div>
-<div id="ref-yokoyama2019age">
-<p>Yokoyama, Akira, Nobuyuki Kakiuchi, Tetsuichi Yoshizato, Yasuhito Nannya, Hiromichi Suzuki, Yasuhide Takeuchi, Yusuke Shiozawa, et al. 2019. “Age-Related Remodelling of Oesophageal Epithelia by Mutated Cancer Drivers.” <em>Nature</em> 565 (7739). Nature Publishing Group: 312.</p>
-</div>
-<div id="ref-martincorena2018somatic">
-<p>Martincorena, Iñigo, Joanna C Fowler, Agnieszka Wabik, Andrew RJ Lawson, Federico Abascal, Michael WJ Hall, Alex Cagan, et al. 2018. “Somatic Mutant Clones Colonize the Human Esophagus with Age.” <em>Science</em> 362 (6417). American Association for the Advancement of Science: 911–17.</p>
-</div>
-<div id="ref-Watson2019-lg">
-<p>Watson, Caroline J, Alana Papula, Yeuk P G Poon, Wing H Wong, Andrew L Young, Todd E Druley, Daniel S Fisher, and Jamie R Blundell. 2019. “The Evolutionary Dynamics and Fitness Landscape of Clonal Haematopoiesis.” <em>bioRxiv</em>.</p>
-</div>
-<div id="ref-Bick2019-ji">
-<p>Bick, Alexander G, Joshua S Weinstock, Satish K Nandakumar, Charles P Fulco, Matthew J Leventhal, Erik L Bao, Joseph Nasser, et al. 2019. “Inherited Causes of Clonal Hematopoiesis of Indeterminate Potential in TOPMed Whole Genomes.” <em>bioRxiv</em>.</p>
-</div>
-<div id="ref-grinfeld2018classification">
-<p>Grinfeld, Jacob, Jyoti Nangalia, E Joanna Baxter, David C Wedge, Nicos Angelopoulos, Robert Cantrill, Anna L Godfrey, et al. 2018. “Classification and Personalized Prognosis in Myeloproliferative Neoplasms.” <em>New England Journal of Medicine</em> 379 (15). Mass Medical Soc: 1416–30.</p>
-</div>
-<div id="ref-mesa2012epidemiology">
-<p>Mesa, Ruben A, Jyotsna Mehta, Hongwei Wang, Yanxin Wang, Usman Iqbal, Frank Neumann, Yanzhen Zhang, and Theodore Colton. 2012. “Epidemiology of Myeloproliferative Disorders in Us-a Real World Analysis.” Am Soc Hematology.</p>
-</div>
-<div id="ref-wilkins2008bone">
-<p>Wilkins, Bridget S, Wendy N Erber, David Bareford, Georgina Buck, Keith Wheatley, Clare L East, Beverley Paul, Claire N Harrison, Anthony R Green, and Peter J Campbell. 2008. “Bone Marrow Pathology in Essential Thrombocythemia: Interobserver Reliability and Utility for Identifying Disease Subtypes.” <em>Blood</em> 111 (1). Am Soc Hematology: 60–70.</p>
-</div>
-<div id="ref-tefferi2014overview">
-<p>Tefferi, Ayalew, J Thiele, AM Vannucchi, and T Barbui. 2014. “An Overview on Calr and Csf3r Mutations and a Proposal for Revision of Who Diagnostic Criteria for Myeloproliferative Neoplasms.” <em>Leukemia</em> 28 (7). Nature Publishing Group: 1407.</p>
-</div>
-<div id="ref-tefferi2015myeloproliferative">
-<p>Tefferi, Ayalew, and Animesh Pardanani. 2015. “Myeloproliferative Neoplasms: A Contemporary Review.” <em>JAMA Oncology</em> 1 (1). American Medical Association: 97–105.</p>
-</div>
-<div id="ref-vannucchi2013mutations">
-<p>Vannucchi, AM, TL Lasho, P Guglielmelli, F Biamonte, A Pardanani, A Pereira, C Finke, et al. 2013. “Mutations and Prognosis in Primary Myelofibrosis.” <em>Leukemia</em> 27 (9). Nature Publishing Group: 1861.</p>
-</div>
-<div id="ref-tefferi2016targeted">
-<p>Tefferi, Ayalew, Terra L Lasho, Paola Guglielmelli, Christy M Finke, Giada Rotunno, Yoseph Elala, Annalisa Pacilli, et al. 2016. “Targeted Deep Sequencing in Polycythemia Vera and Essential Thrombocythemia.” <em>Blood Advances</em> 1 (1). American Society of Hematology: 21–30.</p>
-</div>
-<div id="ref-yogarajah2017leukemic">
-<p>Yogarajah, Meera, and Ayalew Tefferi. 2017. “Leukemic Transformation in Myeloproliferative Neoplasms: A Literature Review on Risk, Characteristics, and Outcome.” In <em>Mayo Clinic Proceedings</em>, 92:1118–28. 7. Elsevier.</p>
-</div>
-<div id="ref-ortmann2015effect">
-<p>Ortmann, Christina A, David G Kent, Jyoti Nangalia, Yvonne Silber, David C Wedge, Jacob Grinfeld, E Joanna Baxter, et al. 2015. “Effect of Mutation Order on Myeloproliferative Neoplasms.” <em>New England Journal of Medicine</em> 372 (7). Mass Medical Soc: 601–12.</p>
-</div>
-<div id="ref-nangalia2015dnmt3a">
-<p>Nangalia, Jyoti, Francesca L Nice, David C Wedge, Anna L Godfrey, Jacob Grinfeld, Clare Thakker, Charlie E Massie, et al. 2015. “DNMT3A Mutations Occur Early or Late in Patients with Myeloproliferative Neoplasms and Mutation Order Influences Phenotype.” <em>Haematologica</em>. Haematologica, haematol–2015.</p>
 </div>
 <div id="ref-ashworth2011genetic">
 <p>Ashworth, Alan, Christopher J Lord, and Jorge S Reis-Filho. 2011. “Genetic Interactions in Cancer Progression and Treatment.” <em>Cell</em> 145 (1). Elsevier: 30–38.</p>
 </div>
+<div id="ref-Bick2019-ji">
+<p>Bick, Alexander G, Joshua S Weinstock, Satish K Nandakumar, Charles P Fulco, Matthew J Leventhal, Erik L Bao, Joseph Nasser, et al. 2019. “Inherited Causes of Clonal Hematopoiesis of Indeterminate Potential in TOPMed Whole Genomes.” <em>bioRxiv</em>.</p>
+</div>
+<div id="ref-george2016leukaemia">
+<p>George, Joshy, Asli Uyar, Kira Young, Lauren Kuffler, Kaiden Waldron-Francis, Eladio Marquez, Duygu Ucar, and Jennifer J Trowbridge. 2016. “Leukaemia Cell of Origin Identified by Chromatin Landscape of Bulk Tumour Cells.” <em>Nature Communications</em> 7. Nature Publishing Group: 12166.</p>
+</div>
+<div id="ref-grinfeld2018classification">
+<p>Grinfeld, Jacob, Jyoti Nangalia, E Joanna Baxter, David C Wedge, Nicos Angelopoulos, Robert Cantrill, Anna L Godfrey, et al. 2018. “Classification and Personalized Prognosis in Myeloproliferative Neoplasms.” <em>New England Journal of Medicine</em> 379 (15). Mass Medical Soc: 1416–30.</p>
+</div>
 <div id="ref-hartman2001principles">
 <p>Hartman, John L, Barbara Garvik, and Lee Hartwell. 2001. “Principles for the Buffering of Genetic Variation.” <em>Science</em> 291 (5506). American Association for the Advancement of Science: 1001–4.</p>
+</div>
+<div id="ref-kronke2013clonal">
+<p>Krönke, Jan, Lars Bullinger, Veronica Teleanu, Florian Tschürtz, Verena I Gaidzik, Michael WM Kühn, Frank G Rücker, et al. 2013. “Clonal Evolution in Relapsed Npm1-Mutated Acute Myeloid Leukemia.” <em>Blood</em> 122 (1). Am Soc Hematology: 100–108.</p>
+</div>
+<div id="ref-martincorena2015somatic">
+<p>Martincorena, Iñigo, and Peter J Campbell. 2015. “Somatic Mutation in Cancer and Normal Cells.” <em>Science</em> 349 (6255). American Association for the Advancement of Science: 1483–9.</p>
+</div>
+<div id="ref-martincorena2018somatic">
+<p>Martincorena, Iñigo, Joanna C Fowler, Agnieszka Wabik, Andrew RJ Lawson, Federico Abascal, Michael WJ Hall, Alex Cagan, et al. 2018. “Somatic Mutant Clones Colonize the Human Esophagus with Age.” <em>Science</em> 362 (6417). American Association for the Advancement of Science: 911–17.</p>
+</div>
+<div id="ref-mckerrell2015leukemia">
+<p>McKerrell, Thomas, Naomi Park, Thaidy Moreno, Carolyn S Grove, Hannes Ponstingl, Jonathan Stephens, Charles Crawley, et al. 2015. “Leukemia-Associated Somatic Mutations Drive Distinct Patterns of Age-Related Clonal Hemopoiesis.” <em>Cell Reports</em> 10 (8). Elsevier: 1239–45.</p>
+</div>
+<div id="ref-mesa2012epidemiology">
+<p>Mesa, Ruben A, Jyotsna Mehta, Hongwei Wang, Yanxin Wang, Usman Iqbal, Frank Neumann, Yanzhen Zhang, and Theodore Colton. 2012. “Epidemiology of Myeloproliferative Disorders in Us-a Real World Analysis.” Am Soc Hematology.</p>
+</div>
+<div id="ref-nangalia2015dnmt3a">
+<p>Nangalia, Jyoti, Francesca L Nice, David C Wedge, Anna L Godfrey, Jacob Grinfeld, Clare Thakker, Charlie E Massie, et al. 2015. “DNMT3A Mutations Occur Early or Late in Patients with Myeloproliferative Neoplasms and Mutation Order Influences Phenotype.” <em>Haematologica</em>. Haematologica, haematol–2015.</p>
+</div>
+<div id="ref-ortmann2015effect">
+<p>Ortmann, Christina A, David G Kent, Jyoti Nangalia, Yvonne Silber, David C Wedge, Jacob Grinfeld, E Joanna Baxter, et al. 2015. “Effect of Mutation Order on Myeloproliferative Neoplasms.” <em>New England Journal of Medicine</em> 372 (7). Mass Medical Soc: 601–12.</p>
+</div>
+<div id="ref-rampal2014integrated">
+<p>Rampal, Raajit, Fatima Al-Shahrour, Omar Abdel-Wahab, Jay P Patel, Jean-Philippe Brunel, Craig H Mermel, Adam J Bass, et al. 2014. “Integrated Genomic Analysis Illustrates the Central Role of Jak-Stat Pathway Activation in Myeloproliferative Neoplasm Pathogenesis.” <em>Blood</em> 123 (22). Am Soc Hematology: e123–e133.</p>
 </div>
 <div id="ref-szuber2018myeloproliferative">
 <p>Szuber, Natasha, Rangit R Vallapureddy, Domenico Penna, Terra L Lasho, Christy Finke, Curtis A Hanson, Rhett P Ketterling, Animesh Pardanani, Naseema Gangat, and Ayalew Tefferi. 2018. “Myeloproliferative Neoplasms in the Young: Mayo Clinic Experience with 361 Patients Age 40 Years or Younger.” <em>American Journal of Hematology</em> 93 (12). Wiley Online Library: 1474–84.</p>
 </div>
-<div id="ref-rampal2014integrated">
-<p>Rampal, Raajit, Fatima Al-Shahrour, Omar Abdel-Wahab, Jay P Patel, Jean-Philippe Brunel, Craig H Mermel, Adam J Bass, et al. 2014. “Integrated Genomic Analysis Illustrates the Central Role of Jak-Stat Pathway Activation in Myeloproliferative Neoplasm Pathogenesis.” <em>Blood</em> 123 (22). Am Soc Hematology: e123–e133.</p>
+<div id="ref-tefferi2016targeted">
+<p>Tefferi, Ayalew, Terra L Lasho, Paola Guglielmelli, Christy M Finke, Giada Rotunno, Yoseph Elala, Annalisa Pacilli, et al. 2016. “Targeted Deep Sequencing in Polycythemia Vera and Essential Thrombocythemia.” <em>Blood Advances</em> 1 (1). American Society of Hematology: 21–30.</p>
+</div>
+<div id="ref-tefferi2015myeloproliferative">
+<p>Tefferi, Ayalew, and Animesh Pardanani. 2015. “Myeloproliferative Neoplasms: A Contemporary Review.” <em>JAMA Oncology</em> 1 (1). American Medical Association: 97–105.</p>
+</div>
+<div id="ref-tefferi2014overview">
+<p>Tefferi, Ayalew, J Thiele, AM Vannucchi, and T Barbui. 2014. “An Overview on Calr and Csf3r Mutations and a Proposal for Revision of Who Diagnostic Criteria for Myeloproliferative Neoplasms.” <em>Leukemia</em> 28 (7). Nature Publishing Group: 1407.</p>
+</div>
+<div id="ref-vannucchi2013mutations">
+<p>Vannucchi, AM, TL Lasho, P Guglielmelli, F Biamonte, A Pardanani, A Pereira, C Finke, et al. 2013. “Mutations and Prognosis in Primary Myelofibrosis.” <em>Leukemia</em> 27 (9). Nature Publishing Group: 1861.</p>
+</div>
+<div id="ref-Watson2019-lg">
+<p>Watson, Caroline J, Alana Papula, Yeuk P G Poon, Wing H Wong, Andrew L Young, Todd E Druley, Daniel S Fisher, and Jamie R Blundell. 2019. “The Evolutionary Dynamics and Fitness Landscape of Clonal Haematopoiesis.” <em>bioRxiv</em>.</p>
+</div>
+<div id="ref-wilkins2008bone">
+<p>Wilkins, Bridget S, Wendy N Erber, David Bareford, Georgina Buck, Keith Wheatley, Clare L East, Beverley Paul, Claire N Harrison, Anthony R Green, and Peter J Campbell. 2008. “Bone Marrow Pathology in Essential Thrombocythemia: Interobserver Reliability and Utility for Identifying Disease Subtypes.” <em>Blood</em> 111 (1). Am Soc Hematology: 60–70.</p>
+</div>
+<div id="ref-yogarajah2017leukemic">
+<p>Yogarajah, Meera, and Ayalew Tefferi. 2017. “Leukemic Transformation in Myeloproliferative Neoplasms: A Literature Review on Risk, Characteristics, and Outcome.” In <em>Mayo Clinic Proceedings</em>, 92:1118–28. 7. Elsevier.</p>
+</div>
+<div id="ref-yokoyama2019age">
+<p>Yokoyama, Akira, Nobuyuki Kakiuchi, Tetsuichi Yoshizato, Yasuhito Nannya, Hiromichi Suzuki, Yasuhide Takeuchi, Yusuke Shiozawa, et al. 2019. “Age-Related Remodelling of Oesophageal Epithelia by Mutated Cancer Drivers.” <em>Nature</em> 565 (7739). Nature Publishing Group: 312.</p>
+</div>
+<div id="ref-young2016open">
+<p>Young, Kira, and Jennifer J Trowbridge. 2016. “Open Chromatin Profiling as a Novel Strategy for Identifying Cancer Cell of Origin.” <em>Molecular &amp; Cellular Oncology</em> 3 (6). Taylor &amp; Francis: e1236770.</p>
 </div>
 </div>
             </section>
@@ -365,11 +392,13 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
 <script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
 <script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
 <script>
 gitbook.require(["gitbook"], function(gitbook) {
 gitbook.start({

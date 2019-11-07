@@ -1,13 +1,12 @@
 <!DOCTYPE html>
-<html >
-
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
 <head>
 
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Chapter 2 Genetics and Genomics | On Matters Of Nature and Science</title>
-  <meta name="description" content="These are just some things.">
-  <meta name="generator" content="bookdown  and GitBook 2.6.7">
+  <meta name="description" content="These are just some things." />
+  <meta name="generator" content="bookdown 0.14 and GitBook 2.6.7" />
 
   <meta property="og:title" content="Chapter 2 Genetics and Genomics | On Matters Of Nature and Science" />
   <meta property="og:type" content="book" />
@@ -22,18 +21,18 @@
   <meta name="twitter:description" content="These are just some things." />
   
 
-<meta name="author" content="L A Liggett">
+<meta name="author" content="L A Liggett" />
 
 
-<meta name="date" content="2019-10-24">
+<meta name="date" content="2019-11-07" />
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="index.html">
-<link rel="next" href="neurosci.html">
+<link rel="prev" href="index.html"/>
+<link rel="next" href="neurosci.html"/>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -41,6 +40,9 @@
 <link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
 
 
 
@@ -51,41 +53,66 @@
 
 
 <style type="text/css">
-div.sourceCode { overflow-x: auto; }
-table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
-  margin: 0; padding: 0; vertical-align: baseline; border: none; }
-table.sourceCode { width: 100%; line-height: 100%; }
-td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
-td.sourceCode { padding-left: 5px; }
-code > span.kw { color: #007020; font-weight: bold; } /* Keyword */
-code > span.dt { color: #902000; } /* DataType */
-code > span.dv { color: #40a070; } /* DecVal */
-code > span.bn { color: #40a070; } /* BaseN */
-code > span.fl { color: #40a070; } /* Float */
-code > span.ch { color: #4070a0; } /* Char */
-code > span.st { color: #4070a0; } /* String */
-code > span.co { color: #60a0b0; font-style: italic; } /* Comment */
-code > span.ot { color: #007020; } /* Other */
-code > span.al { color: #ff0000; font-weight: bold; } /* Alert */
-code > span.fu { color: #06287e; } /* Function */
-code > span.er { color: #ff0000; font-weight: bold; } /* Error */
-code > span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
-code > span.cn { color: #880000; } /* Constant */
-code > span.sc { color: #4070a0; } /* SpecialChar */
-code > span.vs { color: #4070a0; } /* VerbatimString */
-code > span.ss { color: #bb6688; } /* SpecialString */
-code > span.im { } /* Import */
-code > span.va { color: #19177c; } /* Variable */
-code > span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
-code > span.op { color: #666666; } /* Operator */
-code > span.bu { } /* BuiltIn */
-code > span.ex { } /* Extension */
-code > span.pp { color: #bc7a00; } /* Preprocessor */
-code > span.at { color: #7d9029; } /* Attribute */
-code > span.do { color: #ba2121; font-style: italic; } /* Documentation */
-code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
-code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
-code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(data-line-number);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
 </style>
 
 <link rel="stylesheet" href="style.css" type="text/css" />
@@ -237,7 +264,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <h3><span class="header-section-number">2.3.2</span> Mutation Rate Evolution</h3>
 <p>Providing an example of how human mutation rates can differ by geographic origination, Europeans compared to African/Asian populations have a 1.6 increased mutation rate of a TCC-&gt;TTC transitions (Harris, 2015). This change in DNA replication fidelity appears to have happened 40-80kya when Europeans and Asians diverged and illustrates that DNA repair rates have not remained entirely stable throughout human evolution.</p>
 <p>Just as in humans show a number of different mutational likelihoods, the great apes apes also show evolution in the rates of different triplet-context mutation rates <span class="citation">(Harris and Pritchard <a href="#ref-harris2017rapid">2017</a>)</span>. It would be interesting to investigate how these different rates have constrained evolution, if at all.</p>
-<p>Killifish seem to exhibit an elevation in mutation rates, and exhibit chromosomal expansions and deleterious mutations especially in mitochondrial genes and nuclear genes important for late life. It seems that killifish show evidence of their lifespan being limited by many deleterious mutations of small effect-size in a manner that is compatible with neutral theory of evolution <span class="citation">(Ohta and Kimura <a href="#ref-ohta1973model">1973</a>; Kimura and others <a href="#ref-kimura1968evolutionary">1968</a>)</span>. The overall idea is that when adapting to annual niches, killifish experienced intense selection on genes affecting traits important for early life, and a corresponding relaxation of selection on traits affecting later life in a manner compatible with neutral theory <span class="citation">(Cui et al. <a href="#ref-cui2019relaxed">2019</a>)</span>. It is important to note that the authors do not test for antagonistic pleiotropy, so this effect may be playing an important role in the development of detrimental aging-related mutations <span class="citation">(B. Charlesworth and Charlesworth <a href="#ref-charlesworth2000degeneration">2000</a>; Williams <a href="#ref-williams1957pleiotropy">1957</a>)</span>.</p>
+<p>Killifish seem to exhibit an elevation in mutation rates, and exhibit chromosomal expansions and deleterious mutations especially in mitochondrial genes and nuclear genes important for late life. It seems that killifish show evidence of their lifespan being limited by many deleterious mutations of small effect-size in a manner that is compatible with neutral theory of evolution <span class="citation">(Ohta and Kimura <a href="#ref-ohta1973model">1973</a>; Kimura and others <a href="#ref-kimura1968evolutionary">1968</a>)</span>. The overall idea is that when adapting to annual niches, killifish experienced intense selection on genes affecting traits important for early life, and a corresponding relaxation of selection on traits affecting later life in a manner compatible with neutral theory <span class="citation">(Cui et al. <a href="#ref-cui2019relaxed">2019</a>)</span>. It is important to note that the authors do not test for antagonistic pleiotropy, so this effect may be playing an important role in the development of detrimental aging-related mutations <span class="citation">(Charlesworth and Charlesworth <a href="#ref-charlesworth2000degeneration">2000</a>; Williams <a href="#ref-williams1957pleiotropy">1957</a>)</span>.</p>
 </div>
 </div>
 <div id="mutation-hotspots" class="section level2">
@@ -247,7 +274,8 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <div id="mutation-detection" class="section level2">
 <h2><span class="header-section-number">2.5</span> Mutation Detection</h2>
 <p>Pyrophosphorolysis-activated polymerization is a mutation detection method that can detect a single mutant molecule of DNA within 25,000 genomes (Liu and Sommer, 2004; Qin et al., 2007).</p>
-<p>Detecting cancer from cfDNA is often done by mutation detection alone, however, fragment size of the cfDNA seems to be non-randomly linked to malignant state. Using the ratio of short to long cfDNA fragments calculated for 5MB windows, combined with mutation detection within collected cfDNA seems to quite accurately predict cancerous state for a number of different solid cancers <span class="citation">(Cristiano et al. <a href="#ref-cristiano2019genome">2019</a>)</span>. It appears that in individuals without cancer, the majority of cfDNA originates from leukocytes, and is fragmented in a manner that is dependent on nucleosomal patterns. As solid tissue burden grows and the associated cells release cfDNA, that DNA fragments according to the solid tissue nucleosomal patterns, and this seems to be sufficiently distinct from the fragmentation patterns of leukocyte DNA.</p>
+<p>Detecting cancer from cfDNA is often done by mutation detection alone, however, fragment size of the cfDNA seems to be non-randomly linked to malignant state. Using the ratio of short to long cfDNA fragments calculated for 5MB windows, combined with mutation detection within collected cfDNA seems to quite accurately predict cancerous state for a number of different solid cancers <span class="citation">(Cristiano et al. <a href="#ref-cristiano2019genome">2019</a>)</span>. It appears that in individuals without cancer, the majority of cfDNA originates from
+leukocytes, and is fragmented in a manner that is dependent on nucleosomal patterns. As solid tissue burden grows and the associated cells release cfDNA, that DNA fragments according to the solid tissue nucleosomal patterns, and this seems to be sufficiently distinct from the fragmentation patterns of leukocyte DNA.</p>
 </div>
 <div id="genetic-modifications" class="section level2">
 <h2><span class="header-section-number">2.6</span> Genetic Modifications</h2>
@@ -258,7 +286,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <h2><span class="header-section-number">2.7</span> Sequencing Methods</h2>
 <p>Using a new sequencing method called sci-RNA-seq, the transcriptome of every cell of 762 cells in C Elegans was sequenced to yield single-cell sequencing results and transcriptome profiling of every cell in the body. The way this is done is by methanol fixing nuclei and then incorporating a UMI when converting to cDNA, then mixing cells again and incorporating another UMI when synthesizing the other strand (Cao et al., 2017).</p>
 <p>It appears that DAPI does not increase sequencing error rates by Illumina sequencing (Leung et al., 2016).</p>
-<p>One group came up with a method that is essentially identical to mine in which they use barcoded probes to detect leukemia but they tracked the mutation manually and ignored background (Wong et al. 2015)</p>
+<p>One group came up with a method that is essentially identical to mine in which they use barcoded probes to detect leukemia but they tracked the mutation manually and ignored background (Wong et al. 2015)</p>
 <div id="lineage-tracing" class="section level3">
 <h3><span class="header-section-number">2.7.1</span> Lineage Tracing</h3>
 <p>Because mutation rates in mitochondrial DNA are higher than for genomic DNA, and they are heterogeneous, single cell ATAC-Seq of the mitochondrial can be effectively used alone or in combination with RNASeq for lineage tracing <span class="citation">(Ludwig et al. <a href="#ref-ludwig2019lineage">2019</a>)</span>. This is an especially advantageous approach, as it requires no alterations to the organism of interest, allowing its application in humans.</p>
@@ -271,11 +299,24 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <div id="detecting-common-diseases" class="section level2">
 <h2><span class="header-section-number">2.9</span> Detecting Common Diseases</h2>
 <p>Much of the following information comes from this review: <span class="citation">(Shendure, Findlay, and Snyder <a href="#ref-shendure2019genomic">2019</a>)</span>.</p>
-<p>Linkage disequilibrium studies were designed to detect Mendelian diseases GWAS designed back in 1996 to detect non-mendelian multigenic traits that have much less penetrant effects The promise that GWAS could risk stratify people for diseases has been challenging because most diseases seem to be driven by an extremely large number of variants with small effects that will likely require extremely large sample sizes There exists a problem of missing heritability, and it was often believed that common SNPs only held part of the puzzle, and more rare variants accounted for a great deal of heritability, but this does not yet seem to be the case, and SNPs seem to have a much greater effect size Another problem with GWAS is it is haplotype specific in that it can implicate a stretch of DNA inherited from one parent, but is blind to the individual effect sizes of each of the individual variants A challenge raised by Jonathan Pritchard is that gene regulatory networks are so interconnected that variants in one gene may actually cause changes in other genes and are therefore only peripherally relevant to a phenotype One continued promise of the utility of GWAS to identify the causal genetics behind diseases is that most of the strongest GWAS associations came from small studies of european populations that identified mutations of large effect sizes. By expanding studies to populations, especially those like african populations that have less linkage disequilibrium many more variants of large effect sizes could be identified and used to tease out relationships of smaller effect sizes in other populations. Methods are also improving fo linking regulatory elements to the genes they regulate like (Gasperini et al. 2018; Gasperini et al. 2019). Linking regulatory elements to their corresponding genes can be quite helpful, because this information can be incorporated into GWAS calculations to refine causal linkage probabilities. Polygenic risk scores have often been used to predict phenotypic variance in plants and animals, and have yet to really be applied to human genomics (Khera et al. 2018). Training of PRSs seem to not require fine-mapping, and their use has been aided by the UK Biobank (Bycroft et al. 2018).</p>
+<p>Linkage disequilibrium studies were designed to detect Mendelian diseases
+GWAS designed back in 1996 to detect non-mendelian multigenic traits that have much less penetrant effects
+The promise that GWAS could risk stratify people for diseases has been challenging because most diseases seem to be driven by an extremely large number of variants with small effects that will likely require extremely large sample sizes
+There exists a problem of missing heritability, and it was often believed that common SNPs only held part of the puzzle, and more rare variants accounted for a great deal of heritability, but this does not yet seem to be the case, and SNPs seem to have a much greater effect size
+Another problem with GWAS is it is haplotype specific in that it can implicate a stretch of DNA inherited from one parent, but is blind to the individual effect sizes of each of the individual variants
+A challenge raised by Jonathan Pritchard is that gene regulatory networks are so interconnected that variants in one gene may actually cause changes in other genes and are therefore only peripherally relevant to a phenotype
+One continued promise of the utility of GWAS to identify the causal genetics behind diseases is that most of the strongest GWAS associations came from small studies of european populations that identified mutations of large effect sizes. By expanding studies to populations, especially those like african populations that have less linkage disequilibrium many more variants of large effect sizes could be identified and used to tease out relationships of smaller effect sizes in other populations.
+Methods are also improving fo linking regulatory elements to the genes they regulate like (Gasperini et al. 2018; Gasperini et al. 2019).
+Linking regulatory elements to their corresponding genes can be quite helpful, because this information can be incorporated into GWAS calculations to refine causal linkage probabilities.
+Polygenic risk scores have often been used to predict phenotypic variance in plants and animals, and have yet to really be applied to human genomics (Khera et al. 2018).
+Training of PRSs seem to not require fine-mapping, and their use has been aided by the UK Biobank (Bycroft et al. 2018).</p>
 </div>
 <div id="detecting-rare-diseases" class="section level2">
 <h2><span class="header-section-number">2.10</span> Detecting Rare Diseases</h2>
-<p>There are some 7k Mendelian monogenic disorders that impact about 0.5% of live births, but contribute to about 70% of pediatric hospital admissions An important surprise has been that de-novo mutations account for a substantial amount of intellectual disabilities and autism, where as many as 30-60% of ASD is caused by de-novo mutations Currently as many as half of acutely ill inpatient infants can be diagnosed from WGS. There are currently 59 genes designated by the American College of Medical Genetics as being sufficiently clinically actionable as to warrant sequencing and reporting in patients (Kalia et al. 2017).</p>
+<p>There are some 7k Mendelian monogenic disorders that impact about 0.5% of live births, but contribute to about 70% of pediatric hospital admissions
+An important surprise has been that de-novo mutations account for a substantial amount of intellectual disabilities and autism, where as many as 30-60% of ASD is caused by de-novo mutations
+Currently as many as half of acutely ill inpatient infants can be diagnosed from WGS.
+There are currently 59 genes designated by the American College of Medical Genetics as being sufficiently clinically actionable as to warrant sequencing and reporting in patients (Kalia et al. 2017).</p>
 </div>
 <div id="tissue-evolution" class="section level2">
 <h2><span class="header-section-number">2.11</span> Tissue Evolution</h2>
@@ -286,7 +327,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 </div>
 <div id="mutational-processes-in-cancer" class="section level2">
 <h2><span class="header-section-number">2.12</span> Mutational Processes in Cancer</h2>
-<p>Most cancers carry between 1,000 and 20,000 somatic point mutations and a few hundred insertions, deletions, and rearrangements <span class="citation">(Martincorena and Campbell <a href="#ref-martincorena2015somatic">2015</a>)</span>. Leukemias and pediatric brain cancers typically contain the lowest numbers of mutations while those tissues exposed to mutagens like lung and skin cancers tend to have the highest numbers <span class="citation">(P. J. Stephens et al. <a href="#ref-stephens2009complex">2009</a>; Alexandrov et al. <a href="#ref-alexandrov2013signatures">2013</a>; Lawrence et al. <a href="#ref-lawrence2013mutational">2013</a>; Vogelstein et al. <a href="#ref-vogelstein2013cancer">2013</a>)</span>. It is interesting to note that from the Cancer Gene Census database, it appears that only three genes; TP53, PIK3CA, and BRAF are mutated in 10% or more patients <span class="citation">(Martincorena and Campbell <a href="#ref-martincorena2015somatic">2015</a>)</span>.</p>
+<p>Most cancers carry between 1,000 and 20,000 somatic point mutations and a few hundred insertions, deletions, and rearrangements <span class="citation">(Martincorena and Campbell <a href="#ref-martincorena2015somatic">2015</a>)</span>. Leukemias and pediatric brain cancers typically contain the lowest numbers of mutations while those tissues exposed to mutagens like lung and skin cancers tend to have the highest numbers <span class="citation">(Stephens et al. <a href="#ref-stephens2009complex">2009</a>; Alexandrov et al. <a href="#ref-alexandrov2013signatures">2013</a>; Lawrence et al. <a href="#ref-lawrence2013mutational">2013</a>; Vogelstein et al. <a href="#ref-vogelstein2013cancer">2013</a>)</span>. It is interesting to note that from the Cancer Gene Census database, it appears that only three genes; TP53, PIK3CA, and BRAF are mutated in 10% or more patients <span class="citation">(Martincorena and Campbell <a href="#ref-martincorena2015somatic">2015</a>)</span>.</p>
 <p>Carcinogens or particular mutations often cause identifiable mutational patterns. BRCA1 and BRCA2 mutations commonly associated with breast, ovarian, and pancreatic cancers are associated with particular substitution patterns, small indels, and large chromosome duplications <span class="citation">(Nik-Zainal et al. <a href="#ref-nik2012mutational">2012</a>)</span>.</p>
 <p>While mutations in TP53 and NOTCH1 can cause an imbalance in the division symmetry of stem cells in intestinal crypts by increasing the ratio of proliferation to differentiation<span class="citation">(Klein et al. <a href="#ref-klein2010stochastic">2010</a>; Alcolea et al. <a href="#ref-alcolea2014differentiation">2014</a>)</span>, mutations like APC and KRAS can increase the rates of crypt fission to allow multiple crypts to become clonal <span class="citation">(Preston et al. <a href="#ref-preston2003bottom">2003</a>; Snippert et al. <a href="#ref-snippert2014biased">2014</a>)</span>.</p>
 </div>
@@ -294,7 +335,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <h2><span class="header-section-number">2.13</span> Mutagenesis in Cancer</h2>
 <div id="mutation-rates" class="section level3">
 <h3><span class="header-section-number">2.13.1</span> Mutation Rates</h3>
-<p>Substitution rates in B/T lymphocytes appears to be on the order of 2 to 10 mutations per diploid genome per cell division, a rate which may be about 10 times higher than that occurring in germ cells <span class="citation">(M. Lynch <a href="#ref-lynch2010rate">2010</a>)</span>.</p>
+<p>Substitution rates in B/T lymphocytes appears to be on the order of 2 to 10 mutations per diploid genome per cell division, a rate which may be about 10 times higher than that occurring in germ cells <span class="citation">(Lynch <a href="#ref-lynch2010rate">2010</a>)</span>.</p>
 </div>
 <div id="mutation-load" class="section level3">
 <h3><span class="header-section-number">2.13.2</span> Mutation Load</h3>
@@ -320,148 +361,149 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 </div>
 <div id="mitochondria" class="section level3">
 <h3><span class="header-section-number">2.14.4</span> Mitochondria</h3>
-<p>While the mechanism appears to still be unclear <span class="citation">(X. J. Chen <a href="#ref-chen2013mechanism">2013</a>)</span>, mtDNA can undergo recombination, direct evidence of which was first found in an individual that was heterologous for paternal and maternal inheritance of mitochondria <span class="citation">(Kraytsberg et al. <a href="#ref-kraytsberg2004recombination">2004</a>)</span>.</p>
+<p>While the mechanism appears to still be unclear <span class="citation">(Chen <a href="#ref-chen2013mechanism">2013</a>)</span>, mtDNA can undergo recombination, direct evidence of which was first found in an individual that was heterologous for paternal and maternal inheritance of mitochondria <span class="citation">(Kraytsberg et al. <a href="#ref-kraytsberg2004recombination">2004</a>)</span>.</p>
 </div>
 <div id="evolution" class="section level3">
 <h3><span class="header-section-number">2.14.5</span> Evolution</h3>
-<p>In the codfish, it appears that the one of the genes they use to allow them to freeze without damaging cells did not evolve from the duplication of a different gene that was then altered to produce its current function, but rather, it appears to have evolved from a non-functional portion of the genome <span class="citation">(Baalsrud et al. <a href="#ref-baalsrud2017novo">2017</a>)</span>. This constitutes some of the first evidence that genes can result from the de-novo use of junk DNA to create an entirely novel gene, rather than repurposing another gene.</p>
+<p>In the codfish, it appears that the one of the genes they use to allow them to freeze without damaging cells did not evolve from the duplication of a different gene that was then altered to produce its current function, but rather, it appears to have evolved from a non-functional portion of the genome <span class="citation">(Baalsrud et al. <a href="#ref-baalsrud2017novo">2017</a>)</span>. This constitutes some of the first evidence that genes can result from the de-novo use of junk DNA to create an entirely novel gene, rather than repurposing
+another gene.</p>
 
 </div>
 </div>
 </div>
 <h3>References</h3>
 <div id="refs" class="references">
-<div id="ref-kong2012rate">
-<p>Kong, Augustine, Michael L Frigge, Gisli Masson, Soren Besenbacher, Patrick Sulem, Gisli Magnusson, Sigurjon A Gudjonsson, et al. 2012. “Rate of de Novo Mutations and the Importance of Father’s Age to Disease Risk.” <em>Nature</em> 488 (7412). Nature Publishing Group: 471.</p>
-</div>
-<div id="ref-segurel2014determinants">
-<p>Ségurel, Laure, Minyoung J Wyman, and Molly Przeworski. 2014. “Determinants of Mutation Rate Variation in the Human Germline.” <em>Annual Review of Genomics and Human Genetics</em> 15. Annual Reviews: 47–70.</p>
-</div>
-<div id="ref-venn2014strong">
-<p>Venn, Oliver, Isaac Turner, Iain Mathieson, Natasja de Groot, Ronald Bontrop, and Gil McVean. 2014. “Strong Male Bias Drives Germline Mutation in Chimpanzees.” <em>Science</em> 344 (6189). American Association for the Advancement of Science: 1272–5.</p>
-</div>
-<div id="ref-behjati2014genome">
-<p>Behjati, Sam, Meritxell Huch, Ruben van Boxtel, Wouter Karthaus, David C Wedge, Asif U Tamuri, Iñigo Martincorena, et al. 2014. “Genome Sequencing of Normal Cells Reveals Developmental Lineages and Mutational Processes.” <em>Nature</em> 513 (7518). Nature Publishing Group: 422.</p>
-</div>
-<div id="ref-altieri2008dna">
-<p>Altieri, Fabio, Caterina Grillo, Manola Maceroni, and Silvia Chichiarelli. 2008. “DNA Damage and Repair: From Molecular Mechanisms to Health Implications.” <em>Antioxidants &amp; Redox Signaling</em> 10 (5). Mary Ann Liebert, Inc. 2 Madison Avenue Larchmont, NY 10538 USA: 891–938.</p>
-</div>
-<div id="ref-harris2017rapid">
-<p>Harris, Kelley, and Jonathan K Pritchard. 2017. “Rapid Evolution of the Human Mutation Spectrum.” <em>Elife</em> 6. eLife Sciences Publications Limited: e24284.</p>
-</div>
-<div id="ref-ohta1973model">
-<p>Ohta, Tomoko, and Motoo Kimura. 1973. “A Model of Mutation Appropriate to Estimate the Number of Electrophoretically Detectable Alleles in a Finite Population.” <em>Genetics Research</em> 22 (2). Cambridge University Press: 201–4.</p>
-</div>
-<div id="ref-kimura1968evolutionary">
-<p>Kimura, Motoo, and others. 1968. “Evolutionary Rate at the Molecular Level.” <em>Nature</em> 217 (5129): 624–26.</p>
-</div>
-<div id="ref-cui2019relaxed">
-<p>Cui, Rongfeng, Tania Medeiros, David Willemsen, Leonardo NM Iasi, Glen E Collier, Martin Graef, Martin Reichard, and Dario Riccardo Valenzano. 2019. “Relaxed Selection Limits Lifespan by Increasing Mutation Load.” <em>Cell</em>. Elsevier.</p>
-</div>
-<div id="ref-charlesworth2000degeneration">
-<p>Charlesworth, Brian, and Deborah Charlesworth. 2000. “The Degeneration of Y Chromosomes.” <em>Philosophical Transactions of the Royal Society of London. Series B: Biological Sciences</em> 355 (1403). The Royal Society: 1563–72.</p>
-</div>
-<div id="ref-williams1957pleiotropy">
-<p>Williams, George C. 1957. “Pleiotropy, Natural Selection, and the Evolution of Senescence.” <em>Evolution</em>. JSTOR, 398–411.</p>
-</div>
-<div id="ref-cristiano2019genome">
-<p>Cristiano, Stephen, Alessandro Leal, Jillian Phallen, Jacob Fiksel, Vilmos Adleff, Daniel C Bruhm, Sarah Østrup Jensen, et al. 2019. “Genome-Wide Cell-Free Dna Fragmentation in Patients with Cancer.” <em>Nature</em>. Nature Publishing Group, 1.</p>
-</div>
-<div id="ref-ludwig2019lineage">
-<p>Ludwig, Leif S, Caleb A Lareau, Jacob C Ulirsch, Elena Christian, Christoph Muus, Lauren H Li, Karin Pelka, et al. 2019. “Lineage Tracing in Humans Enabled by Mitochondrial Mutations and Single-Cell Genomics.” <em>Cell</em> 176 (6). Elsevier: 1325–39.</p>
-</div>
-<div id="ref-shendure2019genomic">
-<p>Shendure, Jay, Gregory M Findlay, and Matthew W Snyder. 2019. “Genomic Medicine–Progress, Pitfalls, and Promise.” <em>Cell</em> 177 (1). Elsevier: 45–57.</p>
-</div>
-<div id="ref-martincorena2017universal">
-<p>Martincorena, Iñigo, Keiran M Raine, Moritz Gerstung, Kevin J Dawson, Kerstin Haase, Peter Van Loo, Helen Davies, Michael R Stratton, and Peter J Campbell. 2017. “Universal Patterns of Selection in Cancer and Somatic Tissues.” <em>Cell</em> 171 (5). Elsevier: 1029–41.</p>
-</div>
-<div id="ref-armitage1954age">
-<p>Armitage, Peter, and Richard Doll. 1954. “The Age Distribution of Cancer and a Multi-Stage Theory of Carcinogenesis.” <em>British Journal of Cancer</em> 8 (1). Nature Publishing Group: 1.</p>
-</div>
-<div id="ref-tomasetti2015variation">
-<p>Tomasetti, Cristian, and Bert Vogelstein. 2015. “Variation in Cancer Risk Among Tissues Can Be Explained by the Number of Stem Cell Divisions.” <em>Science</em> 347 (6217). American Association for the Advancement of Science: 78–81.</p>
-</div>
-<div id="ref-yates2015subclonal">
-<p>Yates, Lucy R, Moritz Gerstung, Stian Knappskog, Christine Desmedt, Gunes Gundem, Peter Van Loo, Turid Aas, et al. 2015. “Subclonal Diversification of Primary Breast Cancer Revealed by Multiregion Sequencing.” <em>Nature Medicine</em> 21 (7). Nature Publishing Group: 751.</p>
-</div>
-<div id="ref-martincorena2015high">
-<p>Martincorena, Iñigo, Amit Roshan, Moritz Gerstung, Peter Ellis, Peter Van Loo, Stuart McLaren, David C Wedge, et al. 2015. “High Burden and Pervasive Positive Selection of Somatic Mutations in Normal Human Skin.” <em>Science</em> 348 (6237). American Association for the Advancement of Science: 880–86.</p>
-</div>
-<div id="ref-lawrence2014discovery">
-<p>Lawrence, Michael S, Petar Stojanov, Craig H Mermel, James T Robinson, Levi A Garraway, Todd R Golub, Matthew Meyerson, Stacey B Gabriel, Eric S Lander, and Gad Getz. 2014. “Discovery and Saturation Analysis of Cancer Genes Across 21 Tumour Types.” <em>Nature</em> 505 (7484). Nature Publishing Group: 495.</p>
-</div>
-<div id="ref-kandoth2013mutational">
-<p>Kandoth, Cyriac, Michael D McLellan, Fabio Vandin, Kai Ye, Beifang Niu, Charles Lu, Mingchao Xie, et al. 2013. “Mutational Landscape and Significance Across 12 Major Cancer Types.” <em>Nature</em> 502 (7471). Nature Publishing Group: 333.</p>
-</div>
-<div id="ref-lee2018population">
-<p>Lee-Six, Henry, Nina Friesgaard Øbro, Mairi S Shepherd, Sebastian Grossmann, Kevin Dawson, Miriam Belmonte, Robert J Osborne, et al. 2018. “Population Dynamics of Normal Human Blood Inferred from Somatic Mutations.” <em>Nature</em> 561 (7724). Nature Publishing Group: 473.</p>
-</div>
-<div id="ref-Yizhak2019-ch">
-<p>Yizhak, Keren, François Aguet, Jaegil Kim, Julian M Hess, Kirsten Kübler, Jonna Grimsby, Ruslana Frazer, et al. 2019. “RNA Sequence Analysis Reveals Macroscopic Somatic Clonal Expansion Across Normal Tissues.” <em>Science</em> 364 (6444).</p>
-</div>
-<div id="ref-martincorena2015somatic">
-<p>Martincorena, Iñigo, and Peter J Campbell. 2015. “Somatic Mutation in Cancer and Normal Cells.” <em>Science</em> 349 (6255). American Association for the Advancement of Science: 1483–9.</p>
-</div>
-<div id="ref-stephens2009complex">
-<p>Stephens, Philip J, David J McBride, Meng-Lay Lin, Ignacio Varela, Erin D Pleasance, Jared T Simpson, Lucy A Stebbings, et al. 2009. “Complex Landscapes of Somatic Rearrangement in Human Breast Cancer Genomes.” <em>Nature</em> 462 (7276). Nature Publishing Group: 1005.</p>
+<div id="ref-alcolea2014differentiation">
+<p>Alcolea, Maria P, Philip Greulich, Agnieszka Wabik, Julia Frede, Benjamin D Simons, and Philip H Jones. 2014. “Differentiation Imbalance in Single Oesophageal Progenitor Cells Causes Clonal Immortalization and Field Change.” <em>Nature Cell Biology</em> 16 (6). Nature Publishing Group: 612.</p>
 </div>
 <div id="ref-alexandrov2013signatures">
 <p>Alexandrov, Ludmil B, Serena Nik-Zainal, David C Wedge, Samuel AJR Aparicio, Sam Behjati, Andrew V Biankin, Graham R Bignell, et al. 2013. “Signatures of Mutational Processes in Human Cancer.” <em>Nature</em> 500 (7463). Nature Publishing Group: 415.</p>
 </div>
-<div id="ref-lawrence2013mutational">
-<p>Lawrence, Michael S, Petar Stojanov, Paz Polak, Gregory V Kryukov, Kristian Cibulskis, Andrey Sivachenko, Scott L Carter, et al. 2013. “Mutational Heterogeneity in Cancer and the Search for New Cancer-Associated Genes.” <em>Nature</em> 499 (7457). Nature Publishing Group: 214.</p>
+<div id="ref-altieri2008dna">
+<p>Altieri, Fabio, Caterina Grillo, Manola Maceroni, and Silvia Chichiarelli. 2008. “DNA Damage and Repair: From Molecular Mechanisms to Health Implications.” <em>Antioxidants &amp; Redox Signaling</em> 10 (5). Mary Ann Liebert, Inc. 2 Madison Avenue Larchmont, NY 10538 USA: 891–938.</p>
 </div>
-<div id="ref-vogelstein2013cancer">
-<p>Vogelstein, Bert, Nickolas Papadopoulos, Victor E Velculescu, Shibin Zhou, Luis A Diaz, and Kenneth W Kinzler. 2013. “Cancer Genome Landscapes.” <em>Science</em> 339 (6127). American Association for the Advancement of Science: 1546–58.</p>
+<div id="ref-armitage1954age">
+<p>Armitage, Peter, and Richard Doll. 1954. “The Age Distribution of Cancer and a Multi-Stage Theory of Carcinogenesis.” <em>British Journal of Cancer</em> 8 (1). Nature Publishing Group: 1.</p>
 </div>
-<div id="ref-nik2012mutational">
-<p>Nik-Zainal, Serena, Ludmil B Alexandrov, David C Wedge, Peter Van Loo, Christopher D Greenman, Keiran Raine, David Jones, et al. 2012. “Mutational Processes Molding the Genomes of 21 Breast Cancers.” <em>Cell</em> 149 (5). Elsevier: 979–93.</p>
+<div id="ref-baalsrud2017novo">
+<p>Baalsrud, Helle Tessand, Ole Kristian Tørresen, Monica Hongrø Solbakken, Walter Salzburger, Reinhold Hanel, Kjetill S Jakobsen, and Sissel Jentoft. 2017. “De Novo Gene Evolution of Antifreeze Glycoproteins in Codfishes Revealed by Whole Genome Sequence Data.” <em>Molecular Biology and Evolution</em> 35 (3). Oxford University Press: 593–606.</p>
 </div>
-<div id="ref-klein2010stochastic">
-<p>Klein, Allon M, Douglas E Brash, Philip H Jones, and Benjamin D Simons. 2010. “Stochastic Fate of P53-Mutant Epidermal Progenitor Cells Is Tilted Toward Proliferation by Uv B During Preneoplasia.” <em>Proceedings of the National Academy of Sciences</em> 107 (1). National Acad Sciences: 270–75.</p>
+<div id="ref-behjati2014genome">
+<p>Behjati, Sam, Meritxell Huch, Ruben van Boxtel, Wouter Karthaus, David C Wedge, Asif U Tamuri, Iñigo Martincorena, et al. 2014. “Genome Sequencing of Normal Cells Reveals Developmental Lineages and Mutational Processes.” <em>Nature</em> 513 (7518). Nature Publishing Group: 422.</p>
 </div>
-<div id="ref-alcolea2014differentiation">
-<p>Alcolea, Maria P, Philip Greulich, Agnieszka Wabik, Julia Frede, Benjamin D Simons, and Philip H Jones. 2014. “Differentiation Imbalance in Single Oesophageal Progenitor Cells Causes Clonal Immortalization and Field Change.” <em>Nature Cell Biology</em> 16 (6). Nature Publishing Group: 612.</p>
-</div>
-<div id="ref-preston2003bottom">
-<p>Preston, Sean L, Wai-Man Wong, Annie On-On Chan, Richard Poulsom, Rosemary Jeffery, Robert A Goodlad, Nikki Mandir, et al. 2003. “Bottom-up Histogenesis of Colorectal Adenomas: Origin in the Monocryptal Adenoma and Initial Expansion by Crypt Fission.” <em>Cancer Research</em> 63 (13). AACR: 3819–25.</p>
-</div>
-<div id="ref-snippert2014biased">
-<p>Snippert, Hugo J, Arnout G Schepers, Johan H van Es, Benjamin D Simons, and Hans Clevers. 2014. “Biased Competition Between Lgr5 Intestinal Stem Cells Driven by Oncogenic Mutation Induces Clonal Expansion.” <em>EMBO Reports</em> 15 (1). EMBO Press: 62–69.</p>
-</div>
-<div id="ref-lynch2010rate">
-<p>Lynch, Michael. 2010. “Rate, Molecular Spectrum, and Consequences of Human Mutation.” <em>Proceedings of the National Academy of Sciences</em> 107 (3). National Acad Sciences: 961–68.</p>
-</div>
-<div id="ref-gusev2014partitioning">
-<p>Gusev, Alexander, S Hong Lee, Gosia Trynka, Hilary Finucane, Bjarni J Vilhjálmsson, Han Xu, Chongzhi Zang, et al. 2014. “Partitioning Heritability of Regulatory and Cell-Type-Specific Variants Across 11 Common Diseases.” <em>The American Journal of Human Genetics</em> 95 (5). Elsevier: 535–52.</p>
-</div>
-<div id="ref-Mamcarz2019-ei">
-<p>Mamcarz, Ewelina, Sheng Zhou, Timothy Lockey, Hossam Abdelsamed, Shane J Cross, Guolian Kang, Zhijun Ma, et al. 2019. “Lentiviral Gene Therapy Combined with Low-Dose Busulfan in Infants with SCID-X1.” <em>N. Engl. J. Med.</em> 380 (16). Massachusetts Medical Society: 1525–34.</p>
-</div>
-<div id="ref-rauch2019programmable">
-<p>Rauch, Simone, Emily He, Michael Srienc, Huiqing Zhou, Zijie Zhang, and Bryan C Dickinson. 2019. “Programmable Rna-Guided Rna Effector Proteins Built from Human Parts.” <em>Cell</em>. Elsevier.</p>
-</div>
-<div id="ref-keller2002inbreeding">
-<p>Keller, Lukas F, and Donald M Waller. 2002. “Inbreeding Effects in Wild Populations.” <em>Trends in Ecology &amp; Evolution</em> 17 (5). Elsevier: 230–41.</p>
-</div>
-<div id="ref-ingvarsson2001restoration">
-<p>Ingvarsson, Pär K. 2001. “Restoration of Genetic Variation Lost–the Genetic Rescue Hypothesis.” <em>Trends in Ecology &amp; Evolution</em> 16 (2). Elsevier: 62–63.</p>
-</div>
-<div id="ref-vila2003rescue">
-<p>Vila, Carles, Anna–Karin Sundqvist, Øystein Flagstad, Jennifer Seddon, Susanne Bjö rnerfeldt, Ilpo Kojola, Adriano Casulli, Håkan Sand, Petter Wabakken, and Hans Ellegren. 2003. “Rescue of a Severely Bottlenecked Wolf (Canis Lupus) Population by a Single Immigrant.” <em>Proceedings of the Royal Society of London. Series B: Biological Sciences</em> 270 (1510). The Royal Society: 91–97.</p>
-</div>
-<div id="ref-Harris2019-sm">
-<p>Harris, Kelley, Yulin Zhang, and Rasmus Nielsen. 2019. “Genetic Rescue and the Maintenance of Native Ancestry.” <em>Conserv. Genet.</em> 20 (1): 59–64.</p>
+<div id="ref-charlesworth2000degeneration">
+<p>Charlesworth, Brian, and Deborah Charlesworth. 2000. “The Degeneration of Y Chromosomes.” <em>Philosophical Transactions of the Royal Society of London. Series B: Biological Sciences</em> 355 (1403). The Royal Society: 1563–72.</p>
 </div>
 <div id="ref-chen2013mechanism">
 <p>Chen, Xin Jie. 2013. “Mechanism of Homologous Recombination and Implications for Aging-Related Deletions in Mitochondrial Dna.” <em>Microbiol. Mol. Biol. Rev.</em> 77 (3). Am Soc Microbiol: 476–96.</p>
 </div>
+<div id="ref-cristiano2019genome">
+<p>Cristiano, Stephen, Alessandro Leal, Jillian Phallen, Jacob Fiksel, Vilmos Adleff, Daniel C Bruhm, Sarah Østrup Jensen, et al. 2019. “Genome-Wide Cell-Free Dna Fragmentation in Patients with Cancer.” <em>Nature</em>. Nature Publishing Group, 1.</p>
+</div>
+<div id="ref-cui2019relaxed">
+<p>Cui, Rongfeng, Tania Medeiros, David Willemsen, Leonardo NM Iasi, Glen E Collier, Martin Graef, Martin Reichard, and Dario Riccardo Valenzano. 2019. “Relaxed Selection Limits Lifespan by Increasing Mutation Load.” <em>Cell</em>. Elsevier.</p>
+</div>
+<div id="ref-gusev2014partitioning">
+<p>Gusev, Alexander, S Hong Lee, Gosia Trynka, Hilary Finucane, Bjarni J Vilhjálmsson, Han Xu, Chongzhi Zang, et al. 2014. “Partitioning Heritability of Regulatory and Cell-Type-Specific Variants Across 11 Common Diseases.” <em>The American Journal of Human Genetics</em> 95 (5). Elsevier: 535–52.</p>
+</div>
+<div id="ref-harris2017rapid">
+<p>Harris, Kelley, and Jonathan K Pritchard. 2017. “Rapid Evolution of the Human Mutation Spectrum.” <em>Elife</em> 6. eLife Sciences Publications Limited: e24284.</p>
+</div>
+<div id="ref-Harris2019-sm">
+<p>Harris, Kelley, Yulin Zhang, and Rasmus Nielsen. 2019. “Genetic Rescue and the Maintenance of Native Ancestry.” <em>Conserv. Genet.</em> 20 (1): 59–64.</p>
+</div>
+<div id="ref-ingvarsson2001restoration">
+<p>Ingvarsson, Pär K. 2001. “Restoration of Genetic Variation Lost–the Genetic Rescue Hypothesis.” <em>Trends in Ecology &amp; Evolution</em> 16 (2). Elsevier: 62–63.</p>
+</div>
+<div id="ref-kandoth2013mutational">
+<p>Kandoth, Cyriac, Michael D McLellan, Fabio Vandin, Kai Ye, Beifang Niu, Charles Lu, Mingchao Xie, et al. 2013. “Mutational Landscape and Significance Across 12 Major Cancer Types.” <em>Nature</em> 502 (7471). Nature Publishing Group: 333.</p>
+</div>
+<div id="ref-keller2002inbreeding">
+<p>Keller, Lukas F, and Donald M Waller. 2002. “Inbreeding Effects in Wild Populations.” <em>Trends in Ecology &amp; Evolution</em> 17 (5). Elsevier: 230–41.</p>
+</div>
+<div id="ref-kimura1968evolutionary">
+<p>Kimura, Motoo, and others. 1968. “Evolutionary Rate at the Molecular Level.” <em>Nature</em> 217 (5129): 624–26.</p>
+</div>
+<div id="ref-klein2010stochastic">
+<p>Klein, Allon M, Douglas E Brash, Philip H Jones, and Benjamin D Simons. 2010. “Stochastic Fate of P53-Mutant Epidermal Progenitor Cells Is Tilted Toward Proliferation by Uv B During Preneoplasia.” <em>Proceedings of the National Academy of Sciences</em> 107 (1). National Acad Sciences: 270–75.</p>
+</div>
+<div id="ref-kong2012rate">
+<p>Kong, Augustine, Michael L Frigge, Gisli Masson, Soren Besenbacher, Patrick Sulem, Gisli Magnusson, Sigurjon A Gudjonsson, et al. 2012. “Rate of de Novo Mutations and the Importance of Father’s Age to Disease Risk.” <em>Nature</em> 488 (7412). Nature Publishing Group: 471.</p>
+</div>
 <div id="ref-kraytsberg2004recombination">
 <p>Kraytsberg, Yevgenya, Marianne Schwartz, Timothy A Brown, Konstantin Ebralidse, Wolfram S Kunz, David A Clayton, John Vissing, and Konstantin Khrapko. 2004. “Recombination of Human Mitochondrial Dna.” <em>Science</em> 304 (5673). American Association for the Advancement of Science: 981–81.</p>
 </div>
-<div id="ref-baalsrud2017novo">
-<p>Baalsrud, Helle Tessand, Ole Kristian Tørresen, Monica Hongrø Solbakken, Walter Salzburger, Reinhold Hanel, Kjetill S Jakobsen, and Sissel Jentoft. 2017. “De Novo Gene Evolution of Antifreeze Glycoproteins in Codfishes Revealed by Whole Genome Sequence Data.” <em>Molecular Biology and Evolution</em> 35 (3). Oxford University Press: 593–606.</p>
+<div id="ref-lawrence2014discovery">
+<p>Lawrence, Michael S, Petar Stojanov, Craig H Mermel, James T Robinson, Levi A Garraway, Todd R Golub, Matthew Meyerson, Stacey B Gabriel, Eric S Lander, and Gad Getz. 2014. “Discovery and Saturation Analysis of Cancer Genes Across 21 Tumour Types.” <em>Nature</em> 505 (7484). Nature Publishing Group: 495.</p>
+</div>
+<div id="ref-lawrence2013mutational">
+<p>Lawrence, Michael S, Petar Stojanov, Paz Polak, Gregory V Kryukov, Kristian Cibulskis, Andrey Sivachenko, Scott L Carter, et al. 2013. “Mutational Heterogeneity in Cancer and the Search for New Cancer-Associated Genes.” <em>Nature</em> 499 (7457). Nature Publishing Group: 214.</p>
+</div>
+<div id="ref-lee2018population">
+<p>Lee-Six, Henry, Nina Friesgaard Øbro, Mairi S Shepherd, Sebastian Grossmann, Kevin Dawson, Miriam Belmonte, Robert J Osborne, et al. 2018. “Population Dynamics of Normal Human Blood Inferred from Somatic Mutations.” <em>Nature</em> 561 (7724). Nature Publishing Group: 473.</p>
+</div>
+<div id="ref-ludwig2019lineage">
+<p>Ludwig, Leif S, Caleb A Lareau, Jacob C Ulirsch, Elena Christian, Christoph Muus, Lauren H Li, Karin Pelka, et al. 2019. “Lineage Tracing in Humans Enabled by Mitochondrial Mutations and Single-Cell Genomics.” <em>Cell</em> 176 (6). Elsevier: 1325–39.</p>
+</div>
+<div id="ref-lynch2010rate">
+<p>Lynch, Michael. 2010. “Rate, Molecular Spectrum, and Consequences of Human Mutation.” <em>Proceedings of the National Academy of Sciences</em> 107 (3). National Acad Sciences: 961–68.</p>
+</div>
+<div id="ref-Mamcarz2019-ei">
+<p>Mamcarz, Ewelina, Sheng Zhou, Timothy Lockey, Hossam Abdelsamed, Shane J Cross, Guolian Kang, Zhijun Ma, et al. 2019. “Lentiviral Gene Therapy Combined with Low-Dose Busulfan in Infants with SCID-X1.” <em>N. Engl. J. Med.</em> 380 (16). Massachusetts Medical Society: 1525–34.</p>
+</div>
+<div id="ref-martincorena2015somatic">
+<p>Martincorena, Iñigo, and Peter J Campbell. 2015. “Somatic Mutation in Cancer and Normal Cells.” <em>Science</em> 349 (6255). American Association for the Advancement of Science: 1483–9.</p>
+</div>
+<div id="ref-martincorena2017universal">
+<p>Martincorena, Iñigo, Keiran M Raine, Moritz Gerstung, Kevin J Dawson, Kerstin Haase, Peter Van Loo, Helen Davies, Michael R Stratton, and Peter J Campbell. 2017. “Universal Patterns of Selection in Cancer and Somatic Tissues.” <em>Cell</em> 171 (5). Elsevier: 1029–41.</p>
+</div>
+<div id="ref-martincorena2015high">
+<p>Martincorena, Iñigo, Amit Roshan, Moritz Gerstung, Peter Ellis, Peter Van Loo, Stuart McLaren, David C Wedge, et al. 2015. “High Burden and Pervasive Positive Selection of Somatic Mutations in Normal Human Skin.” <em>Science</em> 348 (6237). American Association for the Advancement of Science: 880–86.</p>
+</div>
+<div id="ref-nik2012mutational">
+<p>Nik-Zainal, Serena, Ludmil B Alexandrov, David C Wedge, Peter Van Loo, Christopher D Greenman, Keiran Raine, David Jones, et al. 2012. “Mutational Processes Molding the Genomes of 21 Breast Cancers.” <em>Cell</em> 149 (5). Elsevier: 979–93.</p>
+</div>
+<div id="ref-ohta1973model">
+<p>Ohta, Tomoko, and Motoo Kimura. 1973. “A Model of Mutation Appropriate to Estimate the Number of Electrophoretically Detectable Alleles in a Finite Population.” <em>Genetics Research</em> 22 (2). Cambridge University Press: 201–4.</p>
+</div>
+<div id="ref-preston2003bottom">
+<p>Preston, Sean L, Wai-Man Wong, Annie On-On Chan, Richard Poulsom, Rosemary Jeffery, Robert A Goodlad, Nikki Mandir, et al. 2003. “Bottom-up Histogenesis of Colorectal Adenomas: Origin in the Monocryptal Adenoma and Initial Expansion by Crypt Fission.” <em>Cancer Research</em> 63 (13). AACR: 3819–25.</p>
+</div>
+<div id="ref-rauch2019programmable">
+<p>Rauch, Simone, Emily He, Michael Srienc, Huiqing Zhou, Zijie Zhang, and Bryan C Dickinson. 2019. “Programmable Rna-Guided Rna Effector Proteins Built from Human Parts.” <em>Cell</em>. Elsevier.</p>
+</div>
+<div id="ref-segurel2014determinants">
+<p>Ségurel, Laure, Minyoung J Wyman, and Molly Przeworski. 2014. “Determinants of Mutation Rate Variation in the Human Germline.” <em>Annual Review of Genomics and Human Genetics</em> 15. Annual Reviews: 47–70.</p>
+</div>
+<div id="ref-shendure2019genomic">
+<p>Shendure, Jay, Gregory M Findlay, and Matthew W Snyder. 2019. “Genomic Medicine–Progress, Pitfalls, and Promise.” <em>Cell</em> 177 (1). Elsevier: 45–57.</p>
+</div>
+<div id="ref-snippert2014biased">
+<p>Snippert, Hugo J, Arnout G Schepers, Johan H van Es, Benjamin D Simons, and Hans Clevers. 2014. “Biased Competition Between Lgr5 Intestinal Stem Cells Driven by Oncogenic Mutation Induces Clonal Expansion.” <em>EMBO Reports</em> 15 (1). EMBO Press: 62–69.</p>
+</div>
+<div id="ref-stephens2009complex">
+<p>Stephens, Philip J, David J McBride, Meng-Lay Lin, Ignacio Varela, Erin D Pleasance, Jared T Simpson, Lucy A Stebbings, et al. 2009. “Complex Landscapes of Somatic Rearrangement in Human Breast Cancer Genomes.” <em>Nature</em> 462 (7276). Nature Publishing Group: 1005.</p>
+</div>
+<div id="ref-tomasetti2015variation">
+<p>Tomasetti, Cristian, and Bert Vogelstein. 2015. “Variation in Cancer Risk Among Tissues Can Be Explained by the Number of Stem Cell Divisions.” <em>Science</em> 347 (6217). American Association for the Advancement of Science: 78–81.</p>
+</div>
+<div id="ref-venn2014strong">
+<p>Venn, Oliver, Isaac Turner, Iain Mathieson, Natasja de Groot, Ronald Bontrop, and Gil McVean. 2014. “Strong Male Bias Drives Germline Mutation in Chimpanzees.” <em>Science</em> 344 (6189). American Association for the Advancement of Science: 1272–5.</p>
+</div>
+<div id="ref-vila2003rescue">
+<p>Vila, Carles, Anna–Karin Sundqvist, Øystein Flagstad, Jennifer Seddon, Susanne Bjö rnerfeldt, Ilpo Kojola, Adriano Casulli, Håkan Sand, Petter Wabakken, and Hans Ellegren. 2003. “Rescue of a Severely Bottlenecked Wolf (Canis Lupus) Population by a Single Immigrant.” <em>Proceedings of the Royal Society of London. Series B: Biological Sciences</em> 270 (1510). The Royal Society: 91–97.</p>
+</div>
+<div id="ref-vogelstein2013cancer">
+<p>Vogelstein, Bert, Nickolas Papadopoulos, Victor E Velculescu, Shibin Zhou, Luis A Diaz, and Kenneth W Kinzler. 2013. “Cancer Genome Landscapes.” <em>Science</em> 339 (6127). American Association for the Advancement of Science: 1546–58.</p>
+</div>
+<div id="ref-williams1957pleiotropy">
+<p>Williams, George C. 1957. “Pleiotropy, Natural Selection, and the Evolution of Senescence.” <em>Evolution</em>. JSTOR, 398–411.</p>
+</div>
+<div id="ref-yates2015subclonal">
+<p>Yates, Lucy R, Moritz Gerstung, Stian Knappskog, Christine Desmedt, Gunes Gundem, Peter Van Loo, Turid Aas, et al. 2015. “Subclonal Diversification of Primary Breast Cancer Revealed by Multiregion Sequencing.” <em>Nature Medicine</em> 21 (7). Nature Publishing Group: 751.</p>
+</div>
+<div id="ref-Yizhak2019-ch">
+<p>Yizhak, Keren, François Aguet, Jaegil Kim, Julian M Hess, Kirsten Kübler, Jonna Grimsby, Ruslana Frazer, et al. 2019. “RNA Sequence Analysis Reveals Macroscopic Somatic Clonal Expansion Across Normal Tissues.” <em>Science</em> 364 (6444).</p>
 </div>
 </div>
             </section>
@@ -475,11 +517,13 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
 <script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
 <script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
 <script>
 gitbook.require(["gitbook"], function(gitbook) {
 gitbook.start({
