@@ -2,9 +2,3 @@
 
 ## Clonal Dynamics
 It appears that in physiologically typical states that are unperturbed by irradiation, HSCs equally and continually contribute to hematopoiesis, rather than asynchronously contributing by periodically cycling and then becoming quiescent [@lu2019clonal]. It also appears that the number of mutations per HSC is roughly 1000 with only a small degree of variance, and there does not appear to be a distinction between typical HSCs and an ultra-quiescent pool of HSCs [@lee2018population].
-
-
-
-
-
-Using germ-free mice, when gut microbiota were transplanted from either typical donors or donors with autism spectrum disorder, the brains of the mice that were injected with the microbiota from ASD donors exhibited predominant autistic behaviors [@sharon2019human]. Furthermore, microbiota from typical donors improved behavioral abnormalities and neuron function in ASD model mice.
