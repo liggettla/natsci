@@ -124,7 +124,7 @@
   \postauthor{\par}
       \predate{\centering\large\emph}
   \postdate{\par}
-    \date{2019-11-19}
+    \date{2020-01-06}
 
 \usepackage{booktabs}
 \usepackage{amsthm}
@@ -273,6 +273,8 @@ In their paper, Martincorena and Campbell show that the dN/dS ratio for somatic 
 Using sequencing of blood to find spontaneous mutations and go back and use population biology to calculate the number of HSCs, it was found that there were between 50k-200k HSCs contributing to hematopoiesis at any given time \citep{lee2018population}.
 
 Using a method they developed called RNA-MuTect, mutations from RNA are found and matched with germline DNA. Using samples within TCGA that had DNA and RNA extractions from the same individual from multiple tissues, RNA-MuTect identifies multiple putatively oncogenic mutations from across otherwise normal tissues \citep{Yizhak2019-ch}. The numbers of detected oncogenic mutations was dependent upon tissue exposure to mutagens, proliferation rate, and tissue architecture.
+
+The McCarroll group identified the CHEK2, TERT, and p53 loci as associating with CHIP development \citep{Loh2018-xo}.
 
 \hypertarget{mutational-processes-in-cancer}{%
 \section{Mutational Processes in Cancer}\label{mutational-processes-in-cancer}}
@@ -518,7 +520,9 @@ No free lunch theorem
 
 Google has designed a new variant caller called DeepVariant that uses deep neural networks to learn how best to call variants. This appears to provide a significant improvement to variant calling accuracy (Poplin et al., 2016).
 
-A group put together well defined pipelines for common bioinfomatics analysis like RNASeq into bioconductor that can be easily used and then cited as a method of succinctly referring to the analysis process (\url{http://www.nature.com/authors/policies/license.html}).
+In a similar vein to google's DeepVariant, \href{'https://github.com/parklab/MosaicForecast'}{MosaicForecast} uses a machine learning algorithm to detect mosaic mutations within sequencing samples. In the method, samples are first processed with Mutect2 to eliminate initial artifacts, and create a lenient set of possible mosaic variants. From this set of variants, all recurrent variants and variants found within \href{'https://gnomad.broadinstitute.org/'}{gnomAD} are eliminated as it is assumed that these are artifactual. It is important to note that elimination of all recurrent variants may be an experimentally invalid assumption if samples are originated from the same individual and that individual is truly mosaic for those mutations.
+
+A group put together well defined pipelines for common bioinformatics analysis like RNASeq into bioconductor that can be easily used and then cited as a method of succinctly referring to the analysis process (\url{http://www.nature.com/authors/policies/license.html}).
 
 A group came up with a deep machine learning algorithm that can be used to predict patient data and genomics patterns (Ching et al., 2017).
 
@@ -699,6 +703,11 @@ Complete blood counts exceed the upper limit of the WHO reference range. Other c
 \end{Shaded}
 
 \citep{tefferi2015myeloproliferative}.
+
+\hypertarget{myeloproliferative-neoplasms-1}{%
+\section{Myeloproliferative Neoplasms}\label{myeloproliferative-neoplasms-1}}
+
+It appears that immune elimination of neoantigens during early tumor evolution may be rather negligible \citep{Van_den_Eynden2019-mn}. Signal of elimination of mutants that express neoantigens is essentially eliminated when accounting for the effect of trinucleotide context in mutation patterns.
 
 \hypertarget{microbiome}{%
 \chapter{Microbiome}\label{microbiome}}

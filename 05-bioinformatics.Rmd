@@ -10,7 +10,9 @@ No free lunch theorem
 ## Software
 Google has designed a new variant caller called DeepVariant that uses deep neural networks to learn how best to call variants. This appears to provide a significant improvement to variant calling accuracy (Poplin et al., 2016).
 
-A group put together well defined pipelines for common bioinfomatics analysis like RNASeq into bioconductor that can be easily used and then cited as a method of succinctly referring to the analysis process (http://www.nature.com/authors/policies/license.html).
+In a similar vein to google's DeepVariant, [MosaicForecast]('https://github.com/parklab/MosaicForecast') uses a machine learning algorithm to detect mosaic mutations within sequencing samples. In the method, samples are first processed with Mutect2 to eliminate initial artifacts, and create a lenient set of possible mosaic variants. From this set of variants, all recurrent variants and variants found within [gnomAD]('https://gnomad.broadinstitute.org/') are eliminated as it is assumed that these are artifactual. It is important to note that elimination of all recurrent variants may be an experimentally invalid assumption if samples are originated from the same individual and that individual is truly mosaic for those mutations.
+
+A group put together well defined pipelines for common bioinformatics analysis like RNASeq into bioconductor that can be easily used and then cited as a method of succinctly referring to the analysis process (http://www.nature.com/authors/policies/license.html).
 
 A group came up with a deep machine learning algorithm that can be used to predict patient data and genomics patterns (Ching et al., 2017).
 

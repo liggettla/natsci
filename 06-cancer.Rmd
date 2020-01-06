@@ -80,3 +80,6 @@ knitr::include_graphics(rep("images/06-6.jpg", 1))
 knitr::opts_chunk$set(comment=NA, fig.width=1, fig.height=1)
 ```
 [@tefferi2015myeloproliferative].
+
+## Myeloproliferative Neoplasms
+It appears that immune elimination of neoantigens during early tumor evolution may be rather negligible [@Van_den_Eynden2019-mn]. Signal of elimination of mutants that express neoantigens is essentially eliminated when accounting for the effect of trinucleotide context in mutation patterns.

@@ -115,6 +115,8 @@ Using sequencing of blood to find spontaneous mutations and go back and use popu
 
 Using a method they developed called RNA-MuTect, mutations from RNA are found and matched with germline DNA. Using samples within TCGA that had DNA and RNA extractions from the same individual from multiple tissues, RNA-MuTect identifies multiple putatively oncogenic mutations from across otherwise normal tissues [@Yizhak2019-ch]. The numbers of detected oncogenic mutations was dependent upon tissue exposure to mutagens, proliferation rate, and tissue architecture.
 
+The McCarroll group identified the CHEK2, TERT, and p53 loci as associating with CHIP development [@Loh2018-xo].
+
 ## Mutational Processes in Cancer
 Most cancers carry between 1,000 and 20,000 somatic point mutations and a few hundred insertions, deletions, and rearrangements [@martincorena2015somatic]. Leukemias and pediatric brain cancers typically contain the lowest numbers of mutations while those tissues exposed to mutagens like lung and skin cancers tend to have the highest numbers [@stephens2009complex; @alexandrov2013signatures; @lawrence2013mutational; @vogelstein2013cancer]. It is interesting to note that from the Cancer Gene Census database, it appears that only three genes; TP53, PIK3CA, and BRAF are mutated in 10% or more patients [@martincorena2015somatic].
 
@@ -276,7 +278,9 @@ No free lunch theorem
 ## Software
 Google has designed a new variant caller called DeepVariant that uses deep neural networks to learn how best to call variants. This appears to provide a significant improvement to variant calling accuracy (Poplin et al., 2016).
 
-A group put together well defined pipelines for common bioinfomatics analysis like RNASeq into bioconductor that can be easily used and then cited as a method of succinctly referring to the analysis process (http://www.nature.com/authors/policies/license.html).
+In a similar vein to google's DeepVariant, [MosaicForecast]('https://github.com/parklab/MosaicForecast') uses a machine learning algorithm to detect mosaic mutations within sequencing samples. In the method, samples are first processed with Mutect2 to eliminate initial artifacts, and create a lenient set of possible mosaic variants. From this set of variants, all recurrent variants and variants found within [gnomAD]('https://gnomad.broadinstitute.org/') are eliminated as it is assumed that these are artifactual. It is important to note that elimination of all recurrent variants may be an experimentally invalid assumption if samples are originated from the same individual and that individual is truly mosaic for those mutations.
+
+A group put together well defined pipelines for common bioinformatics analysis like RNASeq into bioconductor that can be easily used and then cited as a method of succinctly referring to the analysis process (http://www.nature.com/authors/policies/license.html).
 
 A group came up with a deep machine learning algorithm that can be used to predict patient data and genomics patterns (Ching et al., 2017).
 
@@ -368,6 +372,9 @@ knitr::include_graphics(rep("images/06-6.jpg", 1))
 knitr::opts_chunk$set(comment=NA, fig.width=1, fig.height=1)
 ```
 [@tefferi2015myeloproliferative].
+
+## Myeloproliferative Neoplasms
+It appears that immune elimination of neoantigens during early tumor evolution may be rather negligible [@Van_den_Eynden2019-mn]. Signal of elimination of mutants that express neoantigens is essentially eliminated when accounting for the effect of trinucleotide context in mutation patterns.
 
 <!--chapter:end:06-cancer.Rmd-->
 
